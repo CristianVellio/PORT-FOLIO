@@ -85,7 +85,7 @@ Este proyecto consiste en un portafolio web personal, desarrollado para presenta
 
 ## Link al proyecto
 
-[demo]([https://utn-js-movies.vercel.app/](https://cristian-vellio-cv.vercel.app/))
+[DEMO]([https://cristian-vellio-cv.vercel.app/])
 
 ### 7. **Conclusión**
 
