@@ -83,6 +83,10 @@ Este proyecto consiste en un portafolio web personal, desarrollado para presenta
 - **Animaciones**: AOS
 - **Navegación y UI**: React Scroll, React Icons
 
+## Link al proyecto
+
+[demo]([https://utn-js-movies.vercel.app/](https://cristian-vellio-cv.vercel.app/))
+
 ### 7. **Conclusión**
 
 Este proyecto de portafolio web es una herramienta poderosa para mostrar habilidades, experiencia y proyectos. Utiliza tecnologías modernas para crear una interfaz atractiva y fácil de navegar, optimizada para diferentes dispositivos. Además, el uso de hooks y componentes de React garantiza un código mantenible y escalable.
