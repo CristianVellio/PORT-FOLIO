@@ -3,6 +3,7 @@ import img2 from "./assets/ISPC_BROKERS.jpg";
 import img3 from "./assets/JS_MOVIES.jpg";
 import img4 from "./assets/LA_BAKERYA.jpg";
 import img5 from "./assets/TRANSPORTES_X.jpg";
+import img6 from "./assets/PORTA.jpg";
 
 function Projects() {
   return (
@@ -73,6 +74,21 @@ function Projects() {
             alt="La Bakerya"
           />
         </a>
+
+        <a
+          href="https://cristian-vellio-cv.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            data-aos="fade-up"
+            height={500}
+            width={300}
+            className="flex items-center text-lime-600 hover:text-lime-500 rounded-3xl p-1 border-2 b_glow"
+            src={img6}
+            alt="Portfolio"
+          />
+        </a>
         <a
           href="https://transportex-x-utn-frba.netlify.app/"
           target="_blank"
@@ -80,7 +96,7 @@ function Projects() {
         >
           <img
             data-aos="fade-up"
-            height={500}
+            height={400}
             width={300}
             className="flex items-center text-lime-600 hover:text-lime-500 rounded-3xl p-1 border-2 b_glow"
             src={img5}

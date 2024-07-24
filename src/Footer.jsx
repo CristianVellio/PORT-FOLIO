@@ -23,7 +23,7 @@ function Footer() {
         </div>
         <div className="flex flex-col md:mb-0">
           <h3 className="text-3xl font-semibold text-lime-400 py-2 uppercase">
-            Find Me in
+            Find Me on
           </h3>
           <div className="flex space-x-2 flex-row items-center justify-items-center">
             <a
