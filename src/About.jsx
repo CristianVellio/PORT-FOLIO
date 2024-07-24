@@ -1,5 +1,5 @@
 import img from "./assets/me.jpg";
-import resume from "./assets/CRISTIAN_VELLIO.pdf";
+import CRISTIAN_VELLIO_RESUME from "./assets/CRISTIAN_VELLIO_RESUME.pdf";
 
 function About() {
   return (
@@ -46,7 +46,10 @@ function About() {
           <div className="flex items-center justify-center">
             <div className="flex space-x-2"></div>
             <button className="neno-button shadow-xl hover:shadow-lime-800/50  text-white border-2 hover:bg-lime-800 border-lime-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden ">
-              <a href={resume} download="resume">
+              <a
+                href={CRISTIAN_VELLIO_RESUME}
+                download="CRISTIAN_VELLIO_RESUME"
+              >
                 Download Resume
               </a>
             </button>
