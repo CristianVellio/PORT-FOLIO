@@ -38,7 +38,7 @@ Este proyecto consiste en un portafolio web personal, desarrollado para presenta
 
 #### 4.2 **Condicionales de Renderizado**
 
-- **Condicionales**: Utilizados para mostrar u ocultar contenido en función del estado, como en el caso del menú desplegable y el acordeón.
+- **Condicionales**: Utilizados para mostrar u ocultar contenido en función del estado, como en el caso del menú desplegable.
 
   ```javascript
   {click && content}
