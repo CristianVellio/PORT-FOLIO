@@ -7,14 +7,29 @@ import Nav from "./Nav";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import { InfinitySpin } from "react-loader-spinner";
+import { FaArrowUp } from "react-icons/fa";
 
 function App() {
   const [loading, setLoading] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 1500);
+    const handleScroll = () => {
+      const bannerHeight = document.getElementById("Banner").offsetHeight;
+      if (window.scrollY > bannerHeight) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
   return (
     <>
@@ -40,6 +55,14 @@ function App() {
           <Projects />
           <Contact />
           <Footer />
+          {showButton && (
+            <button
+              className="neno-button shadow-xl hover:shadow-orange-700/50 text-white border-2 border-orange-800 bg-orange-800 hover:bg-orange-900 rounded-full font-bold py-1 px-1.5 my-3 fixed right-5 bottom-5 b_glow text-xl text-bold"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              <FaArrowUp className="top-button text-[30px]" />
+            </button>
+          )}
         </div>
       )}
     </>
