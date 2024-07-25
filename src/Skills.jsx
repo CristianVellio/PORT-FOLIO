@@ -1,13 +1,15 @@
-import { FaPython } from "react-icons/fa6";
-import { SiFlask } from "react-icons/si";
-import { SiMysql } from "react-icons/si";
-import { FaHtml5 } from "react-icons/fa6";
-import { FaCss3Alt } from "react-icons/fa";
-import { AiOutlineJavaScript } from "react-icons/ai";
-import { FaReact } from "react-icons/fa6";
-import { FaNodeJs } from "react-icons/fa6";
 import { useEffect } from "react";
 import AOS from "aos";
+import "aos/dist/aos.css";
+import {
+  FaPython,
+  FaHtml5,
+  FaReact,
+  FaNodeJs,
+  FaCss3Alt,
+} from "react-icons/fa";
+import { SiFlask, SiMysql } from "react-icons/si";
+import { AiOutlineJavaScript } from "react-icons/ai";
 
 function Skills() {
   useEffect(() => {
@@ -17,6 +19,7 @@ function Skills() {
       duration: 750,
     });
   }, []);
+
   return (
     <div id="Skills" className="p-20 flex flex-col items-center justify-center">
       <h2
@@ -27,81 +30,69 @@ function Skills() {
       </h2>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-10">
         <a
+          data-aos="fade-up"
           href="https://www.w3schools.com/html/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaHtml5
-            data-aos="fade-up"
-            className=" text-[100px] flex items-center justify-center font-semibold text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2"
-          />
+          <FaHtml5 className=" text-[100px] flex items-center justify-center font-semibold text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
 
         <a
+          data-aos="fade-down"
           href="https://developer.mozilla.org/en-US/docs/Web/CSS"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaCss3Alt
-            data-aos="fade-down"
-            className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2"
-          />
+          <FaCss3Alt className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
+          data-aos="fade-up"
           href="https://www.javascript.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AiOutlineJavaScript
-            data-aos="fade-up"
-            className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2"
-          />
-        </a>
-        <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
-          <FaReact
-            data-aos="fade-down"
-            className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2"
-          />
+          <AiOutlineJavaScript className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
+          data-aos="fade-down"
+          href="https://react.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaReact className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+        </a>
+        <a
+          data-aos="fade-up"
           href="https://nodejs.org/en/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaNodeJs
-            data-aos="fade-up"
-            className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2"
-          />
+          <FaNodeJs className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
+          data-aos="fade-down"
           href="https://www.python.org/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaPython
-            data-aos="fade-down"
-            className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2"
-          />
+          <FaPython className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
+          data-aos="fade-up"
           href="https://flask.palletsprojects.com/en/3.0.x/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiFlask
-            data-aos="fade-up"
-            className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2"
-          />
+          <SiFlask className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
+          data-aos="fade-down"
           href="https://www.mysql.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiMysql
-            data-aos="fade-down"
-            className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2"
-          />
+          <SiMysql className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
       </div>
     </div>

@@ -3,7 +3,7 @@ import img2 from "./assets/ISPC_BROKERS.jpg";
 import img3 from "./assets/JS_MOVIES.jpg";
 import img4 from "./assets/LA_BAKERYA.jpg";
 import img5 from "./assets/TRANSPORTES_X.jpg";
-import img6 from "./assets/PORTA.jpg";
+import img6 from "./assets/TOONME.jpeg";
 
 function Projects() {
   return (
@@ -89,6 +89,7 @@ function Projects() {
             alt="Portfolio"
           />
         </a>
+
         <a
           href="https://transportex-x-utn-frba.netlify.app/"
           target="_blank"
