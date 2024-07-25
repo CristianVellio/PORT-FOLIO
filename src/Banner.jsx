@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
-import img from "./assets/programming.jpg";
+import img from "./assets/ME_CARTOON.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

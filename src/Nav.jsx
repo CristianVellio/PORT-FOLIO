@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { FaTimesCircle } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
+import img from "./assets/LOGO.png";
 
 function Nav() {
   const [click, setClick] = useState(false);
@@ -49,7 +50,13 @@ function Nav() {
     <nav className=" bg-orange-700 relative">
       <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 border-b border-amber-800">
         <div className="flex items-center flex-1">
-          <span className="text-3xl font-bold  text-white">CV</span>
+          <img
+            src={img}
+            width={80}
+            height={80}
+            className="rounded-full"
+            alt="logo"
+          />
         </div>
         <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
           <div className="flex-10">

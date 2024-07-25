@@ -1,14 +1,19 @@
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
+import img from "./assets/LOGO.png";
 
 function Footer() {
   return (
     <footer className="bg-orange-700 text-white lg:px-48 py-20">
       <div className="container flex justify-between items-center mx-auto gap-4">
+        <img
+          src={img}
+          width={80}
+          height={80}
+          className="rounded-full"
+          alt="logo"
+        />
         <div className="mb-4 md:md-0">
-          <span className="text-3xl font-semibold text-lime-400 py-2 uppercase">
-            CV
-          </span>
           <p className="text-16px text-bold my-4">Cristian Vellio© 2024</p>
         </div>
         <div>
