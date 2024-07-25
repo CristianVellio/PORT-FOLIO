@@ -139,6 +139,10 @@ AOS proporciona una manera fácil de añadir animaciones que se activan al despl
 
 ## **7. Paleta de Colores**
 
+<div align="center">
+<img src="https://github.com/user-attachments/assets/85a40342-0fa2-45de-a140-37b7f692711c" alt="AdobeColor-Portfolio" width="500" height="200">
+</div>
+
 - **Fondo Principal:** #0F172A (gris oscuro) - Proporciona un fondo sobrio y profesional que resalta el contenido visual.
 - **Color Principal:** #C2410C (naranja) - Utilizado para elementos clave y de llamada a la acción, aporta energía y vitalidad.
 - **Color Secundario:** #84CC16 (lima) - Se emplea para acentos y detalles, creando contraste con el fondo oscuro.
