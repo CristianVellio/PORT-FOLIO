@@ -1,10 +1,14 @@
-# Portfolio
+<h1>Portfolio</h1> 
+
 
 ## **Portfolio Web 💼 - Presentación**
+
 
 ## **1. Introducción**
 
 Este portafolio web personal está diseñado para mostrar habilidades, proyectos y ofrecer un medio de contacto a empleadores o colaboradores potenciales. El sitio web está construido con Vite, React, y Tailwind CSS, destacando por su diseño moderno y responsivo, con animaciones que mejoran la experiencia del usuario.
+
+
 
 ## **2. Funcionalidades Principales**
 
@@ -40,6 +44,8 @@ Se han implementado efectos de animación utilizando AOS (Animate On Scroll), qu
 
 Este botón permite a los usuarios volver rápidamente al inicio de la página. Está diseñado para aparecer solo después de que el usuario haya desplazado una cierta distancia, mejorando la experiencia de navegación en páginas largas.
 
+
+
 ## **3. Requerimientos del Sistema**
 
 El proyecto utiliza las siguientes tecnologías y herramientas:
@@ -49,6 +55,8 @@ El proyecto utiliza las siguientes tecnologías y herramientas:
 - **React Scroll:** Permite el desplazamiento suave entre las secciones del sitio, mejorando la navegación y la experiencia del usuario.
 - **React Icons:** Proporciona una amplia variedad de iconos que se integran fácilmente con React, mejorando la interfaz visual.
 - **AOS (Animate On Scroll):** Se utiliza para implementar animaciones que se activan al desplazarse, manteniendo el interés del usuario.
+
+
 
 ## **4. Uso de Hooks y Funcionalidades de React**
 
@@ -86,6 +94,8 @@ Las condicionales de renderizado se utilizan para mostrar u ocultar elementos de
   {showButton && <button className="back-to-top">...</button>}
   ```
 
+
+
 ## **5. Uso de Librerías**
 
 ### **5.1 Tailwind CSS**
@@ -112,6 +122,8 @@ AOS proporciona una manera fácil de añadir animaciones que se activan al despl
 </div>
 ```
 
+
+
 ## **6. Stack Tecnológico**
 
 - **Frontend**:
@@ -123,6 +135,8 @@ AOS proporciona una manera fácil de añadir animaciones que se activan al despl
 - **Animaciones**: AOS
 - **Navegación y UI**: React Scroll, React Icons
 
+
+
 ## **7. Paleta de Colores**
 
 - **Fondo Principal:** #0F172A (gris oscuro) - Proporciona un fondo sobrio y profesional que resalta el contenido visual.
@@ -130,9 +144,13 @@ AOS proporciona una manera fácil de añadir animaciones que se activan al despl
 - **Color Secundario:** #84CC16 (lima) - Se emplea para acentos y detalles, creando contraste con el fondo oscuro.
 - **Color de Texto:** #ffffff (blanco) - Garantiza la legibilidad en el fondo oscuro, utilizado para la mayoría de los textos.
 
+  
+
 ## **8. Conclusión**
 
 Este proyecto de portafolio web no solo muestra habilidades técnicas y experiencia, sino que también destaca por su diseño intuitivo y estéticamente atractivo. Utiliza tecnologías modernas y prácticas de desarrollo eficientes, lo que lo convierte en una herramienta valiosa para presentar el perfil profesional de manera efectiva. La integración de animaciones, navegación fluida, y un diseño responsivo asegura una experiencia de usuario positiva en cualquier dispositivo.
+
+
 
  ## Link al proyecto
 
