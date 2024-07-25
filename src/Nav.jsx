@@ -9,46 +9,10 @@ function Nav() {
   const handleClick = () => {
     setClick(!click);
   };
-  const content = (
-    <>
-      <div className="lg:hidden block absolute top-16 w-full left-0 right-0 z-50 bg-amber-900 transition">
-        <ul className="text-center text-xl p-20">
-          <li className="text-center text-xl my-4 py-4 border-b border-amber-800 hover:bg-amber-800 hover:rounded">
-            <Link spy={true} smooth={true} to="Home">
-              Home
-            </Link>
-          </li>
 
-          <li className="my-4 py-4 border-b border-amber-800 hover:bg-amber-800 hover:rounded">
-            <Link spy={true} smooth={true} to="About">
-              About
-            </Link>
-          </li>
-
-          <li className="my-4 py-4 border-b border-amber-800 hover:bg-amber-800 hover:rounded">
-            <Link spy={true} smooth={true} to="Skills">
-              Skills
-            </Link>
-          </li>
-
-          <li className="my-4 py-4 border-b border-amber-800 hover:bg-amber-800 hover:rounded">
-            <Link spy={true} smooth={true} to="Projects">
-              Projects
-            </Link>
-          </li>
-
-          <li className="my-4 py-4 border-b border-amber-800 hover:bg-amber-800 hover:rounded">
-            <Link spy={true} smooth={true} to="Contact">
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </>
-  );
   return (
-    <nav className=" bg-orange-700 relative">
-      <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 border-b border-amber-800">
+    <nav className="bg-orange-700 relative">
+      <div className="h-20 flex justify-between text-white items-center px-4 lg:px-20 py-4 border-b border-amber-800">
         <div className="flex items-center flex-1">
           <img
             src={img}
@@ -58,49 +22,77 @@ function Nav() {
             alt="logo"
           />
         </div>
-        <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
-          <div className="flex-10">
-            <ul className="flex gap-8 mr-16 text-[18px]">
-              <li className="text-lg text-bold hover:text-lime-600 transition  border-amber-900 hover:border-lime-600 cursor-pointer">
-                <Link spy={true} smooth={true} to="#">
-                  Home
-                </Link>
-              </li>
-
-              <li className="text-lg text-bold hover:text-lime-600 transition  border-amber-900 hover:border-lime-600 cursor-pointer">
-                <Link spy={true} smooth={true} to="About">
-                  About
-                </Link>
-              </li>
-
-              <li className="text-lg text-bold hover:text-lime-600 transition  border-amber-900 hover:border-lime-600 cursor-pointer">
-                <Link spy={true} smooth={true} to="Skills">
-                  Skills
-                </Link>
-              </li>
-
-              <li className="text-lg text-bold hover:text-lime-600 transition  border-amber-900 hover:border-lime-600 cursor-pointer">
-                <Link spy={true} smooth={true} to="Projects">
-                  Projects
-                </Link>
-              </li>
-
-              <li className="text-lg text-bold hover:text-lime-600 transition  border-amber-900 hover:border-lime-600 cursor-pointer">
-                <Link spy={true} smooth={true} to="Contact">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+        <div className="hidden lg:flex flex-1 justify-end">
+          <ul className="flex gap-8 text-[18px]">
+            <li className="text-lg font-bold hover:text-lime-600 cursor-pointer">
+              <Link spy={true} smooth={true} to="Home">
+                Home
+              </Link>
+            </li>
+            <li className="text-lg font-bold hover:text-lime-600 cursor-pointer">
+              <Link spy={true} smooth={true} to="About">
+                About
+              </Link>
+            </li>
+            <li className="text-lg font-bold hover:text-lime-600 cursor-pointer">
+              <Link spy={true} smooth={true} to="Skills">
+                Skills
+              </Link>
+            </li>
+            <li className="text-lg font-bold hover:text-lime-600 cursor-pointer">
+              <Link spy={true} smooth={true} to="Projects">
+                Projects
+              </Link>
+            </li>
+            <li className="text-lg font-bold hover:text-lime-600 cursor-pointer">
+              <Link spy={true} smooth={true} to="Contact">
+                Contact
+              </Link>
+            </li>
+          </ul>
         </div>
-        <div>{click && content}</div>
-        <button
-          className="text-[25px font-semibold] block md:hidden transition"
-          onClick={handleClick}
-        >
-          {click ? <FaTimesCircle /> : <TiThMenu />}
-        </button>
+        <div className="lg:hidden flex items-center">
+          <button className="text-[25px] font-semibold" onClick={handleClick}>
+            {click ? <FaTimesCircle /> : <TiThMenu />}
+          </button>
+        </div>
       </div>
+      {click && (
+        <div className="text-white lg:hidden bg-amber-900 w-full z-50 absolute">
+          <ul className="text-center text-xl p-5">
+            <li className="py-4 border-b border-amber-800 hover:bg-amber-800">
+              <Link spy={true} smooth={true} to="Home" onClick={handleClick}>
+                Home
+              </Link>
+            </li>
+            <li className="py-4 border-b border-amber-800 hover:bg-amber-800">
+              <Link spy={true} smooth={true} to="About" onClick={handleClick}>
+                About
+              </Link>
+            </li>
+            <li className="py-4 border-b border-amber-800 hover:bg-amber-800">
+              <Link spy={true} smooth={true} to="Skills" onClick={handleClick}>
+                Skills
+              </Link>
+            </li>
+            <li className="py-4 border-b border-amber-800 hover:bg-amber-800">
+              <Link
+                spy={true}
+                smooth={true}
+                to="Projects"
+                onClick={handleClick}
+              >
+                Projects
+              </Link>
+            </li>
+            <li className="py-4 border-b border-amber-800 hover:bg-amber-800">
+              <Link spy={true} smooth={true} to="Contact" onClick={handleClick}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
