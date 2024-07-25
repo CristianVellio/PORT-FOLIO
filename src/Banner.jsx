@@ -4,8 +4,17 @@ import img from "./assets/programming.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 function Banner() {
+  const [text] = useTypewriter({
+    words: ["Full-Stack", "Python", "Software"],
+    loop: {},
+    typeSpeed: 180,
+    delaySpeed: 800,
+    deleteSpeed: 100,
+  });
+
   useEffect(() => {
     AOS.init({
       easing: "ease-out-quart",
@@ -23,8 +32,13 @@ function Banner() {
           data-aos="fade-right"
           className="text-[52px] font-semibold mb-8 leading-normal uppercase"
         >
-          Cristian Vellio
-          <span className="text-lime-500"> Software Developer</span>
+          Cristian Vellio <br></br>
+          <span className="text-lime-500">{text}</span>
+          <span className="text-lime-500">
+            <Cursor cursorStyle="|" />
+          </span>
+          <br></br>
+          <span className="text-lime-500"> Developer</span>
         </h1>
         <p
           data-aos="fade-left"
