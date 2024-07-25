@@ -16,7 +16,7 @@ function Contact() {
     >
       <h2
         data-aos="fade-right"
-        className="text-[52px] font-semibold mb-20 leading-normal uppercase text-white"
+        className="text-[52px] text-center w-full font-semibold mb-20 leading-normal uppercase text-white"
       >
         Contact Me
       </h2>
