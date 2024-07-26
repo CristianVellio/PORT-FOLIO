@@ -33,9 +33,10 @@ function Banner() {
           data-aos="fade-right"
           className="text-[52px] font-semibold mb-8 leading-normal uppercase"
         >
-          Cristian Vellio <br />
-          <span className="text-lime-500">{text}</span>
-          <span className="text-lime-500">
+          Cristian Vellio
+          <br />
+          <span className="text-[48px] text-lime-500">{text}</span>
+          <span className="text-[48px] text-lime-500">
             <Cursor cursorStyle="|" />
           </span>
           <br />

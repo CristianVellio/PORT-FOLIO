@@ -3,7 +3,7 @@ import img2 from "./assets/ISPC_BROKERS.jpg";
 import img3 from "./assets/JS_MOVIES.jpg";
 import img4 from "./assets/LA_BAKERYA.jpg";
 import img5 from "./assets/TRANSPORTES_X.jpg";
-import img6 from "./assets/TOONME.jpeg";
+import img6 from "./assets/TOONME.jpg";
 
 function Projects() {
   return (
@@ -76,7 +76,7 @@ function Projects() {
         </a>
 
         <a
-          href="https://cristian-vellio-cv.vercel.app/"
+          href="https://github.com/CristianVellio/PORT-FOLIO"
           target="_blank"
           rel="noopener noreferrer"
         >
