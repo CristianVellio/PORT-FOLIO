@@ -31,12 +31,13 @@ function Banner() {
       <div className="h-full lg:py-40 flex flex-col justify-center items-center lg:items-start text-center lg:text-left text-white">
         <h1
           data-aos="fade-right"
-          className="text-[52px] font-semibold mb-8 leading-normal uppercase"
+          className="text-[52px] text-center w-full font-semibold mb-8 leading-normal uppercase"
+          style={{ maxWidth: "100%" }}
         >
           Cristian Vellio
           <br />
-          <span className="text-[48px] text-lime-500">{text}</span>
-          <span className="text-[48px] text-lime-500">
+          <span className="text-lime-500">{text}</span>
+          <span className="text-lime-500">
             <Cursor cursorStyle="|" />
           </span>
           <br />
@@ -44,11 +45,16 @@ function Banner() {
         </h1>
         <p
           data-aos="fade-left"
-          className="text-[30px] font-semibold mb-8 leading-normal uppercase"
+          className="text-[30px] text-center w-full font-semibold mb-8 leading-normal uppercase"
+          style={{
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+          }}
         >
-          HTML | CSS | JavaScript | React | Python
+          HTML | CSS | JavaScript <br></br> React | Python
         </p>
-        <div className="flex mt-8 gap-4 justify-center lg:justify-start">
+        <div className="flex mt-8 gap-4 justify-center lg:justify-center w-full">
           <a
             href="https://www.github.com/CristianVellio"
             className="text-lime-600 hover:text-lime-500 rounded-full glow p-2"
