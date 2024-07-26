@@ -158,4 +158,10 @@ Este proyecto de portafolio web no solo muestra habilidades técnicas y experien
 
  ## Link al proyecto
 
-[DEMO](https://cristian-vellio-cv.vercel.app/)
+
+<div align="center">
+  [Portafolio Demo](https://cristian-vellio-cv.vercel.app/)
+  <div>
+    <img src="https://github.com/user-attachments/assets/76da97ca-f1f3-4cf2-ae55-8273e20059bd" alt="AdobeColor-Portfolio" width="500" height="200">
+    <div>
+    </div>
