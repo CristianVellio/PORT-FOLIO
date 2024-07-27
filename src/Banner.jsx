@@ -45,7 +45,7 @@ function Banner() {
         </h1>
         <p
           data-aos="fade-left"
-          className="text-[30px] text-center w-full font-semibold mb-8 leading-normal uppercase"
+          className="text-[25px] text-center w-full font-semibold mb-8 leading-normal uppercase"
           style={{
             overflow: "hidden",
             textOverflow: "ellipsis",
