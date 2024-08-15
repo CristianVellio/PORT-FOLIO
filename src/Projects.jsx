@@ -47,7 +47,7 @@ function Projects() {
           />
         </a>
         <a
-          href="https://github.com/ISPC-Brokers/ISPC-Brokers"
+          href="https://github.com/ISPC-Brokers/Brokers"
           target="_blank"
           rel="noopener noreferrer"
         >
