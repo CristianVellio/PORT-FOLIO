@@ -15,7 +15,7 @@ function About() {
         className="rounded-full border-2 p-1 border-lime-500 img_glow"
         alt="Cristian Vellio"
       />
-      <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white">
+      <div className="h-full lg:py-40 flex flex-col justify-center lg:items-center items-center text-white">
         <h2
           data-aos="fade-right"
           className="text-[52px] font-semibold mb-8 leading-normal text-lime-600 uppercase"
