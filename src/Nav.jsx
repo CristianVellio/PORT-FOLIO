@@ -14,13 +14,15 @@ function Nav() {
     <nav className="bg-orange-700 relative">
       <div className="h-20 flex justify-between text-white items-center px-4 lg:px-20 py-4 border-b border-amber-800">
         <div className="flex items-center flex-1">
-          <img
-            src={img}
-            width={80}
-            height={80}
-            className="rounded-full"
-            alt="logo"
-          />
+          <a href="/" rel="noopener noreferrer">
+            <img
+              src={img}
+              width={80}
+              height={80}
+              className="rounded-full"
+              alt="logo"
+            />
+          </a>
         </div>
         <div className="hidden lg:flex flex-1 justify-end">
           <ul className="flex gap-8 text-[18px]">

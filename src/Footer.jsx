@@ -6,13 +6,15 @@ function Footer() {
   return (
     <footer className="bg-orange-700 text-white px-4 py-8 md:px-12 lg:px-48">
       <div className="container flex flex-col lg:flex-row justify-between items-center mx-auto gap-4">
-        <img
-          src={img}
-          width={80}
-          height={80}
-          className="rounded-full mb-4 lg:mb-0"
-          alt="logo"
-        />
+        <a href="/" rel="noopener noreferrer">
+          <img
+            src={img}
+            width={80}
+            height={80}
+            className="rounded-full mb-4 lg:mb-0"
+            alt="logo"
+          />
+        </a>
         <div className="text-center lg:text-left mb-4 lg:mb-0">
           <p className="text-lg font-bold">Cristian Vellio&#169; 2024</p>
         </div>
