@@ -52,7 +52,10 @@ function Nav() {
           </ul>
         </div>
         <div className="lg:hidden flex items-center">
-          <button className="text-[25px] font-semibold" onClick={handleClick}>
+          <button
+            className="text-[25px] font-semibold hover:text-lime-600"
+            onClick={handleClick}
+          >
             {click ? <FaTimesCircle /> : <TiThMenu />}
           </button>
         </div>
@@ -60,22 +63,22 @@ function Nav() {
       {click && (
         <div className="text-white lg:hidden bg-amber-900 w-full z-50 absolute">
           <ul className="text-center text-xl p-5">
-            <li className="py-4 border-b border-amber-800 hover:bg-amber-800">
+            <li className="text-lg font-bold py-4 border-b border-amber-800 hover:bg-amber-800 hover:text-lime-600 cursor-pointer">
               <Link spy={true} smooth={true} to="Home" onClick={handleClick}>
                 Home
               </Link>
             </li>
-            <li className="py-4 border-b border-amber-800 hover:bg-amber-800">
+            <li className="text-lg font-bold py-4 border-b border-amber-800 hover:bg-amber-800 hover:text-lime-600 cursor-pointer">
               <Link spy={true} smooth={true} to="About" onClick={handleClick}>
                 About
               </Link>
             </li>
-            <li className="py-4 border-b border-amber-800 hover:bg-amber-800">
+            <li className="text-lg font-bold py-4 border-b border-amber-800 hover:bg-amber-800 hover:text-lime-600 cursor-pointer">
               <Link spy={true} smooth={true} to="Skills" onClick={handleClick}>
                 Skills
               </Link>
             </li>
-            <li className="py-4 border-b border-amber-800 hover:bg-amber-800">
+            <li className="text-lg font-bold py-4 border-b border-amber-800 hover:bg-amber-800 hover:text-lime-600 cursor-pointer">
               <Link
                 spy={true}
                 smooth={true}
@@ -85,7 +88,7 @@ function Nav() {
                 Projects
               </Link>
             </li>
-            <li className="py-4 border-b border-amber-800 hover:bg-amber-800">
+            <li className="text-lg font-bold py-4 border-b border-amber-800 hover:bg-amber-800 hover:text-lime-600 cursor-pointer">
               <Link spy={true} smooth={true} to="Contact" onClick={handleClick}>
                 Contact
               </Link>
