@@ -1,12 +1,15 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiSpring, SiMongodb } from "react-icons/si";
 import {
   FaPython,
   FaHtml5,
   FaReact,
   FaNodeJs,
   FaCss3Alt,
+  FaJava,
 } from "react-icons/fa";
 import { SiFlask, SiMysql } from "react-icons/si";
 import { AiOutlineJavaScript } from "react-icons/ai";
@@ -72,6 +75,22 @@ function Skills() {
         </a>
         <a
           data-aos="fade-down"
+          href="https://www.java.com/es/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaJava className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+        </a>
+        <a
+          data-aos="fade-down"
+          href="https://spring.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiSpring className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+        </a>
+        <a
+          data-aos="fade-down"
           href="https://www.python.org/"
           target="_blank"
           rel="noopener noreferrer"
@@ -88,11 +107,27 @@ function Skills() {
         </a>
         <a
           data-aos="fade-down"
+          href="https://www.mongodb.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiMongodb className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+        </a>
+        <a
+          data-aos="fade-down"
           href="https://www.mysql.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <SiMysql className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+        </a>
+        <a
+          data-aos="fade-down"
+          href="https://www.postgresql.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BiLogoPostgresql className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
       </div>
     </div>
