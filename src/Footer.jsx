@@ -20,12 +20,10 @@ function Footer() {
         </div>
         <div className="text-center lg:text-left mb-4 lg:mb-0">
           <h3 className="text-xl font-semibold text-lime-400 py-2 uppercase">
-            Formation
+            Formation as a
           </h3>
           <ul className="text-lg font-bold">
-            <li className="my-2">Full-Stack Developer</li>
-            <li className="my-2">Web Developer</li>
-            <li className="my-2">Python Developer</li>
+            <li className="my-2">Software Developer</li>
           </ul>
         </div>
         <div className="text-center lg:text-left">

@@ -8,7 +8,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 function Banner() {
   const [text] = useTypewriter({
-    words: ["Full-Stack", "Back-End", "Front-End", "Software"],
+    words: ["FullStack", "BackEnd", "FrontEnd", "Software"],
     loop: {},
     typeSpeed: 180,
     delaySpeed: 800,
