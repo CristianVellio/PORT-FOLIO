@@ -14,6 +14,7 @@
     "port-folio": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.54.2",
     "react-icons": "^5.2.1",
     "react-loader-spinner": "^6.1.6",
     "react-scroll": "^1.9.0",

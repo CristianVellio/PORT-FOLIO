@@ -77,7 +77,7 @@ function Projects() {
             />
             {/* Contenedor del overlay */}
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl">
-              <div className="text-6xl text-lime-600 rounded-3xl mb-2 glow">
+              <div className="text-6xl text-lime-600 rounded-3xl mb-2 glow p-1">
                 {project.icon}
               </div>
               <h3 className="text-xl font-bold text-white">{project.title}</h3>
