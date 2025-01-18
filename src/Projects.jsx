@@ -40,7 +40,7 @@ function Projects() {
     },
     {
       img: img5,
-      title: "Transport Site",
+      title: "Transportation Co. WebSite",
       link: "https://transportex-x-utn-frba.netlify.app/",
       icon: <FaHtml5 />,
     },
@@ -66,7 +66,7 @@ function Projects() {
             rel="noopener noreferrer"
             className="relative group"
           >
-            {/* Imagen del proyecto */}
+      
             <img
               data-aos="fade-up"
               height={500}
@@ -75,7 +75,7 @@ function Projects() {
               src={project.img}
               alt={project.title}
             />
-            {/* Contenedor del overlay */}
+
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl">
               <div className="text-6xl text-lime-600 rounded-3xl mb-2 glow p-1">
                 {project.icon}
