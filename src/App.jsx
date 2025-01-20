@@ -41,7 +41,7 @@ function App() {
             height={200}
             width={200}
             radius={5}
-            color="#84cc16"
+            color="#F72585"
             ariaLabel="infinity-spin-loading"
           />
           )

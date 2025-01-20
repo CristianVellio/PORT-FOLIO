@@ -9,8 +9,8 @@ function Footer() {
         <a href="/" rel="noopener noreferrer">
           <img
             src={img}
-            width={80}
-            height={80}
+            width={40}
+            height={40}
             className="rounded-full mb-4 lg:mb-0"
             alt="logo"
           />
