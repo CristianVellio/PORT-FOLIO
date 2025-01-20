@@ -15,11 +15,11 @@ body {
 }
 
 .glow:hover {
-  box-shadow: 0 0 25px rgb(78, 206, 71);
+  box-shadow: 0 0 25px rgb(247, 37, 133);
 }
 
 .img_glow {
-  box-shadow: 0 0 55px rgb(78, 206, 71);
+  box-shadow: 0 0 55px rgb(247, 37, 133);
 }
 
 .neno-button {
@@ -27,11 +27,11 @@ body {
 }
 
 .neno-button:hover {
-  box-shadow: 0 0 15px rgb(78, 206, 71);
+  box-shadow: 0 0 15px rgb(247, 37, 133);
 }
 
 .b_glow {
-  box-shadow: 0 0 25px rgb(78, 206, 71);
+  box-shadow: 0 0 25px rgb(247, 37, 133);
 }
 
 .project-image {
@@ -58,6 +58,6 @@ body {
 }
 
 .glow:hover {
-  box-shadow: 0 0 25px rgb(78, 206, 71);
+  box-shadow: 0 0 25px rgb(247, 37, 133);
 }
 /* css */

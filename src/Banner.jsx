@@ -8,7 +8,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 function Banner() {
   const [text] = useTypewriter({
-    words: ["FullStack", "BackEnd", "FrontEnd", "Software"],
+    words: ["Full-Stack", "Back-End", "Front-End", "Software"],
     loop: {},
     typeSpeed: 180,
     delaySpeed: 800,
@@ -28,7 +28,7 @@ function Banner() {
       id="Banner"
       className="lg:px-56 px-10 lg:py-0 py-20 text-center lg:text-left gap-5 flex lg:flex-row flex-col-reverse justify-between items-center"
     >
-      <div className="h-full lg:py-40 flex flex-col justify-center items-center lg:items-start text-center lg:text-left text-white">
+      <div className="h-full lg:py-40 flex flex-col justify-center items-center lg:items-start text-center lg:text-left text-tertiary">
         <h1
           data-aos="fade-right"
           className="text-[52px] text-center w-full font-semibold mb-8 leading-normal uppercase"
@@ -36,12 +36,12 @@ function Banner() {
         >
           Cristian Vellio
           <br />
-          <span className="text-lime-500">{text}</span>
-          <span className="text-lime-500">
+          <span className="text-primary">{text}</span>
+          <span className="text-primary">
             <Cursor cursorStyle="|" />
           </span>
           <br />
-          <span className="text-lime-500"> Developer</span>
+          <span className="text-primary"> Developer</span>
         </h1>
         <p
           data-aos="fade-left"
@@ -57,13 +57,13 @@ function Banner() {
         <div className="flex mt-8 gap-4 justify-center lg:justify-center w-full">
           <a
             href="https://www.github.com/CristianVellio"
-            className="text-lime-600 hover:text-lime-500 rounded-full glow p-2"
+            className="text-secondary hover:text-primary rounded-full glow p-2"
           >
             <FaGithub className="text-[48px]" />
           </a>
           <a
             href="https://www.linkedin.com/in/cristianvellio"
-            className="text-lime-600 hover:text-lime-500 rounded-full glow p-2"
+            className="text-secondary hover:text-primary rounded-full glow p-2"
           >
             <FaLinkedinIn className="text-[48px]" />
           </a>
@@ -74,7 +74,7 @@ function Banner() {
         src={img}
         width={290}
         height={290}
-        className="rounded border-2 p-1 border-lime-500 img_glow"
+        className="rounded border-2 p-1 border-tertiary img_glow"
         alt="Cristian Vellio"
       />
     </div>

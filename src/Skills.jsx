@@ -27,7 +27,7 @@ function Skills() {
     <div id="Skills" className="p-20 flex flex-col items-center justify-center">
       <h2
         data-aos="fade-right"
-        className="text-[52px] text-center font-semibold mb-20 leading-normal uppercase text-white"
+        className="text-[52px] text-center font-semibold mb-20 leading-normal uppercase text-secondary"
       >
         Favorite Stacks
       </h2>
@@ -38,7 +38,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaHtml5 className=" text-[100px] flex items-center justify-center font-semibold text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <FaHtml5 className=" text-[100px] flex items-center justify-center font-semibold text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
 
         <a
@@ -47,7 +47,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaCss3Alt className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <FaCss3Alt className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-up"
@@ -55,7 +55,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AiOutlineJavaScript className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <AiOutlineJavaScript className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-down"
@@ -63,7 +63,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaReact className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <FaReact className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-up"
@@ -71,7 +71,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaNodeJs className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <FaNodeJs className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-down"
@@ -79,7 +79,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaJava className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <FaJava className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-down"
@@ -87,7 +87,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiSpring className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <SiSpring className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-down"
@@ -95,7 +95,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaPython className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <FaPython className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-up"
@@ -103,7 +103,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiFlask className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <SiFlask className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-down"
@@ -111,7 +111,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiMongodb className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <SiMongodb className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-down"
@@ -119,7 +119,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiMysql className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <SiMysql className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-down"
@@ -127,7 +127,7 @@ function Skills() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <BiLogoPostgresql className=" text-[100px] flex items-center text-lime-600 hover:text-lime-500 rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+          <BiLogoPostgresql className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
       </div>
     </div>

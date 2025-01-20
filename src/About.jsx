@@ -12,13 +12,13 @@ function About() {
         src={img}
         width={290}
         height={290}
-        className="rounded-full border-2 p-1 border-lime-500 img_glow"
+        className="rounded-full border-2 p-1 border-tertiary img_glow"
         alt="Cristian Vellio"
       />
       <div className="h-full lg:py-40 flex flex-col justify-center lg:items-center items-center text-white">
         <h2
           data-aos="fade-right"
-          className="text-[52px] font-semibold mb-8 leading-normal text-lime-600 uppercase"
+          className="text-[52px] font-semibold mb-8 leading-normal text-secondary uppercase"
         >
           About Me
         </h2>
@@ -46,7 +46,7 @@ function About() {
         <div className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
             <div className="flex space-x-2"></div>
-            <button className="neno-button shadow-xl hover:shadow-lime-800/50  text-white border-2 hover:bg-lime-800 border-lime-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden ">
+            <button className="neno-button shadow-xl hover:shadow-secondary/50  text-white border-2 hover:bg-secondary border-tertiary rounded-lg py-4 px-8 uppercase relative overflow-hidden ">
               <a
                 href={CRISTIAN_VELLIO_RESUME}
                 download="CRISTIAN_VELLIO_RESUME"

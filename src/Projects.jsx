@@ -53,7 +53,7 @@ function Projects() {
     >
       <h2
         data-aos="fade-left"
-        className="text-[52px] font-semibold mb-20 leading-normal uppercase text-lime-600"
+        className="text-[52px] font-semibold mb-20 leading-normal uppercase text-secondary"
       >
         Projects
       </h2>
@@ -66,21 +66,22 @@ function Projects() {
             rel="noopener noreferrer"
             className="relative group"
           >
-      
             <img
               data-aos="fade-up"
               height={500}
               width={300}
-              className="project-image flex items-center text-lime-600 hover:text-lime-500 rounded-3xl p-1 border-2 b_glow"
+              className="project-image flex items-center text-tertiary hover:text-secondary rounded-3xl p-1 border-2 b_glow"
               src={project.img}
               alt={project.title}
             />
 
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl">
-              <div className="text-6xl text-lime-600 rounded-3xl mb-2 glow p-1">
+              <div className="text-6xl text-secondary rounded-3xl mb-2 glow p-1">
                 {project.icon}
               </div>
-              <h3 className="text-xl font-bold text-white">{project.title}</h3>
+              <h3 className="text-xl font-bold text-quaternary">
+                {project.title}
+              </h3>
             </div>
           </a>
         ))}

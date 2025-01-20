@@ -11,8 +11,8 @@ function Nav() {
   };
 
   return (
-    <nav className="bg-orange-700 relative">
-      <div className="h-20 flex justify-between text-white items-center px-4 lg:px-20 py-4 border-b border-amber-800">
+    <nav className="bg-quaternary relative">
+      <div className="h-20 flex justify-between text-white items-center px-4 lg:px-20 py-4 border-b border-tertiary">
         <div className="flex items-center flex-1">
           <a href="/" rel="noopener noreferrer">
             <img
@@ -26,27 +26,27 @@ function Nav() {
         </div>
         <div className="hidden lg:flex flex-1 justify-end">
           <ul className="flex gap-8 text-[18px]">
-            <li className="text-lg font-bold hover:text-lime-600 cursor-pointer">
+            <li className="text-lg font-bold hover:text-primary cursor-pointer">
               <Link spy={true} smooth={true} to="Home">
                 Home
               </Link>
             </li>
-            <li className="text-lg font-bold hover:text-lime-600 cursor-pointer">
+            <li className="text-lg font-bold hover:text-primary cursor-pointer">
               <Link spy={true} smooth={true} to="About">
                 About
               </Link>
             </li>
-            <li className="text-lg font-bold hover:text-lime-600 cursor-pointer">
+            <li className="text-lg font-bold hover:text-primary cursor-pointer">
               <Link spy={true} smooth={true} to="Skills">
                 Skills
               </Link>
             </li>
-            <li className="text-lg font-bold hover:text-lime-600 cursor-pointer">
+            <li className="text-lg font-bold hover:text-primary cursor-pointer">
               <Link spy={true} smooth={true} to="Projects">
                 Projects
               </Link>
             </li>
-            <li className="text-lg font-bold hover:text-lime-600 cursor-pointer">
+            <li className="text-lg font-bold hover:text-primary cursor-pointer">
               <Link spy={true} smooth={true} to="Contact">
                 Contact
               </Link>
@@ -55,7 +55,7 @@ function Nav() {
         </div>
         <div className="lg:hidden flex items-center">
           <button
-            className="text-[25px] font-semibold hover:text-lime-600"
+            className="text-[25px] font-semibold hover:text-primary"
             onClick={handleClick}
           >
             {click ? <FaTimesCircle /> : <TiThMenu />}
@@ -63,24 +63,24 @@ function Nav() {
         </div>
       </div>
       {click && (
-        <div className="text-white lg:hidden bg-amber-900 w-full z-50 absolute">
+        <div className="text-white lg:hidden bg-quaternary w-full z-50 absolute">
           <ul className="text-center text-xl p-5">
-            <li className="text-lg font-bold py-4 border-b border-amber-800 hover:bg-amber-800 hover:text-lime-600 cursor-pointer">
+            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary cursor-pointer">
               <Link spy={true} smooth={true} to="Home" onClick={handleClick}>
                 Home
               </Link>
             </li>
-            <li className="text-lg font-bold py-4 border-b border-amber-800 hover:bg-amber-800 hover:text-lime-600 cursor-pointer">
+            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary cursor-pointer">
               <Link spy={true} smooth={true} to="About" onClick={handleClick}>
                 About
               </Link>
             </li>
-            <li className="text-lg font-bold py-4 border-b border-amber-800 hover:bg-amber-800 hover:text-lime-600 cursor-pointer">
+            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary cursor-pointer">
               <Link spy={true} smooth={true} to="Skills" onClick={handleClick}>
                 Skills
               </Link>
             </li>
-            <li className="text-lg font-bold py-4 border-b border-amber-800 hover:bg-amber-800 hover:text-lime-600 cursor-pointer">
+            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary  cursor-pointer">
               <Link
                 spy={true}
                 smooth={true}
@@ -90,7 +90,7 @@ function Nav() {
                 Projects
               </Link>
             </li>
-            <li className="text-lg font-bold py-4 border-b border-amber-800 hover:bg-amber-800 hover:text-lime-600 cursor-pointer">
+            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary  cursor-pointer">
               <Link spy={true} smooth={true} to="Contact" onClick={handleClick}>
                 Contact
               </Link>
