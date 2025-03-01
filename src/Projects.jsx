@@ -4,6 +4,10 @@ import img3 from "./assets/BOOKSTORE_FS.png";
 import img4 from "./assets/CONVERSOR.png";
 import img5 from "./assets/TRANSPORTES_X.jpg";
 import img6 from "./assets/TOONME.png";
+import img7 from "./assets/clinic_api.png";
+import img8 from "./assets/screenmatch.png";
+import img9 from "./assets/forohub.png";
+import img10 from "./assets/literalura.png";
 import { FaReact, FaJava, FaPython, FaHtml5 } from "react-icons/fa";
 
 function Projects() {
@@ -30,6 +34,30 @@ function Projects() {
       img: img4,
       title: "Currency Converter",
       link: "https://github.com/CristianVellio/conversor-de-moneda",
+      icon: <FaJava />,
+    },
+    {
+      img: img7,
+      title: "Med Clinic Api",
+      link: "https://github.com/CristianVellio/api",
+      icon: <FaJava />,
+    },
+    {
+      img: img8,
+      title: "Screenmatch (BackEnd)",
+      link: "https://github.com/CristianVellio/screenmatch",
+      icon: <FaJava />,
+    },
+    {
+      img: img9,
+      title: "FOROHUB (BackEnd)",
+      link: "https://github.com/CristianVellio/FOROHUB",
+      icon: <FaJava />,
+    },
+    {
+      img: img10,
+      title: "LiterAlura (BackEnd)",
+      link: "",
       icon: <FaJava />,
     },
     {
