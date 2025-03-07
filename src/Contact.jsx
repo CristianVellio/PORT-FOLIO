@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
-import { CiMail } from "react-icons/ci";
 
 function Contact() {
   const form = useRef();
@@ -93,10 +92,6 @@ function Contact() {
           Send
         </button>
       </form>
-      <p className="text-center w-full text-[24px] font-semibold mb-10 mt-10 leading-normal text-slate-500 flex justify-center items-center">
-        <CiMail className="mr-2" />
-        cristianvellio86@gmail.com
-      </p>
     </div>
   );
 }
