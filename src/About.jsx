@@ -1,5 +1,6 @@
 import img from "./assets/me.jpg";
 import CRISTIAN_VELLIO_RESUME from "./assets/CRISTIAN_VELLIO_RESUME.pdf";
+import CRISTIAN_VELLIO_CURRICULUM from "./assets/CRISTIAN_VELLIO_CURRICULUM.pdf";
 
 function About() {
   return (
@@ -52,6 +53,19 @@ function About() {
                 download="CRISTIAN_VELLIO_RESUME"
               >
                 Download Resume
+              </a>
+            </button>
+          </div>
+        </div>
+        <div className="flex mt-8 gap-2">
+          <div className="flex items-center justify-center">
+            <div className="flex space-x-2"></div>
+            <button className="neno-button shadow-xl hover:shadow-secondary/50  text-white border-2 hover:bg-secondary border-tertiary rounded-lg py-4 px-8 uppercase relative overflow-hidden ">
+              <a
+                href={CRISTIAN_VELLIO_CURRICULUM}
+                download="CRISTIAN_VELLIO_CURRICULUM"
+              >
+                Descargar Curriculum
               </a>
             </button>
           </div>
