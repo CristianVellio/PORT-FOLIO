@@ -33,12 +33,16 @@ function Footer() {
           <div className="flex justify-center lg:justify-start space-x-4">
             <a
               href="https://www.github.com/CristianVellio"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-secondary hover:text-primary p-2"
             >
               <FaGithub className="text-3xl" />
             </a>
             <a
               href="https://www.linkedin.com/in/cristianvellio"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-secondary hover:text-primary p-2"
             >
               <FaLinkedinIn className="text-3xl" />

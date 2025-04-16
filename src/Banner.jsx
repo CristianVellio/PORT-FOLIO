@@ -57,12 +57,16 @@ function Banner() {
         <div className="flex mt-8 gap-4 justify-center lg:justify-center w-full">
           <a
             href="https://www.github.com/CristianVellio"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-secondary hover:text-primary rounded-full glow p-2"
           >
             <FaGithub className="text-[48px]" />
           </a>
           <a
             href="https://www.linkedin.com/in/cristianvellio"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-secondary hover:text-primary rounded-full glow p-2"
           >
             <FaLinkedinIn className="text-[48px]" />
