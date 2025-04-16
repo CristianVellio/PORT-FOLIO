@@ -52,7 +52,7 @@ function About() {
                 href={CRISTIAN_VELLIO_RESUME}
                 download="CRISTIAN_VELLIO_RESUME"
               >
-                Download Resume
+                Download Resume (EN)
               </a>
             </button>
           </div>
@@ -65,7 +65,7 @@ function About() {
                 href={CRISTIAN_VELLIO_CURRICULUM}
                 download="CRISTIAN_VELLIO_CURRICULUM"
               >
-                Descargar Curriculum
+                Descargar Curriculum (ES)
               </a>
             </button>
           </div>
