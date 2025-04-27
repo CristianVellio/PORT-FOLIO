@@ -8,7 +8,9 @@ import img7 from "./assets/clinic_api.png";
 import img8 from "./assets/screenmatch.png";
 import img9 from "./assets/forohub.png";
 import img10 from "./assets/literalura.png";
+import img11 from "./assets/Bienestar_Plus_Banner.png";
 import { FaReact, FaJava, FaPython, FaHtml5 } from "react-icons/fa";
+import { SiAngular } from "react-icons/si";
 
 function Projects() {
   const projects = [
@@ -19,6 +21,12 @@ function Projects() {
       icon: <FaReact />,
     },
     {
+      img: img11,
+      title: "Bienestar Plus Fullstack",
+      link: "https://github.com/ISPC-Soluciones/Bienestar-Plus",
+      icon: <SiAngular />,
+    },
+    {
       img: img6,
       title: "Portfolio",
       link: "https://github.com/CristianVellio/PORT-FOLIO",
@@ -26,7 +34,7 @@ function Projects() {
     },
     {
       img: img2,
-      title: "Weather Project IoT",
+      title: "Fullstack Weather Project IoT",
       link: "https://proyecto-clima-azure.vercel.app/",
       icon: <FaPython />,
     },
@@ -57,18 +65,18 @@ function Projects() {
     {
       img: img10,
       title: "LiterAlura (BackEnd)",
-      link: "",
+      link: "https://github.com/CristianVellio/LiterAlura",
       icon: <FaJava />,
     },
     {
       img: img1,
-      title: "Text Encrypter",
+      title: "Text Encrypter (FrontEnd)",
       link: "https://encrypter-oracle-one.vercel.app/",
       icon: <FaHtml5 />,
     },
     {
       img: img5,
-      title: "Transportation Co. WebSite",
+      title: "Transportation Co. (FrontEnd)",
       link: "https://transportex-x-utn-frba.netlify.app/",
       icon: <FaHtml5 />,
     },
