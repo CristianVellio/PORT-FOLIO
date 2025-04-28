@@ -2,7 +2,14 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { SiSpring, SiMongodb } from "react-icons/si";
+import {
+  SiSpring,
+  SiMongodb,
+  SiTypescript,
+  SiAngular,
+  SiNgrx,
+  SiDjango,
+} from "react-icons/si";
 import {
   FaPython,
   FaHtml5,
@@ -40,7 +47,6 @@ function Skills() {
         >
           <FaHtml5 className=" text-[100px] flex items-center justify-center font-semibold text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
-
         <a
           data-aos="fade-down"
           href="https://developer.mozilla.org/en-US/docs/Web/CSS"
@@ -56,6 +62,30 @@ function Skills() {
           rel="noopener noreferrer"
         >
           <AiOutlineJavaScript className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+        </a>
+        <a
+          data-aos="fade-up"
+          href="https://www.typescriptlang.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiTypescript className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+        </a>
+        <a
+          data-aos="fade-up"
+          href="https://angular.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiAngular className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+        </a>
+        <a
+          data-aos="fade-up"
+          href="https://ngrx.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiNgrx className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-down"
@@ -96,6 +126,14 @@ function Skills() {
           rel="noopener noreferrer"
         >
           <FaPython className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
+        </a>
+        <a
+          data-aos="fade-down"
+          href="https://www.djangoproject.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiDjango className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
         </a>
         <a
           data-aos="fade-up"
