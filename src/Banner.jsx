@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
-import img from "./assets/EVERYONE_FLOATS.png";
+import img from "./assets/EVERYONE_FLOATS.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
