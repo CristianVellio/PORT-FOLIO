@@ -53,7 +53,7 @@ function Certifications() {
       img: cert6,
       title: "First Certificate in English (FCE)",
       issuer: "Cambridge University",
-      year: "2024",
+      year: "2007",
     },
     {
       img: cert7,
