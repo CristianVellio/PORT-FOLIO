@@ -47,6 +47,11 @@ function Nav() {
               </Link>
             </li>
             <li className="text-lg font-bold hover:text-primary cursor-pointer">
+              <Link spy={true} smooth={true} to="Certifications">
+                Certifications
+              </Link>
+            </li>
+            <li className="text-lg font-bold hover:text-primary cursor-pointer">
               <Link spy={true} smooth={true} to="Contact">
                 Contact
               </Link>
@@ -88,6 +93,16 @@ function Nav() {
                 onClick={handleClick}
               >
                 Projects
+              </Link>
+            </li>
+            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary  cursor-pointer">
+              <Link
+                spy={true}
+                smooth={true}
+                to="Projects"
+                onClick={handleClick}
+              >
+                Certifications
               </Link>
             </li>
             <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary  cursor-pointer">
