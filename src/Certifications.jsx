@@ -133,11 +133,11 @@ function Certifications() {
       {selectedImage && (
         <div
           className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
-          onClick={closeModal} // Close on any click
+          onClick={closeModal}
         >
           <div
             className="relative max-w-4xl w-full"
-            onClick={(e) => e.stopPropagation()} // Prevent click from bubbling up
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={closeModal}

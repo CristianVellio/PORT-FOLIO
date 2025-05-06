@@ -69,13 +69,11 @@ body {
 .swiper-wrapper {
   overflow: visible !important;
 }
-/* Default: secondary color, smooth transition */
 .swiper-button-prev,
 .swiper-button-next {
   @apply text-secondary transition-all duration-300 font-bold text-3xl;
 }
 
-/* On hover: change to primary color and add glow */
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   @apply text-primary b_glow scale-110;
