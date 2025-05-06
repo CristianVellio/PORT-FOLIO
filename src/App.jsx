@@ -8,6 +8,7 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 // import { InfinitySpin } from "react-loader-spinner";
 import { FaArrowUp } from "react-icons/fa";
+import Certifications from "./Certifications";
 
 function App() {
   // const [loading, setLoading] = useState(false);
@@ -53,6 +54,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Certifications />
         <Contact />
         <Footer />
         {showButton && (

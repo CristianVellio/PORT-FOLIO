@@ -60,4 +60,23 @@ body {
 .glow:hover {
   box-shadow: 0 0 25px rgb(247, 37, 133);
 }
-/* css */
+.swiper-slide {
+  height: auto !important;
+}
+.swiper {
+  overflow: visible !important;
+}
+.swiper-wrapper {
+  overflow: visible !important;
+}
+/* Default: secondary color, smooth transition */
+.swiper-button-prev,
+.swiper-button-next {
+  @apply text-secondary transition-all duration-300 font-bold text-3xl;
+}
+
+/* On hover: change to primary color and add glow */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  @apply text-primary b_glow scale-110;
+}

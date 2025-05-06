@@ -20,7 +20,8 @@
     "react-loader-spinner": "^6.1.6",
     "react-scroll": "^1.9.0",
     "react-simple-typewriter": "^5.0.1",
-    "sweetalert2": "^11.15.10"
+    "sweetalert2": "^11.15.10",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
