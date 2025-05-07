@@ -28,7 +28,7 @@ En esta sección se destacan los proyectos más relevantes, cada uno con una ima
 
 Aquí se enumeran las tecnologías y herramientas dominadas, presentando una visión clara de las competencias técnicas. Esta sección utiliza iconos y etiquetas para hacer la información más visual y fácil de interpretar.
 
-### **2.5 Certificaciones (Certifications)**
+### **2.5 Sección de Certificaciones (Certifications)**
 
 Una galeria que utiliza la libreria Swiper Js para mostrar los certificados relevantes adquiridos, permitiendoo desplazarse por esta deslizandonos o usando las flechas de navegacion.
 
