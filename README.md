@@ -34,7 +34,7 @@ Una galeria que utiliza la libreria Swiper Js para mostrar los certificados rele
 
 ### **2.6 Formulario de Contacto (Contact)**
 
-El formulario de contacto permite a los usuarios enviar mensajes directamente desde el sitio, mejorando la accesibilidad y facilitando la comunicación directa. Este formulario está diseñado para ser simple y directo, pidiendo solo la información necesaria.
+El formulario de contacto integra Email.js para el envío automatizado de mensajes, permitiendo a los usuarios comunicarse directamente desde el sitio sin redirecciones externas. Al enviar el formulario, se activa SweetAlert2 para mostrar confirmaciones visuales personalizadas.
 
 ### **2.7 Navegación y Menú Desplegable**
 
