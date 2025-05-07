@@ -53,7 +53,7 @@ function Certifications() {
       img: cert6,
       title: "First Certificate in English (FCE) Level B2",
       issuer: "Cambridge University",
-      year: "2007",
+      year: "2005",
     },
     {
       img: cert7,

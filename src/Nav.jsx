@@ -26,34 +26,46 @@ function Nav() {
         </div>
         <div className="hidden lg:flex flex-1 justify-end">
           <ul className="flex gap-8 text-[18px]">
-            <li className="text-lg font-bold hover:text-primary cursor-pointer">
+            <li className="text-lg font-bold cursor-pointer">
               <Link spy={true} smooth={true} to="Home">
-                Home
+                <span className="menu-animation text-white hover:text-primary">
+                  Home
+                </span>
               </Link>
             </li>
-            <li className="text-lg font-bold hover:text-primary cursor-pointer">
+            <li className="text-lg font-bold cursor-pointer">
               <Link spy={true} smooth={true} to="About">
-                About
+                <span className="menu-animation text-white hover:text-primary">
+                  About
+                </span>
               </Link>
             </li>
-            <li className="text-lg font-bold hover:text-primary cursor-pointer">
+            <li className="text-lg font-bold cursor-pointer">
               <Link spy={true} smooth={true} to="Skills">
-                Skills
+                <span className="menu-animation text-white hover:text-primary">
+                  Skills
+                </span>
               </Link>
             </li>
-            <li className="text-lg font-bold hover:text-primary cursor-pointer">
+            <li className="text-lg font-bold cursor-pointer">
               <Link spy={true} smooth={true} to="Projects">
-                Projects
+                <span className="menu-animation text-white hover:text-primary">
+                  Projects
+                </span>
               </Link>
             </li>
-            <li className="text-lg font-bold hover:text-primary cursor-pointer">
+            <li className="text-lg font-bold cursor-pointer">
               <Link spy={true} smooth={true} to="Certifications">
-                Certifications
+                <span className="menu-animation text-white hover:text-primary">
+                  Certifications
+                </span>
               </Link>
             </li>
-            <li className="text-lg font-bold hover:text-primary cursor-pointer">
+            <li className="text-lg font-bold cursor-pointer">
               <Link spy={true} smooth={true} to="Contact">
-                Contact
+                <span className="menu-animation text-white hover:text-primary">
+                  Contact
+                </span>
               </Link>
             </li>
           </ul>
@@ -70,44 +82,56 @@ function Nav() {
       {click && (
         <div className="text-white lg:hidden bg-quaternary w-full z-50 absolute">
           <ul className="text-center text-xl p-5">
-            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary cursor-pointer">
+            <li className="text-lg font-bold py-4 border-b border-tertiary cursor-pointer">
               <Link spy={true} smooth={true} to="Home" onClick={handleClick}>
-                Home
+                <span className="menu-animation text-white hover:text-primary">
+                  Home
+                </span>
               </Link>
             </li>
-            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary cursor-pointer">
+            <li className="text-lg font-bold py-4 border-b border-tertiary cursor-pointer">
               <Link spy={true} smooth={true} to="About" onClick={handleClick}>
-                About
+                <span className="menu-animation text-white hover:text-primary">
+                  About
+                </span>
               </Link>
             </li>
-            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary cursor-pointer">
+            <li className="text-lg font-bold py-4 border-b border-tertiary cursor-pointer">
               <Link spy={true} smooth={true} to="Skills" onClick={handleClick}>
-                Skills
+                <span className="menu-animation text-white hover:text-primary">
+                  Skills
+                </span>
               </Link>
             </li>
-            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary  cursor-pointer">
+            <li className="text-lg font-bold py-4 border-b border-tertiary cursor-pointer">
               <Link
                 spy={true}
                 smooth={true}
                 to="Projects"
                 onClick={handleClick}
               >
-                Projects
+                <span className="menu-animation text-white hover:text-primary">
+                  Projects
+                </span>
               </Link>
             </li>
-            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary  cursor-pointer">
+            <li className="text-lg font-bold py-4 border-b border-tertiary cursor-pointer">
               <Link
                 spy={true}
                 smooth={true}
-                to="Projects"
+                to="Certifications"
                 onClick={handleClick}
               >
-                Certifications
+                <span className="menu-animation text-white hover:text-primary">
+                  Certifications
+                </span>
               </Link>
             </li>
-            <li className="text-lg font-bold py-4 border-b border-tertiary hover:bg-quaternary hover:text-primary  cursor-pointer">
+            <li className="text-lg font-bold py-4 border-b border-tertiary cursor-pointer">
               <Link spy={true} smooth={true} to="Contact" onClick={handleClick}>
-                Contact
+                <span className="menu-animation text-white hover:text-primary">
+                  Contact
+                </span>
               </Link>
             </li>
           </ul>

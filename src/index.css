@@ -78,3 +78,59 @@ body {
 .swiper-button-next:hover {
   @apply text-primary b_glow scale-110;
 }
+
+.menu-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #f72585, #7209b7, #4cc9f0);
+  background-size: 200% 100%;
+  animation: wave 2s linear infinite;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-animation:hover::after {
+  transform: scaleX(1);
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 200% 100%;
+  }
+}
+
+@layer components {
+  .menu-animation {
+    @apply relative inline-block;
+  }
+  .menu-animation::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #f72585, #7209b7, #4cc9f0);
+    background-size: 200% 100%;
+    animation: wave 2s linear infinite;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu-animation:hover::after {
+    transform: scaleX(1);
+  }
+}
