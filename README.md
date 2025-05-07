@@ -137,17 +137,34 @@ AOS proporciona una manera fácil de añadir animaciones que se activan al despl
 
 
 
-## **7. Paleta de Colores**
+## **7. Paleta de Colores Neon Theme**
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/85a40342-0fa2-45de-a140-37b7f692711c" alt="AdobeColor-Portfolio" width="500" height="200">
+<img src="https://github.com/user-attachments/assets/7b55df69-762b-44ab-b7e2-a42efcdfbe7c" alt="AdobeColor-Portfolio-Palette" width="400" height="300">
 </div>
 
-- **Fondo Principal:** #0F172A (gris oscuro) - Proporciona un fondo sobrio y profesional que resalta el contenido visual.
-- **Color Principal:** #C2410C (naranja) - Utilizado para elementos clave y de llamada a la acción, aporta energía y vitalidad.
-- **Color Secundario:** #84CC16 (lima) - Se emplea para acentos y detalles, creando contraste con el fondo oscuro.
-- **Color de Texto:** #ffffff (blanco) - Garantiza la legibilidad en el fondo oscuro, utilizado para la mayoría de los textos.
 
+| Color	Hex	              | Uso Principal	                           | Efecto Psicológico/Visual                |
+|-------------------------|------------------------------------------|------------------------------------------|
+|Primary	#F72585         |	Botones, títulos, elementos interactivos |	Energía vibrante, atrae la atención     |
+| Secondary	#7209B7	      | Bordes, hover states, acentos	           | Profundidad tecnológica, contraste       |
+| Tertiary	#4CC9F0	      | Iconos, subtítulos, efectos de luz	     | Frescura digital, sensación "cyberpunk"  |
+| Quaternary	#4361EE     |	Barras de progreso, links	               | Estabilidad con toque futurista          |
+| BG (Background)	#0F172A	| Fondo principal	                         | Canvas oscuro para resaltar colores neon |
+| Favorite	#F3F3F3	      | Texto principal, fondos claros           | Legibilidad máxima y equilibrio visual   |
+
+🌟 Razon del Neon Theme
+- Contraste Radical
+
+- El fondo oscuro (#0F172A) actúa como "pantalla negra" para que los colores neón (#F72585, #4CC9F0) brillen literalmente (usa text-shadow para efecto glow).
+- Armonía de Opuestos
+- Los rosas/magentas (#F72585) y azules eléctricos (#4CC9F0) crean un balance térmico (caliente/frío) típico de diseños futuristas.
+- Profundidad Cibernética
+- El púrpura intenso (#7209B7) añade misterio y sofisticación técnica, ideal para hover effects.
+- Legibilidad Optimizada
+- El blanco (#F3F3F3) en texto asegura lectura fácil, mientras los neón destacan solo donde tú quieras (jerarquía visual controlada).
+
+Esta paleta evita la fatiga visual al equilibrar los tonos vibrantes con suficiente espacio negativo (fondo oscuro) y áreas de descanso visual (texto blanco). Perfecta para portfolios tech/diseño vanguardista.
   
 
 ## **8. Conclusión**
@@ -156,12 +173,13 @@ Este proyecto de portafolio web no solo muestra habilidades técnicas y experien
 
 
 
- ## Link al proyecto
+ ## Link al Proyecto
 
 
 <div align="center">
-  <a href="https://cristian-vellio-cv.vercel.app/">Portafolio Demo</a>
+  <a href="https://cristian-vellio-cv.vercel.app/">Portafolio</a>
   <div>
-    <img src="https://github.com/user-attachments/assets/76da97ca-f1f3-4cf2-ae55-8273e20059bd" alt="AdobeColor-Portfolio" width="700" height="300">
+    <img src="https://github.com/user-attachments/assets/39c625ab-5da9-451c-9a05-67dfe84dc7c5" alt="Cristian-Vellio-Portfolio" width="700" height="300">
     <div>
     </div>
+    
