@@ -82,33 +82,37 @@ body {
 .menu-animation {
   position: relative;
   display: inline-block;
+  overflow: visible; /* Permite que la onda se muestre fuera del contenedor */
 }
 
 .menu-animation::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: -3px; /* Posición más ajustada */
   width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, #f72585, #7209b7, #4cc9f0);
-  background-size: 200% 100%;
-  animation: wave 2s linear infinite;
+  height: 6px; /* Altura reducida */
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 6' preserveAspectRatio='none'%3E%3Cpath fill='none' stroke='%23f72585' stroke-width='1.5' d='M0 3 Q 15 0 30 3 T 60 3'/%3E%3C/svg%3E")
+    repeat-x;
+  background-size: 60px 6px; /* SVG más pequeño */
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-out;
+  animation: wave-move 1.2s linear infinite paused;
+  pointer-events: none;
 }
 
 .menu-animation:hover::after {
   transform: scaleX(1);
+  animation-play-state: running;
 }
 
-@keyframes wave {
-  0% {
-    background-position: 0% 100%;
+@keyframes wave-move {
+  from {
+    background-position-x: 0;
   }
-  100% {
-    background-position: 200% 100%;
+  to {
+    background-position-x: 60px;
   }
 }
 
