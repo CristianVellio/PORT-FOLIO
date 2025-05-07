@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        tilt: ['"Tilt Neon"', "sans-serif"],
+      },
       colors: {
         primary: "#F72585",
         secondary: "#7209B7",

@@ -31,7 +31,7 @@ function Banner() {
       <div className="h-full lg:py-40 flex flex-col justify-center items-center lg:items-start text-center lg:text-left text-tertiary">
         <h1
           data-aos="fade-right"
-          className="text-[52px] text-center w-full font-semibold mb-8 leading-normal uppercase"
+          className="text-[52px] text-center w-full font-tilt font-semibold mb-8 leading-normal uppercase"
           style={{ maxWidth: "100%" }}
         >
           Cristian Vellio
