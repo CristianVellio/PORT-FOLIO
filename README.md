@@ -28,19 +28,25 @@ En esta sección se destacan los proyectos más relevantes, cada uno con una ima
 
 Aquí se enumeran las tecnologías y herramientas dominadas, presentando una visión clara de las competencias técnicas. Esta sección utiliza iconos y etiquetas para hacer la información más visual y fácil de interpretar.
 
-### **2.5 Formulario de Contacto (Contact)**
+### **2.5 Sección de Certificaciones (Certifications)**
 
-El formulario de contacto permite a los usuarios enviar mensajes directamente desde el sitio, mejorando la accesibilidad y facilitando la comunicación directa. Este formulario está diseñado para ser simple y directo, pidiendo solo la información necesaria.
+Una galeria que utiliza la libreria Swiper Js para mostrar los certificados relevantes adquiridos, permitiendoo desplazarse por esta deslizandonos o usando las flechas de navegacion.
 
-### **2.6 Navegación y Menú Desplegable**
+### **2.6 Formulario de Contacto (Contact)**
+
+El formulario de contacto integra Email.js para el envío automatizado de mensajes, permitiendo a los usuarios comunicarse directamente desde el sitio sin redirecciones externas. Al enviar el formulario, se activa SweetAlert2 para mostrar confirmaciones visuales personalizadas.
+
+### **2.7 Navegación y Menú Desplegable**
 
 La barra de navegación superior facilita el acceso rápido a las diferentes secciones del sitio mediante desplazamiento suave. En dispositivos móviles, el menú se convierte en un menú desplegable accesible, mejorando la usabilidad en pantallas pequeñas.
 
-### **2.7 Efectos de Animación**
+### **2.8 Efectos de Animación**
 
-Se han implementado efectos de animación utilizando AOS (Animate On Scroll), que añaden dinamismo al sitio. Estos efectos no solo hacen que el sitio sea visualmente más atractivo, sino que también guían al usuario a través del contenido de manera más efectiva.
+- Se han implementado efectos de animación utilizando AOS (Animate On Scroll), que añaden dinamismo al sitio. Estos efectos no solo hacen que el sitio sea visualmente más atractivo, sino que también guían al usuario a través del contenido de manera más efectiva.
+- Se utilizo React Typewriter Effect para el titulo.
+- Tambien un subrayado animado con forma de onda sinusoidal aparece al pasar el cursor sobre los enlaces del menú. La animación simula una ola de luz neón (#F72585) que fluye continuamente de izquierda a derecha, creada con un patrón SVG que se repite.
 
-### **2.8 Botón "Back to Top"**
+### **2.9 Botón "Back to Top"**
 
 Este botón permite a los usuarios volver rápidamente al inicio de la página. Está diseñado para aparecer solo después de que el usuario haya desplazado una cierta distancia, mejorando la experiencia de navegación en páginas largas.
 
@@ -55,6 +61,9 @@ El proyecto utiliza las siguientes tecnologías y herramientas:
 - **React Scroll:** Permite el desplazamiento suave entre las secciones del sitio, mejorando la navegación y la experiencia del usuario.
 - **React Icons:** Proporciona una amplia variedad de iconos que se integran fácilmente con React, mejorando la interfaz visual.
 - **AOS (Animate On Scroll):** Se utiliza para implementar animaciones que se activan al desplazarse, manteniendo el interés del usuario.
+- **TypewriterReact:** Se utiliza para implementar animaciones y dar el fecto de maquina de escribir en el titulo.
+- **Swiper Js:** Permite una navegacion de desplazamiento estilo "deslizar", tal como en los mobiles.
+- **SweetAlerts2:** Nos proporciona alertas visualmente atractivas para el usuario.
 
 
 
