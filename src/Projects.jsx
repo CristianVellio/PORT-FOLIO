@@ -24,6 +24,7 @@ function Projects() {
   }) {
     return (
       <a
+        data-aos="fade-up"
         href={link}
         target="_blank"
         rel="noopener noreferrer"
