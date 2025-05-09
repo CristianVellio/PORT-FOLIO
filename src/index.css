@@ -73,6 +73,7 @@ body {
 .swiper-wrapper {
   overflow: visible !important;
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   @apply text-secondary transition-all duration-300 font-bold text-3xl;
@@ -81,6 +82,12 @@ body {
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   @apply text-primary b_glow scale-110;
+}
+
+.swiper-pagination {
+  margin-top: 2rem; /* o 1.5rem, según prefieras */
+  position: relative;
+  z-index: 10;
 }
 
 .menu-animation {
@@ -151,4 +158,13 @@ body {
   height: 100%;
   z-index: 0;
   pointer-events: none;
+}
+
+.skill-icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px #4cc9f0aa);
 }

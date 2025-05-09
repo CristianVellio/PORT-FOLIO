@@ -1,25 +1,12 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { BiLogoPostgresql } from "react-icons/bi";
-import {
-  SiSpring,
-  SiMongodb,
-  SiTypescript,
-  SiAngular,
-  SiNgrx,
-  SiDjango,
-} from "react-icons/si";
-import {
-  FaPython,
-  FaHtml5,
-  FaReact,
-  FaNodeJs,
-  FaCss3Alt,
-  FaJava,
-} from "react-icons/fa";
-import { SiFlask, SiMysql } from "react-icons/si";
-import { AiOutlineJavaScript } from "react-icons/ai";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Icon } from "@iconify/react";
 
 function Skills() {
   useEffect(() => {
@@ -30,6 +17,66 @@ function Skills() {
     });
   }, []);
 
+  const skills = [
+    {
+      name: "HTML5",
+      icon: "vscode-icons:file-type-html",
+      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
+    {
+      name: "CSS3",
+      icon: "vscode-icons:file-type-css",
+      link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+    {
+      name: "Tailwind CSS",
+      icon: "logos:tailwindcss-icon",
+      link: "https://tailwindcss.com/",
+    },
+    {
+      name: "JavaScript",
+      icon: "logos:javascript",
+      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+      name: "TypeScript",
+      icon: "logos:typescript-icon",
+      link: "https://www.typescriptlang.org/",
+    },
+    {
+      name: "Angular",
+      icon: "logos:angular-icon",
+      link: "https://angular.io/",
+    },
+    { name: "NgRx", icon: "devicon:ngrx", link: "https://ngrx.io/" },
+    { name: "React", icon: "logos:react", link: "https://reactjs.org/" },
+    { name: "Node.js", icon: "logos:nodejs-icon", link: "https://nodejs.org/" },
+    { name: "Java", icon: "logos:java", link: "https://www.java.com/en/" },
+    { name: "Spring", icon: "logos:spring-icon", link: "https://spring.io/" },
+    { name: "Python", icon: "logos:python", link: "https://www.python.org/" },
+    {
+      name: "Django",
+      icon: "logos:django-icon",
+      link: "https://www.djangoproject.com/",
+    },
+    {
+      name: "Flask",
+      icon: "logos:flask",
+      link: "https://flask.palletsprojects.com/",
+    },
+    {
+      name: "MongoDB",
+      icon: "logos:mongodb-icon",
+      link: "https://www.mongodb.com/",
+    },
+    { name: "MySQL", icon: "logos:mysql-icon", link: "https://www.mysql.com/" },
+    {
+      name: "PostgreSQL",
+      icon: "logos:postgresql",
+      link: "https://www.postgresql.org/",
+    },
+  ];
+
   return (
     <div id="Skills" className="p-20 flex flex-col items-center justify-center">
       <h2
@@ -38,135 +85,41 @@ function Skills() {
       >
         Favorite Stacks
       </h2>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-10">
-        <a
-          data-aos="fade-up"
-          href="https://www.w3schools.com/html/"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="w-full max-w-6xl">
+        <Swiper
+          modules={[Navigation, Pagination, A11y]}
+          spaceBetween={30}
+          slidesPerView={4}
+          navigation={true}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            320: { slidesPerView: 1, spaceBetween: 20 },
+            640: { slidesPerView: 2, spaceBetween: 20 },
+            768: { slidesPerView: 3, spaceBetween: 30 },
+            1024: { slidesPerView: 4, spaceBetween: 40 },
+          }}
+          className="mySwiper"
         >
-          <FaHtml5 className=" text-[100px] flex items-center justify-center font-semibold text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-down"
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaCss3Alt className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-up"
-          href="https://www.javascript.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AiOutlineJavaScript className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-up"
-          href="https://www.typescriptlang.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SiTypescript className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-up"
-          href="https://angular.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SiAngular className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-up"
-          href="https://ngrx.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SiNgrx className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-down"
-          href="https://react.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaReact className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-up"
-          href="https://nodejs.org/en/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaNodeJs className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-down"
-          href="https://www.java.com/es/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaJava className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-down"
-          href="https://spring.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SiSpring className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-down"
-          href="https://www.python.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaPython className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-down"
-          href="https://www.djangoproject.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SiDjango className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-up"
-          href="https://flask.palletsprojects.com/en/3.0.x/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SiFlask className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-down"
-          href="https://www.mongodb.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SiMongodb className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-down"
-          href="https://www.mysql.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SiMysql className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
-        <a
-          data-aos="fade-down"
-          href="https://www.postgresql.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <BiLogoPostgresql className=" text-[100px] flex items-center text-tertiary hover:text-secondary rounded-ss-3xl rounded-br-3xl b_glow p-2" />
-        </a>
+          {skills.map((skill, index) => (
+            <SwiperSlide key={index}>
+              <a
+                href={skill.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-full flex flex-col items-center p-1 cursor-pointer"
+              >
+                <Icon
+                  data-aos="fade-up"
+                  icon={skill.icon}
+                  className="skill-icon text-[80px] text-tertiary hover:text-secondary"
+                />
+                <p className="text-lg font-medium text-secondary mt-2">
+                  {skill.name}
+                </p>
+              </a>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );
