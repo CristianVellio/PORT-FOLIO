@@ -10,9 +10,19 @@ import img9 from "./assets/forohub.png";
 import img10 from "./assets/literalura.png";
 import img11 from "./assets/Bienestar_Plus_Banner.png";
 import { FaReact, FaJava, FaPython, FaHtml5, FaCss3 } from "react-icons/fa";
+import { useEffect } from "react";
 import { SiAngular } from "react-icons/si";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Projects() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
+
   function ProjectCard({
     img,
     title,
@@ -182,7 +192,7 @@ function Projects() {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard key={index} {...project} data-aos-delay={index * 100} />
         ))}
       </div>
     </div>
