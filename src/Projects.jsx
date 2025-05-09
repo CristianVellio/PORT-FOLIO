@@ -46,13 +46,13 @@ function Projects() {
           className="w-full h-48 object-cover transition duration-300 group-hover:blur-sm"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="text-6xl text-secondary mb-2 hover:text-primary rounded-3xl p-1 b_glow">
+          <div className="text-6xl text-primary mb-2 hover:text-secondary rounded-3xl p-1 b_glow">
             {icon}
           </div>
           <h3 className="text-xl font-bold text-white">{title}</h3>
         </div>
         <div className="p-4">
-          <span className="inline-block bg-primary text-white text-xs px-2 py-1 rounded-full mb-2">
+          <span className="inline-block bg-secondary text-white text-xs px-2 py-1 rounded-full mb-2">
             {type}
           </span>
           <p className="text-gray-300 text-sm">{description}</p>
