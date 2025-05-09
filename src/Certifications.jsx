@@ -109,7 +109,7 @@ function Certifications() {
             <SwiperSlide key={index}>
               <div
                 data-aos="fade-up"
-                className="h-full flex flex-col items-center p-1 border-2 rounded-3xl b_glow cursor-pointer"
+                className="h-full flex flex-col items-center p-1 border-2 rounded-3xl c_glow cursor-pointer"
                 onClick={() => handleImageClick(cert.img)}
               >
                 <img
