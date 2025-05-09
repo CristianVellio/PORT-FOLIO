@@ -9,8 +9,10 @@ import Skills from "./Skills";
 // import { InfinitySpin } from "react-loader-spinner";
 import { FaArrowUp } from "react-icons/fa";
 import Certifications from "./Certifications";
+import useRainEffect from "./RainEffect";
 
 function App() {
+  // useRainEffect();
   // const [loading, setLoading] = useState(false);
   const [showButton, setShowButton] = useState(false);
 
