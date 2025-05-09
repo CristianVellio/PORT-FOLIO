@@ -44,16 +44,34 @@ function Skills() {
       link: "https://www.typescriptlang.org/",
     },
     {
+      name: "Jest",
+      icon: "logos:jest",
+      link: "https://jestjs.io",
+    },
+    {
       name: "Angular",
       icon: "logos:angular-icon",
       link: "https://angular.io/",
     },
     { name: "NgRx", icon: "devicon:ngrx", link: "https://ngrx.io/" },
+    {
+      name: "RxJS",
+      icon: "devicon:rxjs",
+      link: "https://rxjs.dev/",
+    },
     { name: "React", icon: "logos:react", link: "https://reactjs.org/" },
+    { name: "Redux", icon: "logos:redux", link: "https://redux.js.org/" },
+    { name: "vite", icon: "logos:vitejs", link: "https://vitejs.dev/" },
     { name: "Node.js", icon: "logos:nodejs-icon", link: "https://nodejs.org/" },
     { name: "Java", icon: "logos:java", link: "https://www.java.com/en/" },
+    { name: "JUnit", icon: "devicon:junit", link: "https://junit.org/junit5/" },
     { name: "Spring", icon: "logos:spring-icon", link: "https://spring.io/" },
     { name: "Python", icon: "logos:python", link: "https://www.python.org/" },
+    {
+      name: "pytest",
+      icon: "devicon:pytest",
+      link: "https://docs.pytest.org/",
+    },
     {
       name: "Django",
       icon: "logos:django-icon",
@@ -74,6 +92,11 @@ function Skills() {
       name: "PostgreSQL",
       icon: "logos:postgresql",
       link: "https://www.postgresql.org/",
+    },
+    {
+      name: "postman",
+      icon: "logos:postman-icon",
+      link: "https://www.postman.com/",
     },
   ];
 
