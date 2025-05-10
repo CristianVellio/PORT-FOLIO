@@ -12,6 +12,7 @@ import img11 from "./assets/Bienestar_Plus_Banner.png";
 import { FaReact, FaJava, FaPython, FaHtml5, FaCss3 } from "react-icons/fa";
 import { useEffect } from "react";
 import { SiAngular } from "react-icons/si";
+import { Icon } from "@iconify/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -58,7 +59,7 @@ function Projects() {
           <p className="text-gray-300 text-sm">{description}</p>
           {collaborative && (
             <span className="block text-tertiary text-xs mt-2">
-              Proyecto colaborativo
+              Collaborative Project
             </span>
           )}
         </div>
@@ -73,8 +74,22 @@ function Projects() {
       link: "https://github.com/ISPC-Soluciones/Bienestar-Plus",
       icon: <SiAngular />,
       type: "Fullstack",
-      description:
-        "💚 Bienestar+ Ss a web application focused on physical, mental, and emotional well-being. It allows users to manage healthy habits, access mental health resources, and receive personalized recommendations to improve their quality of life. Developed by students of the Software Development program, with Angular and Agile Methodologies Scrum.",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:heart-plus-outline-rounded"
+            className="text-lime-500 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          Bienestar+ is a web application focused on physical, mental, and
+          emotional well-being. It allows users to manage healthy habits, access
+          mental health resources, and receive personalized recommendations to
+          improve their quality of life. Developed by students of the Software
+          Development program with Angular and Agile Methodologies Scrum.
+        </>
+      ),
       collaborative: true,
     },
     {
@@ -83,18 +98,22 @@ function Projects() {
       link: "https://proyecto-libreria.vercel.app/",
       icon: <FaReact />,
       type: "Fullstack",
-      description:
-        "📚 The Bookstore project is a modern web platform for book management and sales. Designed for both end users and administrators, this application allows users to explore books, add them to their cart, and make purchases. For administrators, it provides complete CRUD functionalities to manage the library.",
-      collaborative: false,
-    },
-    {
-      img: img6,
-      title: "Portfolio",
-      link: "https://github.com/CristianVellio/PORT-FOLIO",
-      icon: <FaReact />,
-      type: "Frontend",
-      description:
-        "💼 This personal web portfolio is designed to showcase skills, projects, and provide a means of contact for potential employers or collaborators. The website is built with Vite, React, and Tailwind CSS, featuring a modern and responsive design, with animations that enhance the user experience.",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:book-2-rounded"
+            className="text-blue-800 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          The Bookstore project is a modern web platform for book management and
+          sales. Designed for both end users and administrators, this
+          application allows users to explore books, add them to their cart, and
+          make purchases. For administrators, it provides complete CRUD
+          functionalities to manage the library.
+        </>
+      ),
       collaborative: false,
     },
     {
@@ -103,38 +122,46 @@ function Projects() {
       link: "https://proyecto-clima-azure.vercel.app/",
       icon: <FaPython />,
       type: "Fullstack IoT",
-      description:
-        "🌤️ The Meteorological Station project is an IoT system designed to monitor and record real-time weather conditions. It uses a Supabase database to store data and an interactive frontend for visualization. It combines simulation, integration, and web development to offer a modern and scalable solution.",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:sunny-snowing"
+            className="text-yellow-400 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          The Meteorological Station project is an IoT system designed to
+          monitor and record real-time weather conditions. It uses a Supabase
+          database to store data and an interactive frontend for visualization.
+          It combines simulation, integration, and web development to offer a
+          modern and scalable solution.
+        </>
+      ),
       collaborative: true,
     },
     {
-      img: img4,
-      title: "Currency Converter",
-      link: "https://github.com/CristianVellio/conversor-de-moneda",
-      icon: <FaJava />,
-      type: "Backend",
-      description:
-        "🟡 The Currency Converter is an application designed to perform currency conversions in a simple and efficient way. The project allows conversion between different currencies using up-to-date data provided by a third-party API..",
-      collaborative: false,
-    },
-    {
-      img: img7,
-      title: "Med Clinic API",
-      link: "https://github.com/CristianVellio/api",
-      icon: <FaJava />,
-      type: "API REST",
-      description:
-        "🩺 Voll Med Clinic API is a RESTful service built with Spring Boot for managing clinic operations, including authentication, user management, and medical data handling. It uses JWT authentication for security and integrates with MySQL for persistent data storage.",
-      collaborative: false,
-    },
-    {
-      img: img8,
-      title: "Screenmatch",
-      link: "https://github.com/CristianVellio/screenmatch",
-      icon: <FaJava />,
-      type: "Backend",
-      description:
-        "Screenmatch is a Spring Boot-based Java application designed as an introductory project for working with the framework. It leverages several key technologies.",
+      img: img6,
+      title: "Portfolio",
+      link: "https://github.com/CristianVellio/PORT-FOLIO",
+      icon: <FaReact />,
+      type: "Frontend",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:cases"
+            className="text-amber-800 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          This personal web portfolio is designed to showcase skills, projects,
+          and provide a means of contact for potential employers or
+          collaborators. The website is built with Vite, React, and Tailwind
+          CSS, featuring a modern and responsive design, with animations that
+          enhance the user experience.
+        </>
+      ),
       collaborative: false,
     },
     {
@@ -143,8 +170,67 @@ function Projects() {
       link: "https://github.com/CristianVellio/FOROHUB",
       icon: <FaJava />,
       type: "Backend",
-      description:
-        "ForoHub is a RESTful web application built using Spring Boot, designed to facilitate the creation of topics and publication of responses within a user-centric forum. The application includes robust security features, user management, and a modular design to ensure scalability and maintainability.",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:sound-detection-loud-sound"
+            className="text-purple-400 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          ForoHub is a RESTful web application built using Spring Boot, designed
+          to facilitate the creation of topics and publication of responses
+          within a user-centric forum. The application includes robust security
+          features, user management, and a modular design to ensure scalability
+          and maintainability.
+        </>
+      ),
+      collaborative: false,
+    },
+    {
+      img: img7,
+      title: "Med Clinic API",
+      link: "https://github.com/CristianVellio/api",
+      icon: <FaJava />,
+      type: "API REST",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:medical-information-outline"
+            className="text-red-600 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          Voll Med Clinic API is a RESTful service built with Spring Boot for
+          managing clinic operations, including authentication, user management,
+          and medical data handling. It uses JWT authentication for security and
+          integrates with MySQL for persistent data storage.
+        </>
+      ),
+      collaborative: false,
+    },
+    {
+      img: img8,
+      title: "Screenmatch",
+      link: "https://github.com/CristianVellio/screenmatch",
+      icon: <FaJava />,
+      type: "Backend",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:video-camera-back"
+            className="text-yellow-200 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          Screenmatch is a Spring Boot-based Java application designed as an
+          introductory project for working with the framework. It leverages
+          several key technologies.
+        </>
+      ),
       collaborative: false,
     },
     {
@@ -153,8 +239,43 @@ function Projects() {
       link: "https://github.com/CristianVellio/LiterAlura",
       icon: <FaJava />,
       type: "Backend",
-      description:
-        "LiterAlura is a book management application developed in Java with Spring Boot. It allows you to manage a digital library with information about books, authors, and languages",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:book-3"
+            className="text-blue-700 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          LiterAlura is a book management application developed in Java with
+          Spring Boot. It allows you to manage a digital library with
+          information about books, authors, and languages.
+        </>
+      ),
+      collaborative: false,
+    },
+    {
+      img: img4,
+      title: "Currency Converter",
+      link: "https://github.com/CristianVellio/conversor-de-moneda",
+      icon: <FaJava />,
+      type: "Backend",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:money-bag"
+            className="text-amber-500 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          The Currency Converter is an application designed to perform currency
+          conversions in a simple and efficient way. The project allows
+          conversion between different currencies using up-to-date data provided
+          by a third-party API.
+        </>
+      ),
       collaborative: false,
     },
     {
@@ -163,8 +284,20 @@ function Projects() {
       link: "https://encrypter-oracle-one.vercel.app/",
       icon: <FaHtml5 />,
       type: "Frontend",
-      description:
-        "Solo challenge creating an application that encrypts texts, so you can exchange secret messages with other people who know the encryption key used.",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:encrypted"
+            className="text-white inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          Solo challenge creating an application that encrypts texts, so you can
+          exchange secret messages with other people who know the encryption key
+          used.
+        </>
+      ),
       collaborative: false,
     },
     {
@@ -173,8 +306,20 @@ function Projects() {
       link: "https://transportex-x-utn-frba.netlify.app/",
       icon: <FaCss3 />,
       type: "Frontend",
-      description:
-        "First solo project creating a static, MPA of three sections, responsive Website using HTML; CSS correct use of Flexbox or CSS Grid; Bootstrap as an alternative to our layout.",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:travel-rounded"
+            className="text-blue-500 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          First solo project creating a static, MPA of three sections,
+          responsive Website using HTML; CSS correct use of Flexbox or CSS Grid;
+          Bootstrap as an alternative to our layout.
+        </>
+      ),
       collaborative: false,
     },
   ];
