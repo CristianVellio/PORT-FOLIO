@@ -38,7 +38,7 @@ function Projects() {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="b_glow relative group w-80 bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105"
+        className="b_glow relative group w-full bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 max-w-sm mx-auto"
       >
         <img
           src={img}
@@ -182,7 +182,7 @@ function Projects() {
   return (
     <div
       id="Projects"
-      className="p-20 flex flex-col items-center justify-center"
+      className="px-4 sm:px-8 md:px-16 lg:px-20 py-16 flex flex-col items-center justify-center"
     >
       <h2
         data-aos="fade-left"
@@ -190,7 +190,7 @@ function Projects() {
       >
         Projects
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 w-full max-w-7xl">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} data-aos-delay={index * 100} />
         ))}

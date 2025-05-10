@@ -82,7 +82,7 @@ function Certifications() {
   return (
     <div
       id="Certifications"
-      className="p-20 flex flex-col items-center justify-center bg-slate-900"
+      className="p-2 flex flex-col items-center justify-center bg-slate-900"
     >
       <h2
         data-aos="fade-right"
@@ -93,14 +93,15 @@ function Certifications() {
 
       <div className="w-full max-w-6xl">
         <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
+          slidesPerView={1.2}
+          spaceBetween={15}
           navigation={true}
           pagination={{ clickable: true }}
           breakpoints={{
-            640: { slidesPerView: 1, spaceBetween: 20 },
-            768: { slidesPerView: 2, spaceBetween: 30 },
-            1024: { slidesPerView: 3, spaceBetween: 40 },
+            480: { slidesPerView: 1, spaceBetween: 20 },
+            640: { slidesPerView: 2, spaceBetween: 20 },
+            768: { slidesPerView: 3, spaceBetween: 30 },
+            1024: { slidesPerView: 4, spaceBetween: 40 },
           }}
           modules={[Pagination, Navigation]}
           className="mySwiper"
