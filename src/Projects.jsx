@@ -74,7 +74,7 @@ function Projects() {
       icon: <SiAngular />,
       type: "Fullstack",
       description:
-        "💚 Bienestar+ is a web application focused on physical, mental, and emotional well-being. It allows users to manage healthy habits, access mental health resources, and receive personalized recommendations to improve their quality of life. Developed by students of the Software Development Technician program in Angular with Agile Methodologies Scrum.",
+        "💚 Bienestar+ Ss a web application focused on physical, mental, and emotional well-being. It allows users to manage healthy habits, access mental health resources, and receive personalized recommendations to improve their quality of life. Developed by students of the Software Development program, with Angular and Agile Methodologies Scrum.",
       collaborative: true,
     },
     {
