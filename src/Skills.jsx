@@ -63,6 +63,11 @@ function Skills() {
     { name: "Redux", icon: "logos:redux", link: "https://redux.js.org/" },
     { name: "vite", icon: "logos:vitejs", link: "https://vitejs.dev/" },
     { name: "Node.js", icon: "logos:nodejs-icon", link: "https://nodejs.org/" },
+    {
+      name: "Express",
+      icon: "devicon:express",
+      link: "https://expressjs.com/",
+    },
     { name: "Java", icon: "logos:java", link: "https://www.java.com/en/" },
     { name: "JUnit", icon: "devicon:junit", link: "https://junit.org/junit5/" },
     { name: "Spring", icon: "logos:spring-icon", link: "https://spring.io/" },
