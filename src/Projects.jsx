@@ -68,16 +68,6 @@ function Projects() {
 
   const projects = [
     {
-      img: img3,
-      title: "Bookstore App Fullstack",
-      link: "https://proyecto-libreria.vercel.app/",
-      icon: <FaReact />,
-      type: "Fullstack",
-      description:
-        "📚 The Bookstore project is a modern web platform for book management and sales. Designed for both end users and administrators, this application allows users to explore books, add them to their cart, and make purchases. For administrators, it provides complete CRUD functionalities to manage the library.",
-      collaborative: true,
-    },
-    {
       img: img11,
       title: "Bienestar Plus Fullstack",
       link: "https://github.com/ISPC-Soluciones/Bienestar-Plus",
@@ -86,6 +76,16 @@ function Projects() {
       description:
         "💚 Bienestar+ is a web application focused on physical, mental, and emotional well-being. It allows users to manage healthy habits, access mental health resources, and receive personalized recommendations to improve their quality of life. Developed by students of the Software Development Technician program in Angular with Agile Methodologies Scrum.",
       collaborative: true,
+    },
+    {
+      img: img3,
+      title: "Bookstore App Fullstack",
+      link: "https://proyecto-libreria.vercel.app/",
+      icon: <FaReact />,
+      type: "Fullstack",
+      description:
+        "📚 The Bookstore project is a modern web platform for book management and sales. Designed for both end users and administrators, this application allows users to explore books, add them to their cart, and make purchases. For administrators, it provides complete CRUD functionalities to manage the library.",
+      collaborative: false,
     },
     {
       img: img6,
@@ -172,9 +172,9 @@ function Projects() {
       title: "Transportes X",
       link: "https://transportex-x-utn-frba.netlify.app/",
       icon: <FaCss3 />,
-      type: "Backend",
+      type: "Frontend",
       description:
-        "Solo project creating a static, MPA of three sections, responsive Website using HTML; CSS correct use of Flexbox or CSS Grid; Bootstrap as an alternative to our layout.",
+        "First solo project creating a static, MPA of three sections, responsive Website using HTML; CSS correct use of Flexbox or CSS Grid; Bootstrap as an alternative to our layout.",
       collaborative: false,
     },
   ];
