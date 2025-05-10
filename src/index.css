@@ -168,3 +168,9 @@ body {
   transform: scale(1.1);
   filter: drop-shadow(0 0 8px #4cc9f0aa);
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
