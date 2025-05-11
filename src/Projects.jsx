@@ -70,7 +70,7 @@ function Projects() {
   const projects = [
     {
       img: img11,
-      title: "Bienestar Plus Fullstack",
+      title: "Bienestar Plus",
       link: "https://github.com/ISPC-Soluciones/Bienestar-Plus",
       icon: <SiAngular />,
       type: "Fullstack",
@@ -94,7 +94,7 @@ function Projects() {
     },
     {
       img: img3,
-      title: "Bookstore App Fullstack",
+      title: "Bookstore App",
       link: "https://proyecto-libreria.vercel.app/",
       icon: <FaReact />,
       type: "Fullstack",
@@ -118,7 +118,7 @@ function Projects() {
     },
     {
       img: img2,
-      title: "Weather IoT Project",
+      title: "Meteorological Station",
       link: "https://proyecto-clima-azure.vercel.app/",
       icon: <FaPython />,
       type: "Fullstack IoT",
@@ -190,7 +190,7 @@ function Projects() {
     },
     {
       img: img7,
-      title: "Med Clinic API",
+      title: "Voll Clinic",
       link: "https://github.com/CristianVellio/api",
       icon: <FaJava />,
       type: "API REST",
