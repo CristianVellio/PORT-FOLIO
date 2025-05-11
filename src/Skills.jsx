@@ -68,10 +68,20 @@ function Skills() {
       icon: "devicon:express",
       link: "https://expressjs.com/",
     },
+    {
+      name: "Axios",
+      icon: "devicon-plain:axios",
+      link: "https://axios-http.com/",
+    },
     { name: "Java", icon: "logos:java", link: "https://www.java.com/en/" },
     { name: "JUnit", icon: "devicon:junit", link: "https://junit.org/junit5/" },
     { name: "Spring", icon: "logos:spring-icon", link: "https://spring.io/" },
     { name: "Python", icon: "logos:python", link: "https://www.python.org/" },
+    {
+      name: "fastapi",
+      icon: "devicon:fastapi",
+      link: "https://fastapi.tiangolo.com/",
+    },
     {
       name: "pytest",
       icon: "devicon:pytest",
@@ -91,6 +101,11 @@ function Skills() {
       name: "MongoDB",
       icon: "logos:mongodb-icon",
       link: "https://www.mongodb.com/",
+    },
+    {
+      name: "Mongoose",
+      icon: "devicon:mongoose",
+      link: "https://mongoosejs.com/",
     },
     { name: "MySQL", icon: "logos:mysql-icon", link: "https://www.mysql.com/" },
     {
