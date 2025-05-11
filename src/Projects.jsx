@@ -87,7 +87,7 @@ function Projects() {
           emotional well-being. It allows users to manage healthy habits, access
           mental health resources, and receive personalized recommendations to
           improve their quality of life. Developed by students of the Software
-          Development program with Angular and Agile Methodologies Scrum.
+          Development program with Angular and, Agile Methodologies, Scrum.
         </>
       ),
       collaborative: true,
