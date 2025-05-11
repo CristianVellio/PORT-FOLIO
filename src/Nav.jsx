@@ -11,15 +11,15 @@ function Nav() {
   };
 
   return (
-    <nav className="bg-quaternary relative">
+    <nav className="bg-slate-800 relative">
       <div className="h-20 flex justify-between text-white items-center px-4 lg:px-20 py-4 border-b border-tertiary">
-        <div className="flex items-center flex-1">
+        <div className="flex items-center  flex-1">
           <a href="/" rel="noopener noreferrer">
             <img
               src={img}
-              width={40}
-              height={40}
-              className="rounded-full"
+              width={50}
+              height={50}
+              className="rounded-full hover:text-primary glow"
               alt="logo"
             />
           </a>
@@ -80,7 +80,7 @@ function Nav() {
         </div>
       </div>
       {click && (
-        <div className="text-white lg:hidden bg-quaternary w-full z-50 absolute">
+        <div className="text-white lg:hidden bg-slate-800 t w-full z-50 absolute">
           <ul className="text-center text-xl p-5">
             <li className="text-lg font-bold py-4 border-b border-tertiary cursor-pointer">
               <Link spy={true} smooth={true} to="Home" onClick={handleClick}>

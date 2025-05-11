@@ -4,14 +4,14 @@ import img from "./assets/LOGO.png";
 
 function Footer() {
   return (
-    <footer className="bg-quaternary text-white px-4 py-8 md:px-12 lg:px-48">
+    <footer className="bg-slate-800 text-white px-4 py-8 md:px-12 lg:px-48">
       <div className="container flex flex-col lg:flex-row justify-between items-center mx-auto gap-4">
         <a href="/" rel="noopener noreferrer">
           <img
             src={img}
-            width={40}
-            height={40}
-            className="rounded-full mb-4 lg:mb-0"
+            width={50}
+            height={50}
+            className="rounded-full mb-4 lg:mb-0 hover:text-primary glow"
             alt="logo"
           />
         </a>
