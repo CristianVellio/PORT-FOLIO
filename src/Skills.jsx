@@ -44,6 +44,11 @@ function Skills() {
       link: "https://www.typescriptlang.org/",
     },
     {
+      name: "JWT",
+      icon: "logos:jwt-icon",
+      link: "https://jwt.io/",
+    },
+    {
       name: "Jest",
       icon: "logos:jest",
       link: "https://jestjs.io",
