@@ -11,7 +11,7 @@ function Footer() {
             src={img}
             width={50}
             height={50}
-            className="rounded-full mb-4 lg:mb-0 hover:text-primary glow"
+            className="rounded-full mb-4 lg:mb-0 hover:text-primary glow p-1"
             alt="logo"
           />
         </a>
@@ -35,7 +35,7 @@ function Footer() {
               href="https://www.github.com/CristianVellio"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary hover:text-primary p-2"
+              className="text-secondary hover:text-primary rounded-full glow p-2"
             >
               <FaGithub className="text-3xl" />
             </a>
@@ -43,7 +43,7 @@ function Footer() {
               href="https://www.linkedin.com/in/cristianvellio"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary hover:text-primary p-2"
+              className="text-secondary hover:text-primary rounded-full glow p-2"
             >
               <FaLinkedinIn className="text-3xl" />
             </a>

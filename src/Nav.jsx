@@ -19,7 +19,7 @@ function Nav() {
               src={img}
               width={50}
               height={50}
-              className="rounded-full hover:text-primary glow"
+              className="rounded-full hover:text-primary glow p-1"
               alt="logo"
             />
           </a>
