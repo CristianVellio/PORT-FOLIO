@@ -14,6 +14,10 @@ body {
   position: relative;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 .glow:hover {
   box-shadow: 0 0 25px rgb(247, 37, 133);
 }
