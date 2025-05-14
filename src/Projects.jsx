@@ -121,6 +121,31 @@ function Projects() {
       collaborative: true,
     },
     {
+      img: img3,
+      title: "Bookstore App",
+      link: "https://proyecto-libreria.vercel.app/",
+      icon: <FaReact />,
+      type: "Fullstack",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:book-2-rounded"
+            className="text-blue-800 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          The Bookstore project is a modern web platform for book management and
+          sales. Designed for both end users and administrators, this
+          application allows users to explore books, add them to their cart, and
+          make purchases. For administrators, it provides complete CRUD
+          functionalities to manage the library. Final Project of FullStack
+          Developer program at the National University of Technology (UTN).
+        </>
+      ),
+      collaborative: false,
+    },
+    {
       img: img2,
       title: "Meteorological Station",
       link: "https://proyecto-clima-azure.vercel.app/",
@@ -145,30 +170,6 @@ function Projects() {
         </>
       ),
       collaborative: true,
-    },
-    {
-      img: img3,
-      title: "Bookstore App",
-      link: "https://proyecto-libreria.vercel.app/",
-      icon: <FaReact />,
-      type: "Fullstack",
-      description: (
-        <>
-          {" "}
-          <Icon
-            icon="material-symbols:book-2-rounded"
-            className="text-blue-800 inline-block mr-2"
-            width="24"
-            height="24"
-          />
-          The Bookstore project is a modern web platform for book management and
-          sales. Designed for both end users and administrators, this
-          application allows users to explore books, add them to their cart, and
-          make purchases. For administrators, it provides complete CRUD
-          functionalities to manage the library.
-        </>
-      ),
-      collaborative: false,
     },
     {
       img: img7,
