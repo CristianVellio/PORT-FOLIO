@@ -9,9 +9,10 @@ import img8 from "./assets/screenmatch.png";
 import img9 from "./assets/forohub.png";
 import img10 from "./assets/literalura.png";
 import img11 from "./assets/Bienestar_Plus_Banner.png";
+import img12 from "./assets/toolkit_project.jpg";
 import { FaReact, FaJava, FaPython, FaHtml5, FaCss3 } from "react-icons/fa";
 import { useEffect } from "react";
-import { SiAngular } from "react-icons/si";
+import { SiAngular, SiGnubash, SiSpring } from "react-icons/si";
 import { Icon } from "@iconify/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -87,7 +88,60 @@ function Projects() {
           emotional well-being. It allows users to manage healthy habits, access
           mental health resources, and receive personalized recommendations to
           improve their quality of life. Developed by students of the Software
-          Development program with Angular and, Agile Methodologies, Scrum.
+          Development program, at the Higher Polytechnic Institute of Cordoba
+          (ISPC), with Agile Methodologies Scrum.
+        </>
+      ),
+      collaborative: true,
+    },
+    {
+      img: img12,
+      title: "Administration Toolkit Jr.",
+      link: "https://github.com/CristianVellio/toolkit-linux",
+      icon: <SiGnubash />,
+      type: "Operating Systems",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="devicon:linux"
+            className="inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          The Administration Toolkit Jr. is a command-line utility developed in
+          Bash scripting for Linux-based systems (Ubuntu/Debian). It provides a
+          user-friendly text-based menu interface that allows junior system
+          administrators to perform essential system monitoring and management
+          tasks without requiring advanced Linux knowledge. Developed by
+          students of the Software Development program at the Higher Polytechnic
+          Institute of Cordoba (ISPC).
+        </>
+      ),
+      collaborative: true,
+    },
+    {
+      img: img2,
+      title: "Meteorological Station",
+      link: "https://proyecto-clima-azure.vercel.app/",
+      icon: <FaPython />,
+      type: "Fullstack IoT",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:sunny-snowing"
+            className="text-yellow-400 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          The Meteorological Station project is an IoT system designed to
+          monitor and record real-time weather conditions. It uses a Supabase
+          database to store data and an interactive frontend for visualization.
+          It combines simulation, integration, and web development to offer a
+          modern and scalable solution. Developed by students of the Software
+          Development program at the Higher Polytechnic Institute of Cordoba
+          (ISPC).
         </>
       ),
       collaborative: true,
@@ -117,49 +171,24 @@ function Projects() {
       collaborative: false,
     },
     {
-      img: img2,
-      title: "Meteorological Station",
-      link: "https://proyecto-clima-azure.vercel.app/",
-      icon: <FaPython />,
-      type: "Fullstack IoT",
+      img: img7,
+      title: "Voll Clinic",
+      link: "https://github.com/CristianVellio/api",
+      icon: <SiSpring />,
+      type: "API REST",
       description: (
         <>
           {" "}
           <Icon
-            icon="material-symbols:sunny-snowing"
-            className="text-yellow-400 inline-block mr-2"
+            icon="material-symbols:medical-information-outline"
+            className="text-red-600 inline-block mr-2"
             width="24"
             height="24"
           />
-          The Meteorological Station project is an IoT system designed to
-          monitor and record real-time weather conditions. It uses a Supabase
-          database to store data and an interactive frontend for visualization.
-          It combines simulation, integration, and web development to offer a
-          modern and scalable solution.
-        </>
-      ),
-      collaborative: true,
-    },
-    {
-      img: img6,
-      title: "Portfolio",
-      link: "https://github.com/CristianVellio/PORT-FOLIO",
-      icon: <FaReact />,
-      type: "Frontend",
-      description: (
-        <>
-          {" "}
-          <Icon
-            icon="material-symbols:cases"
-            className="text-amber-800 inline-block mr-2"
-            width="24"
-            height="24"
-          />
-          This personal web portfolio is designed to showcase skills, projects,
-          and provide a means of contact for potential employers or
-          collaborators. The website is built with Vite, React, and Tailwind
-          CSS, featuring a modern and responsive design, with animations that
-          enhance the user experience.
+          Voll Med Clinic API is a RESTful service built with Spring Boot for
+          managing clinic operations, including authentication, user management,
+          and medical data handling. It uses JWT authentication for security and
+          integrates with MySQL for persistent data storage.
         </>
       ),
       collaborative: false,
@@ -168,7 +197,7 @@ function Projects() {
       img: img9,
       title: "ForoHub",
       link: "https://github.com/CristianVellio/FOROHUB",
-      icon: <FaJava />,
+      icon: <SiSpring />,
       type: "Backend",
       description: (
         <>
@@ -189,33 +218,10 @@ function Projects() {
       collaborative: false,
     },
     {
-      img: img7,
-      title: "Voll Clinic",
-      link: "https://github.com/CristianVellio/api",
-      icon: <FaJava />,
-      type: "API REST",
-      description: (
-        <>
-          {" "}
-          <Icon
-            icon="material-symbols:medical-information-outline"
-            className="text-red-600 inline-block mr-2"
-            width="24"
-            height="24"
-          />
-          Voll Med Clinic API is a RESTful service built with Spring Boot for
-          managing clinic operations, including authentication, user management,
-          and medical data handling. It uses JWT authentication for security and
-          integrates with MySQL for persistent data storage.
-        </>
-      ),
-      collaborative: false,
-    },
-    {
       img: img8,
       title: "Screenmatch",
       link: "https://github.com/CristianVellio/screenmatch",
-      icon: <FaJava />,
+      icon: <SiSpring />,
       type: "Backend",
       description: (
         <>
@@ -237,7 +243,7 @@ function Projects() {
       img: img10,
       title: "LiterAlura",
       link: "https://github.com/CristianVellio/LiterAlura",
-      icon: <FaJava />,
+      icon: <SiSpring />,
       type: "Backend",
       description: (
         <>
@@ -274,6 +280,30 @@ function Projects() {
           conversions in a simple and efficient way. The project allows
           conversion between different currencies using up-to-date data provided
           by a third-party API.
+        </>
+      ),
+      collaborative: false,
+    },
+    {
+      img: img6,
+      title: "Portfolio",
+      link: "https://github.com/CristianVellio/PORT-FOLIO",
+      icon: <FaReact />,
+      type: "Frontend",
+      description: (
+        <>
+          {" "}
+          <Icon
+            icon="material-symbols:cases"
+            className="text-amber-800 inline-block mr-2"
+            width="24"
+            height="24"
+          />
+          This personal web portfolio is designed to showcase skills, projects,
+          and provide a means of contact for potential employers or
+          collaborators. The website is built with Vite, React, and Tailwind
+          CSS, featuring a modern and responsive design, with animations that
+          enhance the user experience.
         </>
       ),
       collaborative: false,
