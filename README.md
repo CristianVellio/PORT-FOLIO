@@ -157,7 +157,7 @@ AOS proporciona una manera fácil de añadir animaciones que se activan al despl
 |-------------------------|------------------------------------------|------------------------------------------|
 |Primary	#F72585         |	Botones, títulos, elementos interactivos |	Energía vibrante, atrae la atención     |
 | Secondary	#7209B7	      | Bordes, hover states, acentos	           | Profundidad tecnológica, contraste       |
-| Tertiary	#4CC9F0	      | Iconos, subtítulos, efectos de luz	     | Frescura digital, sensación "vaporwave"  |
+| Tertiary	#4CC9F0	      | Iconos, subtítulos, efectos de luz	     | Frescura digital, sensación "cyberpunk"  |
 | Quaternary	#4361EE     |	Barras de progreso, links	               | Estabilidad con toque futurista          |
 | BG (Background)	#0F172A	| Fondo principal	                         | Canvas oscuro para resaltar colores neon |
 | Favorite	#F3F3F3	      | Texto principal, fondos claros           | Legibilidad máxima y equilibrio visual   |
