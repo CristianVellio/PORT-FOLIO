@@ -82,14 +82,16 @@ function Banner() {
           </a>
         </div>
       </div>
-      <img
-        data-aos="fade-up"
-        src={img}
-        width={290}
-        height={290}
-        className="rounded border-2 p-1 ml-4 border-tertiary img_glow"
-        alt="Cristian Vellio"
-      />
+      <div className="w-full h-full flex justify-center lg:justify-end mb-8 p-1 ml-4">
+        <img
+          data-aos="fade-up"
+          src={img}
+          width={290}
+          height={290}
+          className="rounded border-2 border-tertiary img_glow"
+          alt="Cristian Vellio"
+        />
+      </div>
     </div>
   );
 }
