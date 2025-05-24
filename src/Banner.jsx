@@ -1,6 +1,7 @@
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import img from "./assets/EVERYONE_FLOATS.jpg";
+import brand_banner from "./assets/brand_banner.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -29,23 +30,31 @@ function Banner() {
       className="lg:px-56 px-10 lg:py-0 py-20 text-center lg:text-left gap-5 flex lg:flex-row flex-col-reverse justify-between items-center"
     >
       <div className="h-full lg:py-40 flex flex-col justify-center items-center lg:items-start text-center lg:text-left text-tertiary">
+        <div className="w-full h-full flex justify-center lg:justify-start mb-8">
+          <img
+            src={brand_banner}
+            data-aos="fade-up"
+            width={450}
+            height={450}
+            className="p-1"
+            alt="Cristian Vellio"
+          />
+        </div>
         <h1
           data-aos="fade-right"
           className="text-[52px] text-center w-full font-tilt font-semibold mb-8 leading-normal uppercase"
           style={{ maxWidth: "100%" }}
         >
-          Cristian Vellio
-          <br />
-          <span className="text-primary">{text}</span>
-          <span className="text-primary">
+          {text}
+          <span className="text-tertiary">
             <Cursor cursorStyle="|" />
           </span>
-          <br />
-          <span className="text-primary"> Developer</span>
+          <br></br>
+          <span className="text-tertiary"> Developer</span>
         </h1>
         <p
           data-aos="fade-left"
-          className="text-[30px] flex justify-center items-center flex-wrap text-center w-full font-semibold mb-8 leading-tight uppercase px-4 text-balance"
+          className="text-[30px] flex justify-center items-center flex-wrap text-center w-full font-semibold mb-8 leading-tight uppercase px-4 text-balance text-primary"
           style={{
             overflow: "hidden",
             textOverflow: "ellipsis",
@@ -78,7 +87,7 @@ function Banner() {
         src={img}
         width={290}
         height={290}
-        className="rounded border-2 p-1 border-tertiary img_glow"
+        className="rounded border-2 p-1 ml-4 border-tertiary img_glow"
         alt="Cristian Vellio"
       />
     </div>
