@@ -33,56 +33,83 @@ function Projects() {
     type,
     description,
     collaborative,
+    repo,
   }) {
     return (
-      <a
+      <div
         data-aos="fade-up"
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
         className="b_glow relative group w-full bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 max-w-sm mx-auto"
       >
-        <img
-          src={img}
-          alt={title}
-          className="w-full h-48 object-cover transition duration-300 group-hover:blur-sm"
-        />
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="text-6xl text-primary mb-2 hover:text-secondary rounded-3xl p-1 b_glow">
-            {icon}
+        <div className="relative w-full h-48 overflow-hidden">
+          <img
+            src={img}
+            alt={title}
+            className="w-full h-full object-cover transition duration-300 group-hover:blur-sm"
+          />
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="text-6xl text-primary mb-2 hover:text-secondary rounded-3xl p-1 b_glow">
+              {icon}
+            </div>
+            <h3 className="text-xl font-bold text-white">{title}</h3>
           </div>
-          <h3 className="text-xl font-bold text-white">{title}</h3>
         </div>
+
+        {/* Card Body */}
         <div className="p-4">
           <span className="inline-block bg-secondary text-white text-xs px-2 py-1 rounded-full mb-2">
             {type}
           </span>
-          <p className="text-gray-300 text-sm">{description}</p>
+          <p className="text-gray-300 text-sm select-text">{description}</p>
+
           {collaborative && (
-            <span className="block text-tertiary text-xs mt-2">
+            <span className="block text-quaternary text-xs mt-2">
               Collaborative Project
             </span>
           )}
+
+          {/* Links */}
+          <div className="mt-4 space-y-1">
+            {link && (
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm text-blue-400 hover:text-blue-300 transition duration-200"
+              >
+                Visit Deployed Demo →
+              </a>
+            )}
+            {repo && (
+              <a
+                href={repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm text-blue-400 hover:text-blue-300 transition duration-200"
+              >
+                View GitHub Repository →
+              </a>
+            )}
+          </div>
         </div>
-      </a>
+      </div>
     );
   }
 
   ProjectCard.propTypes = {
     img: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
     icon: PropTypes.node.isRequired,
     type: PropTypes.string.isRequired,
     description: PropTypes.node.isRequired,
     collaborative: PropTypes.bool,
+    link: PropTypes.string.isRequired,
+    repo: PropTypes.string,
   };
 
   const projects = [
     {
       img: img11,
       title: "Bienestar Plus",
-      link: "https://github.com/ISPC-Soluciones/Bienestar-Plus",
       icon: <SiAngular />,
       type: "Fullstack",
       description: (
@@ -103,11 +130,11 @@ function Projects() {
         </>
       ),
       collaborative: true,
+      repo: "https://github.com/ISPC-Soluciones/Bienestar-Plus",
     },
     {
       img: img12,
       title: "Administration Toolkit Jr.",
-      link: "https://github.com/CristianVellio/toolkit-linux",
       icon: <SiGnubash />,
       type: "Operating Systems",
       description: (
@@ -129,11 +156,11 @@ function Projects() {
         </>
       ),
       collaborative: true,
+      repo: "https://github.com/CristianVellio/toolkit-linux",
     },
     {
       img: img3,
       title: "Bookstore App",
-      link: "https://proyecto-libreria.vercel.app/",
       icon: <FaReact />,
       type: "Fullstack",
       description: (
@@ -154,11 +181,12 @@ function Projects() {
         </>
       ),
       collaborative: false,
+      link: "https://proyecto-libreria.vercel.app/",
+      repo: "https://github.com/CristianVellio/proyecto-Libreria",
     },
     {
       img: img2,
       title: "Meteorological Station",
-      link: "https://proyecto-clima-azure.vercel.app/",
       icon: <FaPython />,
       type: "Fullstack IoT",
       description: (
@@ -180,11 +208,12 @@ function Projects() {
         </>
       ),
       collaborative: true,
+      link: "https://proyecto-clima-azure.vercel.app/",
+      repo: "https://github.com/CristianVellio/proyecto_Clima",
     },
     {
       img: img7,
       title: "Voll Clinic",
-      link: "https://github.com/CristianVellio/api",
       icon: <SiSpring />,
       type: "API REST",
       description: (
@@ -203,11 +232,11 @@ function Projects() {
         </>
       ),
       collaborative: false,
+      repo: "https://github.com/CristianVellio/api",
     },
     {
       img: img9,
       title: "ForoHub",
-      link: "https://github.com/CristianVellio/FOROHUB",
       icon: <SiSpring />,
       type: "Backend",
       description: (
@@ -227,11 +256,11 @@ function Projects() {
         </>
       ),
       collaborative: false,
+      repo: "https://github.com/CristianVellio/FOROHUB",
     },
     {
       img: img8,
       title: "Screenmatch",
-      link: "https://github.com/CristianVellio/screenmatch",
       icon: <SiSpring />,
       type: "Backend",
       description: (
@@ -249,11 +278,11 @@ function Projects() {
         </>
       ),
       collaborative: false,
+      repo: "https://github.com/CristianVellio/screenmatch",
     },
     {
       img: img10,
       title: "LiterAlura",
-      link: "https://github.com/CristianVellio/LiterAlura",
       icon: <SiSpring />,
       type: "Backend",
       description: (
@@ -271,11 +300,11 @@ function Projects() {
         </>
       ),
       collaborative: false,
+      repo: "https://github.com/CristianVellio/LiterAlura",
     },
     {
       img: img4,
       title: "Currency Converter",
-      link: "https://github.com/CristianVellio/conversor-de-moneda",
       icon: <FaJava />,
       type: "Backend",
       description: (
@@ -294,11 +323,11 @@ function Projects() {
         </>
       ),
       collaborative: false,
+      repo: "https://github.com/CristianVellio/conversor-de-moneda",
     },
     {
       img: img6,
       title: "Portfolio",
-      link: "https://github.com/CristianVellio/PORT-FOLIO",
       icon: <FaReact />,
       type: "Frontend",
       description: (
@@ -318,11 +347,12 @@ function Projects() {
         </>
       ),
       collaborative: false,
+      link: "https://cristianvellio.vercel.app/",
+      repo: "https://github.com/CristianVellio/PORT-FOLIO",
     },
     {
       img: img1,
       title: "Text Encryptor",
-      link: "https://encrypter-oracle-one.vercel.app/",
       icon: <FaHtml5 />,
       type: "Frontend",
       description: (
@@ -340,11 +370,12 @@ function Projects() {
         </>
       ),
       collaborative: false,
+      link: "https://encrypter-oracle-one.vercel.app/",
+      repo: "https://github.com/CristianVellio/Oracle-ONE/tree/main/Challenge%201",
     },
     {
       img: img5,
       title: "Transportes X",
-      link: "https://transportex-x-utn-frba.netlify.app/",
       icon: <FaCss3 />,
       type: "Frontend",
       description: (
@@ -362,6 +393,8 @@ function Projects() {
         </>
       ),
       collaborative: false,
+      link: "https://transportex-x-utn-frba.netlify.app/",
+      repo: "https://github.com/CristianVellio/Proyecto-Integrador-UTN-FRBA-Inicial",
     },
   ];
 
