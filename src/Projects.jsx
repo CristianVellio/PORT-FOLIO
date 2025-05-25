@@ -12,6 +12,7 @@ import img11 from "./assets/Bienestar_Plus_Banner.png";
 import img12 from "./assets/toolkit_project.jpg";
 import { FaReact, FaJava, FaPython, FaHtml5, FaCss3 } from "react-icons/fa";
 import { useEffect } from "react";
+import PropTypes from "prop-types";
 import { SiAngular, SiGnubash, SiSpring } from "react-icons/si";
 import { Icon } from "@iconify/react";
 import AOS from "aos";
@@ -24,7 +25,6 @@ function Projects() {
       once: false,
     });
   }, []);
-
   function ProjectCard({
     img,
     title,
@@ -67,6 +67,16 @@ function Projects() {
       </a>
     );
   }
+
+  ProjectCard.propTypes = {
+    img: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+    icon: PropTypes.node.isRequired,
+    type: PropTypes.string.isRequired,
+    description: PropTypes.node.isRequired,
+    collaborative: PropTypes.bool,
+  };
 
   const projects = [
     {
