@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
-import img from "./assets/LOGO.png";
+import img from "./assets/img/logo/LOGO.webp";
 
 function Footer() {
   return (

@@ -1,6 +1,6 @@
-import img from "./assets/me.jpg";
-import CRISTIAN_VELLIO_RESUME from "./assets/CRISTIAN_VELLIO_RESUME.pdf";
-import CRISTIAN_VELLIO_CURRICULUM from "./assets/CRISTIAN_VELLIO_CURRICULUM.pdf";
+import img from "./assets/img/about/me.webp";
+import CRISTIAN_VELLIO_RESUME from "./assets/pdf/CRISTIAN_VELLIO_RESUME.pdf";
+import CRISTIAN_VELLIO_CURRICULUM from "./assets/pdf/CRISTIAN_VELLIO_CURRICULUM.pdf";
 
 function About() {
   return (

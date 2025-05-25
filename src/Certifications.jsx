@@ -8,13 +8,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import cert1 from "./assets/diplo_fullstack_UTN.jpg";
-import cert2 from "./assets/cs50.jpg";
-import cert3 from "./assets/utn_frontedn_developer.jpg";
-import cert4 from "./assets/Oracle_java_Spring_backend.jpg";
-import cert5 from "./assets/fullstack_python_cac.jpg";
-import cert6 from "./assets/Cambridge_FCE.jpg.png";
-import cert7 from "./assets/EF SET Certificate.jpg";
+import cert1 from "./assets/img/certificates/diplo_fullstack_UTN.webp";
+import cert2 from "./assets/img/certificates/cs50.webp";
+import cert3 from "./assets/img/certificates/utn_frontedn_developer.webp";
+import cert4 from "./assets/img/certificates/Oracle_java_Spring_backend.webp";
+import cert5 from "./assets/img/certificates/fullstack_python_cac.webp";
+import cert6 from "./assets/img/certificates/Cambridge_FCE.jpg.webp";
+import cert7 from "./assets/img/certificates/EF SET Certificate.webp";
 
 function Certifications() {
   const [selectedImage, setSelectedImage] = useState(null);
