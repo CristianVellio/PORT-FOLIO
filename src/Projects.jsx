@@ -17,6 +17,7 @@ import { SiAngular, SiGnubash, SiSpring } from "react-icons/si";
 import { Icon } from "@iconify/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 function Projects() {
   useEffect(() => {
@@ -38,57 +39,64 @@ function Projects() {
     return (
       <div
         data-aos="fade-up"
-        className="b_glow relative group w-full bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 max-w-sm mx-auto"
+        className="relative group w-full max-w-sm mx-auto bg-gray-800 shadow-lg"
       >
-        <div className="relative w-full h-48 overflow-hidden">
-          <img
-            src={img}
-            alt={title}
-            className="w-full h-full object-cover transition duration-300 group-hover:blur-sm"
+        <div className="absolute inset-0 pointer-events-none z-0">
+          <GlowingEffect
+            spread={40}
+            glow={true}
+            disabled={false}
+            proximity={64}
+            inactiveZone={0.01}
+            className="w-full h-full"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <div className="text-6xl text-primary mb-2 hover:text-secondary rounded-3xl p-1 b_glow">
-              {icon}
-            </div>
-            <h3 className="text-xl font-bold text-white">{title}</h3>
-          </div>
         </div>
-
-        {/* Card Body */}
-        <div className="p-4">
-          <span className="inline-block bg-secondary text-white text-xs px-2 py-1 rounded-full mb-2">
-            {type}
-          </span>
-          <p className="text-gray-300 text-sm select-text">{description}</p>
-
-          {collaborative && (
-            <span className="block text-quaternary text-xs mt-2">
-              Collaborative Project
+        <div className="relative z-10">
+          <div className="relative w-full h-48 overflow-hidden">
+            <img
+              src={img}
+              alt={title}
+              className="w-full h-full object-cover transition duration-300 group-hover:blur-sm"
+            />
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="text-6xl text-primary mb-2 hover:text-secondary rounded-3xl p-1">
+                {icon}
+              </div>
+              <h3 className="text-xl font-bold text-white">{title}</h3>
+            </div>
+          </div>
+          <div className="p-4">
+            <span className="inline-block bg-secondary text-white text-xs px-2 py-1 rounded-full mb-2">
+              {type}
             </span>
-          )}
-
-          {/* Links */}
-          <div className="mt-4 space-y-1">
-            {link && (
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-sm text-blue-400 hover:text-blue-300 transition duration-200"
-              >
-                Visit Deployed Demo →
-              </a>
+            <p className="text-gray-300 text-sm select-text">{description}</p>
+            {collaborative && (
+              <span className="block text-quaternary text-xs mt-2">
+                Collaborative Project
+              </span>
             )}
-            {repo && (
-              <a
-                href={repo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-sm text-blue-400 hover:text-blue-300 transition duration-200"
-              >
-                View GitHub Repository →
-              </a>
-            )}
+            <div className="mt-4 space-y-1">
+              {link && (
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-blue-400 hover:text-blue-300 transition duration-200"
+                >
+                  Visit Deployed Demo →
+                </a>
+              )}
+              {repo && (
+                <a
+                  href={repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-blue-400 hover:text-blue-300 transition duration-200"
+                >
+                  View GitHub Repository →
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ function About() {
       >
         <BackgroundGradient
           className="w-[290px] h-[290px] overflow-hidden"
-          containerClassName="p-[6px]"
+          containerClassName="p-[3px]"
         >
           <img
             src={img}
