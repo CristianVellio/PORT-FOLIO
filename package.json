@@ -14,6 +14,9 @@
     "@iconify-json/devicon": "^1.2.23",
     "@iconify/react": "^6.0.0",
     "aos": "^2.3.4",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.12.2",
+    "motion": "^12.12.2",
     "port-folio": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,7 +26,8 @@
     "react-scroll": "^1.9.0",
     "react-simple-typewriter": "^5.0.1",
     "sweetalert2": "^11.15.10",
-    "swiper": "^11.2.6"
+    "swiper": "^11.2.6",
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

@@ -1,10 +1,15 @@
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import img from "./assets/img/logo/LOGO.webp";
+import { forwardRef } from "react";
 
-function Footer() {
+const Footer = forwardRef((props, ref) => {
   return (
-    <footer className="bg-slate-800 text-white px-4 py-8 md:px-12 lg:px-48 border-t border-tertiary">
+    <footer
+      ref={ref}
+      {...props}
+      className="bg-slate-800 text-white px-4 py-8 md:px-12 lg:px-48 border-t border-tertiary"
+    >
       <div className="container flex flex-col lg:flex-row justify-between items-center mx-auto gap-4">
         <a href="/" rel="noopener noreferrer">
           <img
@@ -52,6 +57,8 @@ function Footer() {
       </div>
     </footer>
   );
-}
+});
+
+Footer.displayName = "Footer";
 
 export default Footer;
