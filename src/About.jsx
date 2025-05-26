@@ -1,6 +1,7 @@
 import img from "./assets/img/about/me.webp";
 import CRISTIAN_VELLIO_RESUME from "./assets/pdf/CRISTIAN_VELLIO_RESUME.pdf";
 import CRISTIAN_VELLIO_CURRICULUM from "./assets/pdf/CRISTIAN_VELLIO_CURRICULUM.pdf";
+import "aos/dist/aos.css";
 
 function About() {
   return (

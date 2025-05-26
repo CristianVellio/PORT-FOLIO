@@ -29,7 +29,10 @@ function Banner() {
       id="Banner"
       className="lg:px-56 px-10 lg:py-0 py-20 text-center lg:text-left gap-5 flex lg:flex-row flex-col-reverse justify-between items-center"
     >
-      <div className="h-full lg:py-40 flex flex-col justify-center items-center lg:items-start text-center lg:text-left text-tertiary">
+      <div
+        translate="no"
+        className="h-full lg:py-40 flex flex-col justify-center items-center lg:items-start text-center lg:text-left text-tertiary"
+      >
         <div className="w-full h-full flex justify-center lg:justify-start mb-8">
           <img
             src={brand_banner}

@@ -16,7 +16,8 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const bannerHeight = document.getElementById("Banner").offsetHeight;
+      const banner = document.getElementById("Banner");
+      const bannerHeight = banner?.offsetHeight || 0;
       setShowButton(window.scrollY > bannerHeight);
     };
     window.addEventListener("scroll", handleScroll);
