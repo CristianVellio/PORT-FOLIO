@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 function Banner() {
   const [text] = useTypewriter({
@@ -86,14 +87,16 @@ function Banner() {
         </div>
       </div>
       <div className="w-full h-full flex justify-center lg:justify-end mb-8 p-1 ml-4">
-        <img
-          data-aos="fade-up"
-          src={img}
-          width={290}
-          height={290}
-          className="rounded border-2 border-tertiary img_glow"
-          alt="Cristian Vellio"
-        />
+        <BackgroundGradient className="rounded-[22px]">
+          <img
+            data-aos="fade-up"
+            src={img}
+            width={290}
+            height={290}
+            className="rounded-[22px]"
+            alt="Cristian Vellio"
+          />
+        </BackgroundGradient>
       </div>
     </div>
   );
