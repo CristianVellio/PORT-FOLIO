@@ -6,21 +6,13 @@ import Footer from "./Footer";
 import Nav from "./Nav";
 import Projects from "./Projects";
 import Skills from "./Skills";
-// import { InfinitySpin } from "react-loader-spinner";
 import { FaArrowUp } from "react-icons/fa";
 import Certifications from "./Certifications";
-// import useRainEffect from "./RainEffect";
 
 function App() {
-  // useRainEffect();
-  // const [loading, setLoading] = useState(false);
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    // setLoading(true);
-    // setTimeout(() => {
-    //   setLoading(false);
-    // }, 1000);
     const handleScroll = () => {
       const bannerHeight = document.getElementById("Banner").offsetHeight;
       if (window.scrollY > bannerHeight) {
@@ -36,20 +28,6 @@ function App() {
   }, []);
   return (
     <>
-      {/* {loading ? (
-        <div className="bg-slate-900 h-[100vh] flex justify-center items-center">
-          (
-          <InfinitySpin
-            visible={true}
-            height={200}
-            width={200}
-            radius={5}
-            color="#F72585"
-            ariaLabel="infinity-spin-loading"
-          />
-          )
-        </div>
-      ) : ( */}
       <div className="bg-slate-900">
         <Nav />
         <Banner />
@@ -68,8 +46,6 @@ function App() {
           </button>
         )}
       </div>
-      {/* )
-      } */}
     </>
   );
 }
