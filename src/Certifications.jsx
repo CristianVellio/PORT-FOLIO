@@ -82,11 +82,11 @@ function Certifications() {
   return (
     <div
       id="Certifications"
-      className="p-2 flex flex-col items-center justify-center bg-slate-900"
+      className="p-2 lg:p-20 flex flex-col items-center justify-center"
     >
       <h2
         data-aos="fade-right"
-        className="text-[52px] font-semibold mb-20 leading-normal uppercase text-secondary"
+        className="text-[52px] text-center font-semibold mb-20 leading-normal uppercase text-secondary"
       >
         Certifications
       </h2>
