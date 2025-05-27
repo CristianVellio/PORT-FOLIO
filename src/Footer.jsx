@@ -21,7 +21,7 @@ const Footer = forwardRef((props, ref) => {
           />
         </a>
         <div className="text-center lg:text-left mb-4 lg:mb-0">
-          <p className="text-lg font-bold">Cristian Vellio&#169; 2025</p>
+          <p className="text-lg font-bold">&#169; 2025 Cristian Vellio </p>
         </div>
         <div className="text-center lg:text-left mb-4 lg:mb-0">
           <h3 className="text-xl font-semibold text-primary py-2 uppercase">
