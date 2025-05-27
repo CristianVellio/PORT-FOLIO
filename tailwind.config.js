@@ -6,7 +6,7 @@ export default {
       fontFamily: {
         tilt: ['"Tilt Neon"', "sans-serif"],
         serrat: ['"Montserrat"', "sans-serif"],
-        nunito: ['"Nunito"', "sans-serif"],
+        orbitron: ['"Orbitron"', "sans-serif"],
       },
       colors: {
         primary: "#F72585",

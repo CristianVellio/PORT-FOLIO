@@ -87,7 +87,7 @@ function Certifications() {
     >
       <h2
         data-aos="fade-right"
-        className="text-[52px] font-tilt text-center font-semibold mb-20 leading-normal uppercase text-secondary"
+        className="text-[52px] font-orbitron text-center font-semibold mb-20 leading-normal uppercase text-secondary"
       >
         Certifications
       </h2>

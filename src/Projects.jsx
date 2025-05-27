@@ -417,7 +417,7 @@ function Projects() {
     >
       <h2
         data-aos="fade-left"
-        className="font-tilt text-[52px] font-semibold mb-20 leading-normal uppercase text-secondary"
+        className="font-orbitron text-[52px] font-semibold mb-20 leading-normal uppercase text-secondary"
       >
         Projects
       </h2>

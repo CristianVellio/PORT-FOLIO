@@ -48,7 +48,7 @@ function Contact() {
     >
       <h2
         data-aos="fade-right"
-        className="font-tilt text-[52px] text-center w-full font-semibold mb-20 leading-normal uppercase text-secondary"
+        className="font-orbitron text-[52px] text-center w-full font-semibold mb-20 leading-normal uppercase text-secondary"
       >
         Contact Me
       </h2>
@@ -86,7 +86,7 @@ function Contact() {
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
         <button
-          className="neno-button shadow-xl hover:shadow-secondary/50 text-white border-2 border-tertiary bg-secondary hover:bg-secondary/50 rounded-lg py-4 px-8 my-6 uppercase relative overflow-hidden text-xl text-bold"
+          className="neno-button font-tilt shadow-xl hover:shadow-secondary/50 text-white border-2 border-tertiary bg-secondary hover:bg-secondary/50 rounded-lg py-4 px-8 my-6 uppercase relative overflow-hidden text-xl text-bold"
           type="submit"
         >
           Send

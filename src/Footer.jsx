@@ -26,7 +26,7 @@ const Footer = forwardRef((props, ref) => {
           </p>
         </div>
         <div className="text-center lg:text-left mb-4 lg:mb-0">
-          <h3 className="font-tilt text-xl font-semibold text-primary py-2 uppercase">
+          <h3 className="font-orbitron text-xl font-semibold text-primary py-2 uppercase">
             Formation as
           </h3>
           <ul className="font-serrat text-lg font-bold">
@@ -34,7 +34,7 @@ const Footer = forwardRef((props, ref) => {
           </ul>
         </div>
         <div className="text-center lg:text-left">
-          <h3 className="font-tilt text-xl font-semibold text-primary py-2 uppercase">
+          <h3 className="font-orbitron text-xl font-semibold text-primary py-2 uppercase">
             Find Me on
           </h3>
           <div className="flex justify-center lg:justify-start space-x-4">

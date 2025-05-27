@@ -20,7 +20,7 @@ function Nav() {
 
   return (
     <nav className="bg-slate-800 relative">
-      <div className="h-20 font-tilt flex justify-between text-white items-center px-4 lg:px-20 py-4 border-b border-tertiary">
+      <div className="h-20 font-orbitron flex justify-between text-white items-center px-4 lg:px-20 py-4 border-b border-tertiary">
         <div className="flex items-center  flex-1">
           <a href="/" rel="noopener noreferrer">
             <img
@@ -107,7 +107,7 @@ function Nav() {
               >
                 <FaTimesCircle />
               </button>
-              <ul className="space-y-6 text-xl font-bold text-white">
+              <ul className="space-y-6 text-xl font-orbitron font-bold text-white">
                 {[
                   "Home",
                   "About",
