@@ -45,6 +45,9 @@ La barra de navegación superior facilita el acceso rápido a las diferentes sec
 - Se han implementado efectos de animación utilizando AOS (Animate On Scroll), que añaden dinamismo al sitio. Estos efectos no solo hacen que el sitio sea visualmente más atractivo, sino que también guían al usuario a través del contenido de manera más efectiva.
 - Se utilizo React Typewriter Effect para el titulo.
 - Tambien un subrayado animado con forma de onda sinusoidal aparece al pasar el cursor sobre los enlaces del menú. La animación simula una ola de luz neón (#F72585) que fluye continuamente de izquierda a derecha, creada con un patrón SVG que se repite.
+- Bordes con **Glowing Effect** crea una linea iridiscente que sigue el contorno de las cartas en direccion al paso del puntero.
+- Bordes con **Background Gradient** crea un efecto futurista en las fotos y en las Certificaciones.
+- **Background Beans With Collision** crea un fonde con rayos cayendo que colisionan contra el Footer del sitio en una animacion.
 
 ### **2.9 Botón "Back to Top"**
 
@@ -131,6 +134,15 @@ AOS proporciona una manera fácil de añadir animaciones que se activan al despl
 </div>
 ```
 
+### **5.3 Aceternity UI**
+librería de componentes de interfaz de usuario (UI) innovadora y de código abierto, diseñada para desarrolladores que buscan crear sitios web y aplicaciones web visualmente impactantes y altamente interactivas con un mínimo esfuerzo.
+
+Se basa en tecnologías modernas como React, Next.js, Tailwind CSS y Framer Motion, lo que le permite ofrecer componentes preconstruidos con animaciones y efectos complejos que son fáciles de integrar y personalizar.
+
+De aqui se utilizaron los componentes:
+- Background Beans With Collision
+- Nackground Gradient
+- Glowing Effect
 
 
 ## **6. Stack Tecnológico**
@@ -141,8 +153,8 @@ AOS proporciona una manera fácil de añadir animaciones que se activan al despl
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="20" height="20"/> Tailwind CSS
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="20" height="20"/> HTML5
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="20" height="20"/>CSS3 
-- **Animaciones**: AOS
-- **Navegación y UI**: React Scroll, React Icons
+- **Animaciones**: AOS, Framer Motion
+- **Navegación y UI**: React Scroll, React Icons, Aceternity UI
 
 
 
