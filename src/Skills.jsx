@@ -129,7 +129,7 @@ function Skills() {
     <div id="Skills" className="p-20 flex flex-col items-center justify-center">
       <h2
         data-aos="fade-right"
-        className="text-[52px] text-center font-semibold mb-20 leading-normal uppercase text-secondary"
+        className="text-[52px] font-tilt text-center font-semibold mb-20 leading-normal uppercase text-secondary"
       >
         Favorite Stacks
       </h2>
@@ -162,7 +162,7 @@ function Skills() {
                   icon={skill.icon}
                   className="skill-icon text-[80px] text-tertiary hover:text-secondary"
                 />
-                <p className="text-lg font-medium text-secondary mt-2">
+                <p className="text-lg font-medium text-secondary mt-2 font-serrat">
                   {skill.name}
                 </p>
               </a>

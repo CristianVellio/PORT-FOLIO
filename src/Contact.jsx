@@ -48,7 +48,7 @@ function Contact() {
     >
       <h2
         data-aos="fade-right"
-        className="text-[52px] text-center w-full font-semibold mb-20 leading-normal uppercase text-secondary"
+        className="font-tilt text-[52px] text-center w-full font-semibold mb-20 leading-normal uppercase text-secondary"
       >
         Contact Me
       </h2>
@@ -56,7 +56,7 @@ function Contact() {
       <form
         ref={form}
         onSubmit={handleSubmit}
-        className="flex flex-col gap-3 lg:w-1/2"
+        className="flex flex-col gap-3 lg:w-1/2 font-serrat"
       >
         <div className="lg:flex gap-6">
           <input

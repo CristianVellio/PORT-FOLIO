@@ -28,11 +28,14 @@ function About() {
       <div className="h-full lg:py-40 flex flex-col justify-center lg:items-center items-center text-white">
         <h2
           data-aos="fade-right"
-          className="text-[52px] font-semibold mb-8 leading-normal text-secondary uppercase"
+          className="text-[52px] font-tilt font-semibold mb-8 leading-normal text-secondary uppercase"
         >
           About Me
         </h2>
-        <p data-aos="fade-left" className="text-justify text-lg leading-8">
+        <p
+          data-aos="fade-left"
+          className="font-serrat text-justify text-lg leading-8"
+        >
           I’m a Software Developer with a love for turning ideas into
           experiences through technology. With a strong base in full-stack
           development and a background in both technical and creative fields, I
@@ -51,7 +54,7 @@ function About() {
         <div className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
             <div className="flex space-x-2"></div>
-            <button className="neno-button shadow-xl hover:shadow-secondary/50  text-white border-2 hover:bg-secondary border-tertiary rounded-lg py-4 px-8 uppercase relative overflow-hidden ">
+            <button className="neno-button shadow-xl hover:shadow-secondary/50  text-white border-2 hover:bg-secondary border-tertiary rounded-lg py-4 px-8 uppercase font-serrat relative overflow-hidden ">
               <a
                 href={CRISTIAN_VELLIO_RESUME}
                 download="CRISTIAN_VELLIO_RESUME"
@@ -64,7 +67,7 @@ function About() {
         <div className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
             <div className="flex space-x-2"></div>
-            <button className="neno-button shadow-xl hover:shadow-secondary/50  text-white border-2 hover:bg-secondary border-tertiary rounded-lg py-4 px-8 uppercase relative overflow-hidden ">
+            <button className="neno-button shadow-xl font-serrat hover:shadow-secondary/50  text-white border-2 hover:bg-secondary border-tertiary rounded-lg py-4 px-8 uppercase relative overflow-hidden ">
               <a
                 href={CRISTIAN_VELLIO_CURRICULUM}
                 download="CRISTIAN_VELLIO_CURRICULUM"

@@ -87,7 +87,7 @@ function Certifications() {
     >
       <h2
         data-aos="fade-right"
-        className="text-[52px] text-center font-semibold mb-20 leading-normal uppercase text-secondary"
+        className="text-[52px] font-tilt text-center font-semibold mb-20 leading-normal uppercase text-secondary"
       >
         Certifications
       </h2>
@@ -123,11 +123,11 @@ function Certifications() {
                     className="w-full h-48 object-contain mb-6 transition-transform duration-300"
                   />
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-primary mb-2">
+                    <h3 className="font-tilt text-xl font-bold text-primary mb-2">
                       {cert.title}
                     </h3>
-                    <p className="text-tertiary">{cert.issuer}</p>
-                    <p className="text-quaternary">{cert.year}</p>
+                    <p className="text-tertiary font-serrat">{cert.issuer}</p>
+                    <p className="text-quaternary font-serrat">{cert.year}</p>
                   </div>
                 </div>
               </BackgroundGradient>

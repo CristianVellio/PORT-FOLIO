@@ -20,7 +20,7 @@ function Nav() {
 
   return (
     <nav className="bg-slate-800 relative">
-      <div className="h-20 flex justify-between text-white items-center px-4 lg:px-20 py-4 border-b border-tertiary">
+      <div className="h-20 font-tilt flex justify-between text-white items-center px-4 lg:px-20 py-4 border-b border-tertiary">
         <div className="flex items-center  flex-1">
           <a href="/" rel="noopener noreferrer">
             <img

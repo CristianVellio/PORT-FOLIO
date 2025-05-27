@@ -62,16 +62,20 @@ function Projects() {
               <div className="text-6xl text-primary mb-2 hover:text-secondary rounded-3xl p-1">
                 {icon}
               </div>
-              <h3 className="text-xl font-bold text-white">{title}</h3>
+              <h3 className="font-tilt text-xl font-bold text-white">
+                {title}
+              </h3>
             </div>
           </div>
           <div className="p-4">
-            <span className="inline-block bg-secondary text-white text-xs px-2 py-1 rounded-full mb-2">
+            <span className="inline-block bg-secondary text-white font-tilt text-xs px-2 py-1 rounded-full mb-2">
               {type}
             </span>
-            <p className="text-gray-300 text-sm select-text">{description}</p>
+            <p className="text-gray-300 font-serrat text-sm select-text">
+              {description}
+            </p>
             {collaborative && (
-              <span className="block text-quaternary text-xs mt-2">
+              <span className="font-tilt block text-quaternary text-xs mt-2">
                 Collaborative Project
               </span>
             )}
@@ -81,7 +85,7 @@ function Projects() {
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-sm text-blue-400 hover:text-blue-300 transition duration-200"
+                  className="font-serrat block text-sm text-blue-400 hover:text-blue-300 transition duration-200"
                 >
                   Visit Deployed Demo →
                 </a>
@@ -91,7 +95,7 @@ function Projects() {
                   href={repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-sm text-blue-400 hover:text-blue-300 transition duration-200"
+                  className="font-serrat block text-sm text-blue-400 hover:text-blue-300 transition duration-200"
                 >
                   View GitHub Repository →
                 </a>
@@ -413,7 +417,7 @@ function Projects() {
     >
       <h2
         data-aos="fade-left"
-        className="text-[52px] font-semibold mb-20 leading-normal uppercase text-secondary"
+        className="font-tilt text-[52px] font-semibold mb-20 leading-normal uppercase text-secondary"
       >
         Projects
       </h2>

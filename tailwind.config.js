@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         tilt: ['"Tilt Neon"', "sans-serif"],
+        serrat: ['"Montserrat"', "sans-serif"],
+        nunito: ['"Nunito"', "sans-serif"],
       },
       colors: {
         primary: "#F72585",

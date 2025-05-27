@@ -21,18 +21,20 @@ const Footer = forwardRef((props, ref) => {
           />
         </a>
         <div className="text-center lg:text-left mb-4 lg:mb-0">
-          <p className="text-lg font-bold">&#169; 2025 Cristian Vellio </p>
+          <p className="text-lg font-bold font-serrat">
+            &#169; 2025 Cristian Vellio{" "}
+          </p>
         </div>
         <div className="text-center lg:text-left mb-4 lg:mb-0">
-          <h3 className="text-xl font-semibold text-primary py-2 uppercase">
+          <h3 className="font-tilt text-xl font-semibold text-primary py-2 uppercase">
             Formation as
           </h3>
-          <ul className="text-lg font-bold">
-            <li className="my-2">Software Developer</li>
+          <ul className="font-serrat text-lg font-bold">
+            <li className="font-serrat my-2">Software Developer</li>
           </ul>
         </div>
         <div className="text-center lg:text-left">
-          <h3 className="text-xl font-semibold text-primary py-2 uppercase">
+          <h3 className="font-tilt text-xl font-semibold text-primary py-2 uppercase">
             Find Me on
           </h3>
           <div className="flex justify-center lg:justify-start space-x-4">
