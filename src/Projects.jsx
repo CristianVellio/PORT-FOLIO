@@ -39,7 +39,7 @@ function Projects() {
     return (
       <div
         data-aos="fade-up"
-        className="relative group w-full max-w-sm mx-auto bg-gray-800 shadow-lg"
+        className="relative group w-full max-w-sm mx-auto bg-gray-800 shadow-lg flex flex-col h-full"
       >
         <div className="absolute inset-0 pointer-events-none z-0">
           <GlowingEffect
@@ -51,7 +51,7 @@ function Projects() {
             className="w-full h-full"
           />
         </div>
-        <div className="relative z-10">
+        <div className="relative z-10 flex flex-col h-full">
           <div className="relative w-full h-48 overflow-hidden">
             <img
               src={img}
@@ -67,11 +67,11 @@ function Projects() {
               </h3>
             </div>
           </div>
-          <div className="p-4">
-            <span className="inline-block bg-secondary text-white font-tilt text-xs px-2 py-1 rounded-full mb-2">
+          <div className="p-4 flex-grow flex flex-col">
+            <span className="inline-block text-center bg-secondary text-white font-tilt text-xs px-2 py-1 rounded-full mb-2">
               {type}
             </span>
-            <p className="text-gray-300 font-serrat text-sm select-text">
+            <p className="text-gray-300 font-serrat text-justify text-sm select-text flex-grow">
               {description}
             </p>
             {collaborative && (
@@ -133,12 +133,13 @@ function Projects() {
             width="24"
             height="24"
           />
-          Bienestar+ is a web application focused on physical, mental, and
-          emotional well-being. It allows users to manage healthy habits, access
-          mental health resources, and receive personalized recommendations to
-          improve their quality of life. Developed by students of the Software
-          Development program, at the Higher Polytechnic Institute of Cordoba
-          (ISPC), with Agile Methodologies Scrum.
+          <br /> Bienestar+ is a web application focused on physical, mental,
+          and emotional well-being. It allows users to manage healthy habits,
+          access mental health resources, and receive personalized
+          recommendations to improve their quality of life. <br /> Developed by
+          students of the Software Development program, at the Higher
+          Polytechnic Institute of Cordoba (ISPC), with Agile Methodologies
+          Scrum.
         </>
       ),
       collaborative: true,
@@ -158,13 +159,13 @@ function Projects() {
             width="24"
             height="24"
           />
-          The Administration Toolkit Jr. is a command-line utility developed in
-          Bash scripting for Linux-based systems (Ubuntu/Debian). It provides a
-          user-friendly text-based menu interface that allows junior system
-          administrators to perform essential system monitoring and management
-          tasks without requiring advanced Linux knowledge. Developed by
-          students of the Software Development program at the Higher Polytechnic
-          Institute of Cordoba (ISPC).
+          <br /> The Administration Toolkit Jr. is a command-line utility
+          developed in Bash scripting for Linux-based systems (Ubuntu/Debian).
+          <br /> It provides a user-friendly text-based menu interface that
+          allows junior system administrators to perform essential system
+          monitoring and management tasks without requiring advanced Linux
+          knowledge. <br /> Developed by students of the Software Development
+          program at the Higher Polytechnic Institute of Cordoba (ISPC).
         </>
       ),
       collaborative: true,
@@ -184,12 +185,13 @@ function Projects() {
             width="24"
             height="24"
           />
-          The Bookstore project is a modern web platform for book management and
-          sales. Designed for both end users and administrators, this
-          application allows users to explore books, add them to their cart, and
-          make purchases. For administrators, it provides complete CRUD
-          functionalities to manage the library. Final Project of FullStack
-          Developer program at the National University of Technology (UTN).
+          <br /> The Bookstore project is a modern web platform for book
+          management and sales. Designed for both end users and administrators,
+          this application allows users to explore books, add them to their
+          cart, and make purchases. For administrators, it provides complete
+          CRUD functionalities to manage the library. <br /> Final Project of
+          FullStack Developer program at the National University of Technology
+          (UTN).
         </>
       ),
       collaborative: false,
@@ -210,11 +212,12 @@ function Projects() {
             width="24"
             height="24"
           />
-          The Meteorological Station project is an IoT system designed to
-          monitor and record real-time weather conditions. It uses a Supabase
-          database to store data and an interactive frontend for visualization.
-          It combines simulation, integration, and web development to offer a
-          modern and scalable solution. Developed by students of the Software
+          <br /> The Meteorological Station project is an IoT system designed to
+          monitor and record real-time weather conditions. <br /> It uses a
+          Supabase database to store data and an interactive frontend for
+          visualization of the data collected by Wokwi. <br /> It combines
+          simulation, integration, and web development to offer a modern and
+          scalable solution. <br /> Developed by students of the Software
           Development program at the Higher Polytechnic Institute of Cordoba
           (ISPC).
         </>
@@ -237,10 +240,11 @@ function Projects() {
             width="24"
             height="24"
           />
-          Voll Med Clinic API is a RESTful service built with Spring Boot for
-          managing clinic operations, including authentication, user management,
-          and medical data handling. It uses JWT authentication for security and
-          integrates with MySQL for persistent data storage.
+          <br /> Voll Med Clinic API is a RESTful service built with Spring Boot
+          for managing clinic operations, including authentication, user
+          management, and medical data handling. <br /> It uses JWT
+          authentication for security and integrates with MySQL for persistent
+          data storage.
         </>
       ),
       collaborative: false,
@@ -260,11 +264,11 @@ function Projects() {
             width="24"
             height="24"
           />
-          ForoHub is a RESTful web application built using Spring Boot, designed
-          to facilitate the creation of topics and publication of responses
-          within a user-centric forum. The application includes robust security
-          features, user management, and a modular design to ensure scalability
-          and maintainability.
+          <br /> ForoHub is a RESTful web application built using Spring Boot,
+          designed to facilitate the creation of topics and publication of
+          responses within a user-centric forum. <br /> The application includes
+          robust security features, user management, and a modular design to
+          ensure scalability and maintainability.
         </>
       ),
       collaborative: false,
@@ -284,8 +288,8 @@ function Projects() {
             width="24"
             height="24"
           />
-          Screenmatch is a Spring Boot-based Java application designed as an
-          introductory project for working with the framework. It leverages
+          <br /> Screenmatch is a Spring Boot-based Java application designed as
+          an introductory project for working with the framework. It leverages
           several key technologies.
         </>
       ),
@@ -306,8 +310,8 @@ function Projects() {
             width="24"
             height="24"
           />
-          LiterAlura is a book management application developed in Java with
-          Spring Boot. It allows you to manage a digital library with
+          <br /> LiterAlura is a book management application developed in Java
+          with Spring Boot. It allows you to manage a digital library with
           information about books, authors, and languages.
         </>
       ),
@@ -328,8 +332,8 @@ function Projects() {
             width="24"
             height="24"
           />
-          The Currency Converter is an application designed to perform currency
-          conversions in a simple and efficient way. The project allows
+          <br /> The Currency Converter is an application designed to perform
+          currency conversions in a simple and efficient way. The project allows
           conversion between different currencies using up-to-date data provided
           by a third-party API.
         </>
@@ -351,11 +355,12 @@ function Projects() {
             width="24"
             height="24"
           />
-          This personal web portfolio is designed to showcase skills, projects,
-          and provide a means of contact for potential employers or
-          collaborators. The website is built with Vite, React, and Tailwind
-          CSS, featuring a modern and responsive design, with animations that
-          enhance the user experience.
+          <br /> This personal web portfolio is designed to showcase skills,
+          projects, and provide a means of contact for potential employers or
+          collaborators.
+          <br /> The website is built with Vite, React, and Tailwind CSS,
+          featuring a modern and responsive design, with animations that enhance
+          the user experience.
         </>
       ),
       collaborative: false,
@@ -376,9 +381,9 @@ function Projects() {
             width="24"
             height="24"
           />
-          Solo challenge creating an application that encrypts texts, so you can
-          exchange secret messages with other people who know the encryption key
-          used.
+          <br /> Solo challenge creating an application that encrypts texts, so
+          you can exchange secret messages with other people who know the
+          encryption key used.
         </>
       ),
       collaborative: false,
@@ -399,7 +404,7 @@ function Projects() {
             width="24"
             height="24"
           />
-          First solo project creating a static, MPA of three sections,
+          <br /> First solo project creating a static, MPA of three sections,
           responsive Website using HTML; CSS correct use of Flexbox or CSS Grid;
           Bootstrap as an alternative to our layout.
         </>
