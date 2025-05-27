@@ -114,18 +114,20 @@ function Certifications() {
                 containerClassName="h-full"
               >
                 <div
-                  className="flex flex-col items-center bg-gray-900 rounded-3xl p-4 cursor-pointer h-full"
+                  className="flex flex-col items-center justify-between bg-gray-900 rounded-3xl p-4 cursor-pointer h-full"
                   onClick={() => handleImageClick(cert.img)}
                 >
-                  <img
-                    src={cert.img}
-                    alt={cert.title}
-                    className="w-full h-48 object-contain mb-6 transition-transform duration-300"
-                  />
-                  <div className="text-center">
-                    <h3 className="font-tilt text-xl font-bold text-primary mb-2">
+                  <div className="w-full">
+                    <img
+                      src={cert.img}
+                      alt={cert.title}
+                      className="w-full h-48 object-contain mb-4 transition-transform duration-300"
+                    />
+                    <h3 className="font-tilt text-xl font-bold text-primary mb-2 text-center">
                       {cert.title}
                     </h3>
+                  </div>
+                  <div className="w-full text-center mt-auto">
                     <p className="text-tertiary font-serrat">{cert.issuer}</p>
                     <p className="text-quaternary font-serrat">{cert.year}</p>
                   </div>
