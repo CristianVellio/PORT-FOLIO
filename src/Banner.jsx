@@ -86,10 +86,12 @@ function Banner() {
           </a>
         </div>
       </div>
-      <div className="w-full h-full flex justify-center lg:justify-end mb-8 p-1 ml-4">
+      <div
+        data-aos="fade-up"
+        className="w-full h-full flex justify-center lg:justify-end mb-8 p-1 ml-4"
+      >
         <BackgroundGradient className="rounded-[22px]">
           <img
-            data-aos="fade-up"
             src={img}
             width={290}
             height={290}
