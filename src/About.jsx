@@ -32,26 +32,21 @@ function About() {
         >
           About Me
         </h2>
-        <p data-aos="fade-left" className="text-align: justify;">
-          I am a Software Developer with a solid foundation in full-stack web
-          development. I graduated from the Full-Stack Web Developer program at
-          the National University of Technology, Buenos Aires (UTN-BA), and I’m
-          currently pursuing a Bachelor’s in Software Development at the Higher
-          Polytechnic Institute of Córdoba (ISPC), where I am a sophomore in my
-          third semester. Additionally, I hold an Associate’s Programmer degree,
-          specializing in Python, from the ISPC. <br /> My diverse background
-          includes a high school diploma in Arts, Communications, and Design,
-          and I previously pursued a master in Modern Literature. These
-          experiences have enriched my creative problem-solving skills, which I
-          now apply in the IT and programming world. My passion for technology
-          began early: I completed my first Junior PC Operator course at age 12,
-          even without owning a computer at the time. <br /> I am a
-          self-motivated and empathetic individual who thrives in collaborative
-          environments. I enjoy learning from others, sharing knowledge, and
-          tackling challenges head-on. My journey reflects my deep enthusiasm
-          for the IT field and my pride in evolving into a dedicated Developer.
-          <br />I look forward to potential collaborations or working with you
-          in the future.
+        <p data-aos="fade-left" className="text-justify text-lg leading-8">
+          I’m a Software Developer with a love for turning ideas into
+          experiences through technology. With a strong base in full-stack
+          development and a background in both technical and creative fields, I
+          aim to build applications that are not only functional but thoughtful.{" "}
+          <br />
+          My academic path includes a Full-Stack Web Developer diploma from
+          UTN-BA, a Python-based Associate’s degree, and ongoing studies in
+          Software Development at ISPC. But just as important are the years I
+          spent exploring Arts and Literature—they shape how I think, solve
+          problems, and communicate. <br /> I believe in clean code, lifelong
+          learning, and collaboration over competition. Every challenge is a
+          chance to grow, and I’m always excited to contribute, learn, and
+          create. <br /> Thanks for stopping by—I look forward to working
+          together.
         </p>
         <div className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
