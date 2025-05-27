@@ -46,7 +46,7 @@ function App() {
 
         {showButton && (
           <button
-            className="neno-button shadow-xl hover:primary/50 text-white border-2 border-tertiary bg-secondary hover:bg-secondary rounded-full font-bold py-1 px-1.5 my-3 fixed right-5 bottom-5 b_glow text-xl"
+            className="neno-button shadow-xl hover:primary/50 text-white border-2 border-tertiary bg-secondary hover:bg-secondary rounded-full font-bold py-1 px-1.5 my-3 fixed right-5 bottom-5 text-sm z-10"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             <FaArrowUp className="top-button text-[30px]" />

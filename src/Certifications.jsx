@@ -7,6 +7,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 import cert1 from "./assets/img/certificates/diplo_fullstack_UTN.webp";
 import cert2 from "./assets/img/certificates/cs50.webp";
@@ -108,24 +109,28 @@ function Certifications() {
         >
           {certifications.map((cert, index) => (
             <SwiperSlide key={index}>
-              <div
-                data-aos="fade-up"
-                className="h-full flex flex-col items-center p-1 border-2 rounded-3xl c_glow cursor-pointer"
-                onClick={() => handleImageClick(cert.img)}
+              <BackgroundGradient
+                className="rounded-3xl h-full"
+                containerClassName="h-full"
               >
-                <img
-                  src={cert.img}
-                  alt={cert.title}
-                  className="w-full h-48 object-contain mb-6 transition-transform duration-300"
-                />
-                <div className="text-center">
-                  <h3 className="text-xl font-bold text-primary mb-2">
-                    {cert.title}
-                  </h3>
-                  <p className="text-tertiary">{cert.issuer}</p>
-                  <p className="text-quaternary">{cert.year}</p>
+                <div
+                  className="flex flex-col items-center bg-gray-900 rounded-3xl p-4 cursor-pointer h-full"
+                  onClick={() => handleImageClick(cert.img)}
+                >
+                  <img
+                    src={cert.img}
+                    alt={cert.title}
+                    className="w-full h-48 object-contain mb-6 transition-transform duration-300"
+                  />
+                  <div className="text-center">
+                    <h3 className="text-xl font-bold text-primary mb-2">
+                      {cert.title}
+                    </h3>
+                    <p className="text-tertiary">{cert.issuer}</p>
+                    <p className="text-quaternary">{cert.year}</p>
+                  </div>
                 </div>
-              </div>
+              </BackgroundGradient>
             </SwiperSlide>
           ))}
         </Swiper>

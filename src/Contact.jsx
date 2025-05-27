@@ -60,7 +60,7 @@ function Contact() {
       >
         <div className="lg:flex gap-6">
           <input
-            className="w-full lg:my-3 my-6 rounded-lg bg-slate-800 border-tertiary p-4 border-2 b_glow text-xl text-slate-500"
+            className="w-full lg:my-3 my-6 rounded-lg bg-slate-800 border-tertiary p-4 border-2 text-xl text-slate-500"
             placeholder="Enter Your Name"
             type="text"
             name="user_name"
@@ -68,7 +68,7 @@ function Contact() {
             onChange={(e) => setName(e.target.value)}
           />
           <input
-            className="w-full lg:my-3 my-6 rounded-lg bg-slate-800 border-tertiary p-4 border-2 b_glow text-xl text-slate-500"
+            className="w-full lg:my-3 my-6 rounded-lg bg-slate-800 border-tertiary p-4 border-2 text-xl text-slate-500"
             placeholder="Enter Your Email"
             type="email"
             name="user_email"
@@ -77,16 +77,16 @@ function Contact() {
           />
         </div>
         <textarea
-          className="w-full my-3 rounded-lg bg-slate-800 border-tertiary p-4 border-2 b_glow text-xl text-slate-500"
+          className="w-full my-3 rounded-lg bg-slate-800 border-tertiary p-4 border-2 text-xl text-slate-500"
           placeholder="Write me a Message..."
           name="message"
-          cols="20"
-          rows="10"
+          cols="10"
+          rows="7"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
         <button
-          className="neno-button shadow-xl hover:shadow-secondary/50 text-white border-2 border-tertiary bg-secondary hover:bg-secondary/50 rounded-lg py-4 px-8 my-6 uppercase relative overflow-hidden b_glow text-xl text-bold"
+          className="neno-button shadow-xl hover:shadow-secondary/50 text-white border-2 border-tertiary bg-secondary hover:bg-secondary/50 rounded-lg py-4 px-8 my-6 uppercase relative overflow-hidden text-xl text-bold"
           type="submit"
         >
           Send
