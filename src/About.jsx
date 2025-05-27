@@ -44,7 +44,7 @@ function About() {
           My academic path includes a Full-Stack Web Developer diploma from
           UTN-BA, a Python-based Associate’s degree, and ongoing studies in
           Software Development at ISPC. But just as important are the years I
-          spent exploring Arts and Literature—they shape how I think, solve
+          spent exploring Arts and Literature; they shape how I think, solve
           problems, and communicate. <br /> I believe in clean code, lifelong
           learning, and collaboration over competition. Every challenge is a
           chance to grow, and I’m always excited to contribute, learn, and
