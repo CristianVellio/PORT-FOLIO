@@ -153,8 +153,8 @@ De aqui se utilizaron los componentes:
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="20" height="20"/> Tailwind CSS
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="20" height="20"/> HTML5
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="20" height="20"/>CSS3 
-- **Animaciones**: AOS
-- **Navegación y UI**: React Scroll, React Icons
+- **Animaciones**: AOS, Framer Motion
+- **Navegación y UI**: React Scroll, React Icons, Aceternity UI
 
 
 
