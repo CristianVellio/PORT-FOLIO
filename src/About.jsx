@@ -48,7 +48,7 @@ function About() {
           problems, and communicate. <br /> I believe in clean code, lifelong
           learning, and collaboration over competition. Every challenge is a
           chance to grow, and I’m always excited to contribute, learn, and
-          create. <br /> Thanks for stopping by—I look forward to working
+          create. <br /> Thanks for stopping by. I look forward to working
           together.
         </p>
         <div className="flex mt-8 gap-2">
