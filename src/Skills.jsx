@@ -208,7 +208,7 @@ function Skills() {
                   icon={skill.icon}
                   className="skill-icon text-[40px] text-tertiary hover:text-secondary"
                 />
-                <p className="text-xs md:text-sm font-bold text-white mt-2 font-tilt whitespace-nowrap">
+                <p translate="no" className="text-xs md:text-sm font-bold text-white mt-2 font-tilt whitespace-nowrap">
                   {skill.name}
                 </p>
               </a>

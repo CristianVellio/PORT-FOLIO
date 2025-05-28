@@ -128,7 +128,9 @@ function Certifications() {
                     </h3>
                   </div>
                   <div className="w-full text-center mt-auto">
-                    <p className="text-tertiary font-serrat">{cert.issuer}</p>
+                    <p translate="no" className="text-tertiary font-serrat">
+                      {cert.issuer}
+                    </p>
                     <p className="text-quaternary font-serrat">{cert.year}</p>
                   </div>
                 </div>
