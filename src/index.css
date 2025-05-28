@@ -89,7 +89,7 @@ body.menu-open {
 }
 
 .swiper-pagination {
-  margin-top: 2rem; /* o 1.5rem, según prefieras */
+  margin-top: 2rem;
   position: relative;
   z-index: 10;
 }
@@ -156,11 +156,11 @@ body.menu-open {
 
 .skill-icon {
   transition: all 0.3s ease-in-out;
+  filter: drop-shadow(0 0 8px #4cc9f0aa);
 }
 
 .skill-icon:hover {
   transform: scale(1.1);
-  filter: drop-shadow(0 0 8px #4cc9f0aa);
 }
 
 @layer utilities {
