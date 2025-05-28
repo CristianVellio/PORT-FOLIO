@@ -123,10 +123,10 @@ function Skills() {
 
   const cylinderWidth = isMobile ? 800 : 1500;
   const faceCount = skills.length;
-  const faceWidth = (cylinderWidth / faceCount) * 0.7;
-  const radius = (cylinderWidth / (2 * Math.PI)) * (isMobile ? 2.5 : 2.2);
+  const faceWidth = (cylinderWidth / faceCount) * 0.5;
+  const radius = (cylinderWidth / (2 * Math.PI)) * (isMobile ? 2.1 : 1.7);
 
-  const dragFactor = 0.01;
+  const dragFactor = 0.03;
   const rotation = useMotionValue(0);
   const controls = useAnimation();
   const transform = useTransform(
@@ -206,9 +206,12 @@ function Skills() {
               >
                 <Icon
                   icon={skill.icon}
-                  className="skill-icon text-[40px] text-tertiary hover:text-secondary"
+                  className="skill-icon text-[30px] md:text-[35px] lg:text-[40px] text-tertiary hover:text-secondary"
                 />
-                <p translate="no" className="text-xs md:text-sm font-bold text-white mt-2 font-tilt whitespace-nowrap">
+                <p
+                  translate="no"
+                  className="text-xs md:text-sm lg:text-sm font-bold text-white mt-2 font-tilt whitespace-nowrap"
+                >
                   {skill.name}
                 </p>
               </a>
