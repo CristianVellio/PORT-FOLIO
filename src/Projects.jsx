@@ -68,14 +68,14 @@ function Projects() {
             </div>
           </div>
           <div className="p-4 flex-grow flex flex-col">
-            <span className="inline-block text-center bg-secondary text-white font-tilt text-xs px-2 py-1 rounded-full mb-2">
+            <span className="inline-block text-center font-bold bg-secondary text-white font-serrat text-sm px-2 py-1 rounded-full mb-2">
               {type}
             </span>
             <p className="text-gray-300 font-serrat text-justify text-sm select-text flex-grow">
               {description}
             </p>
             {collaborative && (
-              <span className="font-tilt block text-quaternary text-xs mt-2">
+              <span className="font-tilt block text-quaternary text-sm mt-2">
                 Collaborative Project
               </span>
             )}
