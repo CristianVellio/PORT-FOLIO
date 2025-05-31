@@ -4,6 +4,7 @@ import img from "./assets/img/logo/LOGO.webp";
 import { forwardRef } from "react";
 
 const Footer = forwardRef((props, ref) => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer
       ref={ref}
@@ -22,7 +23,7 @@ const Footer = forwardRef((props, ref) => {
         </a>
         <div className="text-center lg:text-left mb-4 lg:mb-0">
           <p className="text-lg font-bold font-serrat">
-            &#169; 2025 Cristian Vellio{" "}
+            &#169; {currentYear} Cristian Vellio{" "}
           </p>
         </div>
         <div className="text-center lg:text-left mb-4 lg:mb-0">
