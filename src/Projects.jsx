@@ -149,7 +149,7 @@ function Projects() {
       img: img12,
       title: "Administration Toolkit Jr.",
       icon: <SiGnubash />,
-      type: "Operating Systems",
+      type: "Scripting",
       description: (
         <>
           {" "}
