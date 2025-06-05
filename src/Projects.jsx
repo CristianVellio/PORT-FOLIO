@@ -114,7 +114,7 @@ function Projects() {
     type: PropTypes.string.isRequired,
     description: PropTypes.node.isRequired,
     collaborative: PropTypes.bool,
-    link: PropTypes.string.isRequired,
+    link: PropTypes.string,
     repo: PropTypes.string,
   };
 
