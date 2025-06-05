@@ -1,4 +1,4 @@
-import img from "./assets/img/about/me.webp";
+import img from "./assets/img/about/Ome.webp";
 import CRISTIAN_VELLIO_RESUME from "./assets/pdf/CRISTIAN_VELLIO_RESUME.pdf";
 import CRISTIAN_VELLIO_CURRICULUM from "./assets/pdf/CRISTIAN_VELLIO_CURRICULUM.pdf";
 import { BackgroundGradient } from "@/components/ui/background-gradient";

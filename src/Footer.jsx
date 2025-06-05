@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
-import img from "./assets/img/logo/LOGO.webp";
+import img from "./assets/img/logo/OLOGO.webp";
 import { forwardRef } from "react";
 
 const Footer = forwardRef((props, ref) => {

@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
-import img from "./assets/img/banner/EVERYONE_FLOATS.webp";
-import brand_banner from "./assets/img/banner/brand_banner.webp";
+import img from "./assets/img/banner/OEVERYONE_FLOATS.webp";
+import brand_banner from "./assets/img/banner/Obrand_banner.webp";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 

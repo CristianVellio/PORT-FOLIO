@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { FaTimesCircle } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
-import img from "./assets/img/logo/LOGO.webp";
+import img from "./assets/img/logo/OLOGO.webp";
 
 function Nav() {
   const [click, setClick] = useState(false);
