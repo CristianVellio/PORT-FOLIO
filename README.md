@@ -67,6 +67,7 @@ El proyecto utiliza las siguientes tecnologías y herramientas:
 - **TypewriterReact:** Se utiliza para implementar animaciones y dar el fecto de maquina de escribir en el titulo.
 - **Swiper Js:** Permite una navegacion de desplazamiento estilo "deslizar", tal como en los mobiles.
 - **SweetAlerts2:** Nos proporciona alertas visualmente atractivas para el usuario.
+- **Motion** Una Libreria de animaciones robusta para proyectos modernos en JS, React o Vue. Animaciones contornos/margenes, fondo, carrusel.
 
 
 
