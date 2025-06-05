@@ -89,7 +89,14 @@ body.menu-open {
 }
 
 .swiper-pagination {
-  margin-top: 2rem;
+  margin-top: 6rem;
+  position: static;
+  display: flex;
+  justify-content: center;
+  z-index: auto;
+}
+
+.custom-swiper-pagination {
   position: relative;
   z-index: 10;
 }

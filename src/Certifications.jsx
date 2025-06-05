@@ -79,12 +79,15 @@ function Certifications() {
         Certifications
       </h2>
 
-      <div className="w-full max-w-6xl">
+      <div className="w-full max-w-6xl flex flex-col items-center">
         <Swiper
           slidesPerView={1.2}
           spaceBetween={15}
           navigation={true}
-          pagination={{ clickable: true }}
+          pagination={{
+            el: ".custom-swiper-pagination", // 👈 paginación externa
+            clickable: true,
+          }}
           breakpoints={{
             480: { slidesPerView: 1, spaceBetween: 20 },
             640: { slidesPerView: 1.5, spaceBetween: 20 },
@@ -92,10 +95,10 @@ function Certifications() {
             1024: { slidesPerView: 3, spaceBetween: 40 },
           }}
           modules={[Pagination, Navigation]}
-          className="mySwiper"
+          className="w-full"
         >
           {certifications.map((cert, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="!h-auto">
               <BackgroundGradient
                 className="rounded-3xl h-full"
                 containerClassName="h-full"
@@ -126,8 +129,12 @@ function Certifications() {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* Paginación externa y centrada */}
+        <div className="custom-swiper-pagination mt-6 flex justify-center" />
       </div>
 
+      {/* Modal de imagen */}
       {selectedImage && (
         <div
           className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
