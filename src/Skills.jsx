@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import {
   motion,
   useMotionValue,
@@ -128,7 +128,7 @@ function Skills() {
     (startAngle) => {
       controls.start({
         rotateY: [startAngle, startAngle - 360],
-        transition: { duration: 60, ease: "linear", repeat: Infinity },
+        transition: { duration: 80, ease: "linear", repeat: Infinity },
       });
     },
     [controls]
@@ -137,6 +137,32 @@ function Skills() {
   useEffect(() => {
     startInfiniteSpin(rotation.get());
   }, [rotation, startInfiniteSpin]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          startInfiniteSpin(rotation.get());
+        } else {
+          controls.stop();
+        }
+      },
+      {
+        root: null,
+        threshold: 0.2, // cuando el 20% del carrusel sea visible
+      }
+    );
+
+    if (carouselRef.current) {
+      observer.observe(carouselRef.current);
+    }
+
+    return () => {
+      if (carouselRef.current) {
+        observer.unobserve(carouselRef.current);
+      }
+    };
+  }, [controls, startInfiniteSpin, rotation]);
 
   const handleUpdate = (latest) => {
     if (typeof latest.rotateY === "number") rotation.set(latest.rotateY);
@@ -156,6 +182,8 @@ function Skills() {
   const handleMouseEnter = () => controls.stop();
   const handleMouseLeave = () => startInfiniteSpin(rotation.get());
 
+  const carouselRef = useRef(null);
+
   return (
     <div id="Skills" className="p-20 flex flex-col items-center justify-center">
       <h2 className="text-[52px] font-orbitron text-center font-semibold mb-20 leading-normal uppercase text-secondary">
@@ -164,6 +192,7 @@ function Skills() {
       <div className="relative h-[250px] w-full overflow-hidden">
         <div className="flex h-full items-center justify-center [perspective:1000px] [transform-style:preserve-3d]">
           <motion.div
+            ref={carouselRef}
             drag="x"
             dragElastic={0}
             onDrag={handleDrag}
