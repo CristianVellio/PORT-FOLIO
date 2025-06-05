@@ -61,6 +61,7 @@ function Banner() {
             className="text-secondary hover:text-primary rounded-full glow p-2"
           >
             <FaGithub className="text-[48px]" />
+            <span className="sr-only">Go to GitHub profile</span>
           </a>
           <a
             href="https://www.linkedin.com/in/cristianvellio"
@@ -69,6 +70,7 @@ function Banner() {
             className="text-secondary hover:text-primary rounded-full glow p-2"
           >
             <FaLinkedinIn className="text-[48px]" />
+            <span className="sr-only">Go to LinkedIn profile</span>
           </a>
         </div>
       </div>
