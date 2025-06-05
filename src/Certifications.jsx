@@ -119,6 +119,7 @@ function Certifications() {
                 >
                   <div className="w-full">
                     <img
+                      loading="lazy"
                       src={cert.img}
                       alt={cert.title}
                       className="w-full h-48 object-contain mb-4 transition-transform duration-300"

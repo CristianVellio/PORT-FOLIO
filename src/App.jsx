@@ -1,12 +1,12 @@
-import { useRef, useEffect, useState } from "react";
-import About from "./About";
-import Banner from "./Banner";
-import Contact from "./Contact";
-import Footer from "./Footer";
-import Nav from "./Nav";
-import Projects from "./Projects";
-import Skills from "./Skills";
-import Certifications from "./Certifications";
+import React, { useRef, useEffect, useState, Suspense, lazy } from "react";
+const About = React.lazy(() => import("./About"));
+const Banner = lazy(() => import("./Banner"));
+const Contact = lazy(() => import("./Contact"));
+const Footer = lazy(() => import("./Footer"));
+const Nav = lazy(() => import("./Nav"));
+const Projects = lazy(() => import("./Projects"));
+const Skills = lazy(() => import("./Skills"));
+const Certifications = lazy(() => import("./Certifications"));
 import { FaArrowUp } from "react-icons/fa";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
@@ -37,7 +37,9 @@ function App() {
       <div className="relative z-10">
         <Nav />
         <Banner />
-        <About />
+        <Suspense fallback={<div>Loading...</div>}>
+          <About />
+        </Suspense>
         <Skills />
         <Projects />
         <Certifications />

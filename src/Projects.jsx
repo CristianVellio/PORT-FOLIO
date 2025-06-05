@@ -54,6 +54,7 @@ function Projects() {
         <div className="relative z-10 flex flex-col h-full">
           <div className="relative w-full h-48 overflow-hidden">
             <img
+              loading="lazy"
               src={img}
               alt={title}
               className="w-full h-full object-cover transition duration-300 group-hover:blur-sm"
