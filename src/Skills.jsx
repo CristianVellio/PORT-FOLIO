@@ -153,13 +153,15 @@ function Skills() {
       }
     );
 
-    if (carouselRef.current) {
-      observer.observe(carouselRef.current);
+    const carouselNode = carouselRef.current;
+
+    if (carouselNode) {
+      observer.observe(carouselNode);
     }
 
     return () => {
-      if (carouselRef.current) {
-        observer.unobserve(carouselRef.current);
+      if (carouselNode) {
+        observer.unobserve(carouselNode);
       }
     };
   }, [controls, startInfiniteSpin, rotation]);
