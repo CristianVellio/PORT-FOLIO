@@ -46,10 +46,7 @@ function Contact() {
       id="Contact"
       className="p-4 lg:p-20 flex flex-col items-center justify-center"
     >
-      <h2
-        data-aos="fade-right"
-        className="font-orbitron text-[52px] text-center w-full font-semibold mb-20 leading-normal uppercase text-secondary"
-      >
+      <h2 className="font-orbitron text-[52px] text-center w-full font-semibold mb-20 leading-normal uppercase text-secondary">
         Contact Me
       </h2>
 

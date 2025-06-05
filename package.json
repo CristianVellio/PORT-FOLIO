@@ -13,7 +13,6 @@
     "@emailjs/browser": "^4.4.1",
     "@iconify-json/devicon": "^1.2.23",
     "@iconify/react": "^6.0.0",
-    "aos": "^2.3.4",
     "clsx": "^2.1.1",
     "framer-motion": "^12.15.0",
     "motion": "^12.12.2",

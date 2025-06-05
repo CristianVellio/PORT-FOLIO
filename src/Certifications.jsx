@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
@@ -64,14 +62,6 @@ function Certifications() {
     },
   ];
 
-  useEffect(() => {
-    AOS.init({
-      easing: "ease-out-quart",
-      delay: 0,
-      duration: 750,
-    });
-  }, []);
-
   const handleImageClick = (imgSrc) => {
     setSelectedImage(imgSrc);
   };
@@ -85,10 +75,7 @@ function Certifications() {
       id="Certifications"
       className="p-2 lg:p-20 flex flex-col items-center justify-center"
     >
-      <h2
-        data-aos="fade-right"
-        className="text-[52px] font-orbitron text-center font-semibold mb-20 leading-normal uppercase text-secondary"
-      >
+      <h2 className="text-[52px] font-orbitron text-center font-semibold mb-20 leading-normal uppercase text-secondary">
         Certifications
       </h2>
 

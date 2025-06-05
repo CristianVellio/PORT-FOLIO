@@ -1,23 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import {
   motion,
   useMotionValue,
   useAnimation,
   useTransform,
 } from "framer-motion";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { Icon } from "@iconify/react";
 
 function Skills() {
-  useEffect(() => {
-    AOS.init({
-      easing: "ease-out-quart",
-      delay: 0,
-      duration: 750,
-    });
-  }, []);
-
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 640);
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 640);
@@ -134,16 +124,19 @@ function Skills() {
     (val) => `rotate3d(0,1,0,${val}deg)`
   );
 
-  const startInfiniteSpin = (startAngle) => {
-    controls.start({
-      rotateY: [startAngle, startAngle - 360],
-      transition: { duration: 60, ease: "linear", repeat: Infinity },
-    });
-  };
+  const startInfiniteSpin = useCallback(
+    (startAngle) => {
+      controls.start({
+        rotateY: [startAngle, startAngle - 360],
+        transition: { duration: 60, ease: "linear", repeat: Infinity },
+      });
+    },
+    [controls]
+  );
 
   useEffect(() => {
     startInfiniteSpin(rotation.get());
-  }, []);
+  }, [rotation, startInfiniteSpin]);
 
   const handleUpdate = (latest) => {
     if (typeof latest.rotateY === "number") rotation.set(latest.rotateY);
@@ -165,10 +158,7 @@ function Skills() {
 
   return (
     <div id="Skills" className="p-20 flex flex-col items-center justify-center">
-      <h2
-        data-aos="fade-right"
-        className="text-[52px] font-orbitron text-center font-semibold mb-20 leading-normal uppercase text-secondary"
-      >
+      <h2 className="text-[52px] font-orbitron text-center font-semibold mb-20 leading-normal uppercase text-secondary">
         Favorite Stacks
       </h2>
       <div className="relative h-[250px] w-full overflow-hidden">

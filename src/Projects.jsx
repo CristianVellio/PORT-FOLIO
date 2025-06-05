@@ -11,21 +11,12 @@ import img10 from "./assets/img/projects_covers/literalura.webp";
 import img11 from "./assets/img/projects_covers/Bienestar_Plus_Banner.webp";
 import img12 from "./assets/img/projects_covers/toolkit_project.webp";
 import { FaReact, FaJava, FaPython, FaHtml5, FaCss3 } from "react-icons/fa";
-import { useEffect } from "react";
 import PropTypes from "prop-types";
 import { SiAngular, SiGnubash, SiSpring } from "react-icons/si";
 import { Icon } from "@iconify/react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 function Projects() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-    });
-  }, []);
   function ProjectCard({
     img,
     title,
@@ -37,10 +28,7 @@ function Projects() {
     repo,
   }) {
     return (
-      <div
-        data-aos="fade-up"
-        className="relative group w-full max-w-sm mx-auto bg-gray-800 shadow-lg flex flex-col h-full"
-      >
+      <div className="relative group w-full max-w-sm mx-auto bg-gray-800 shadow-lg flex flex-col h-full">
         <div className="absolute inset-0 pointer-events-none z-0">
           <GlowingEffect
             spread={40}
@@ -421,15 +409,12 @@ function Projects() {
       id="Projects"
       className="px-4 sm:px-8 md:px-16 lg:px-20 py-16 flex flex-col items-center justify-center"
     >
-      <h2
-        data-aos="fade-left"
-        className="font-orbitron text-[52px] font-semibold mb-20 leading-normal uppercase text-secondary"
-      >
+      <h2 className="font-orbitron text-[52px] font-semibold mb-20 leading-normal uppercase text-secondary">
         Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 w-full max-w-7xl">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} data-aos-delay={index * 100} />
+          <ProjectCard key={index} {...project} />
         ))}
       </div>
     </div>

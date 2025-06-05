@@ -1,7 +1,6 @@
 import img from "./assets/img/about/me.webp";
 import CRISTIAN_VELLIO_RESUME from "./assets/pdf/CRISTIAN_VELLIO_RESUME.pdf";
 import CRISTIAN_VELLIO_CURRICULUM from "./assets/pdf/CRISTIAN_VELLIO_CURRICULUM.pdf";
-import "aos/dist/aos.css";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 function About() {
@@ -10,10 +9,7 @@ function About() {
       id="About"
       className="lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg-text-start flex lg:flex-row flex-col justify-between lg:gap-20 items-center"
     >
-      <div
-        data-aos="fade-down"
-        className="flex-shrink-0 flex justify-center items-center"
-      >
+      <div className="flex-shrink-0 flex justify-center items-center">
         <BackgroundGradient
           className="w-[290px] h-[290px] overflow-hidden"
           containerClassName="p-[3px]"
@@ -26,16 +22,10 @@ function About() {
         </BackgroundGradient>
       </div>
       <div className="h-full lg:py-40 flex flex-col justify-center lg:items-center items-center text-white">
-        <h2
-          data-aos="fade-right"
-          className="text-[52px] font-orbitron font-semibold mb-8 leading-normal text-secondary uppercase"
-        >
+        <h2 className="text-[52px] font-orbitron font-semibold mb-8 leading-normal text-secondary uppercase">
           About Me
         </h2>
-        <p
-          data-aos="fade-left"
-          className="font-serrat text-justify text-lg leading-8"
-        >
+        <p className="font-serrat text-justify text-lg leading-8">
           I’m a Software Developer with a love for turning ideas into
           experiences through technology. With a strong base in full-stack
           development and a background in both technical and creative fields, I
