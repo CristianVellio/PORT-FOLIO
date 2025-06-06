@@ -3,6 +3,10 @@
 
 ## **Portfolio Web 💼 - Presentación**
 
+ <div>
+    <img src="https://github.com/user-attachments/assets/7820ae17-3ba5-482a-a5b0-6d2785a3812d" alt="Rendimiento" width="700" height="300">
+    <div>
+
 
 ## **1. Introducción**
 
@@ -42,7 +46,6 @@ La barra de navegación superior facilita el acceso rápido a las diferentes sec
 
 ### **2.8 Efectos de Animación**
 
-- Se han implementado efectos de animación utilizando AOS (Animate On Scroll), que añaden dinamismo al sitio. Estos efectos no solo hacen que el sitio sea visualmente más atractivo, sino que también guían al usuario a través del contenido de manera más efectiva.
 - Se utilizo React Typewriter Effect para el titulo.
 - Tambien un subrayado animado con forma de onda sinusoidal aparece al pasar el cursor sobre los enlaces del menú. La animación simula una ola de luz neón (#F72585) que fluye continuamente de izquierda a derecha, creada con un patrón SVG que se repite.
 - Bordes con **Glowing Effect** crea una linea iridiscente que sigue el contorno de las cartas en direccion al paso del puntero.
@@ -63,7 +66,6 @@ El proyecto utiliza las siguientes tecnologías y herramientas:
 - **Tailwind CSS:** Un framework CSS utilitario que facilita la creación de diseños personalizados sin necesidad de escribir CSS desde cero.
 - **React Scroll:** Permite el desplazamiento suave entre las secciones del sitio, mejorando la navegación y la experiencia del usuario.
 - **React Icons:** Proporciona una amplia variedad de iconos que se integran fácilmente con React, mejorando la interfaz visual.
-- **AOS (Animate On Scroll):** Se utiliza para implementar animaciones que se activan al desplazarse, manteniendo el interés del usuario.
 - **TypewriterReact:** Se utiliza para implementar animaciones y dar el fecto de maquina de escribir en el titulo.
 - **Swiper Js:** Permite una navegacion de desplazamiento estilo "deslizar", tal como en los mobiles.
 - **SweetAlerts2:** Nos proporciona alertas visualmente atractivas para el usuario.
@@ -125,16 +127,6 @@ import { TiThMenu } from "react-icons/ti";
 import { FaArrowUp } from "react-icons/fa";
 ```
 
-### **5.3 AOS (Animate On Scroll)**
-
-AOS proporciona una manera fácil de añadir animaciones que se activan al desplazarse. Esto no solo mejora la apariencia del sitio, sino que también puede dirigir la atención del usuario a elementos clave.
-
-```html
-<div data-aos="fade-up">
-  <!-- Contenido animado -->
-</div>
-```
-
 ### **5.3 Aceternity UI**
 librería de componentes de interfaz de usuario (UI) innovadora y de código abierto, diseñada para desarrolladores que buscan crear sitios web y aplicaciones web visualmente impactantes y altamente interactivas con un mínimo esfuerzo.
 
@@ -154,7 +146,7 @@ De aqui se utilizaron los componentes:
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="20" height="20"/> Tailwind CSS
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="20" height="20"/> HTML5
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="20" height="20"/>CSS3 
-- **Animaciones**: AOS, Framer Motion
+- **Animaciones**: Framer Motion
 - **Navegación y UI**: React Scroll, React Icons, Aceternity UI
 
 
