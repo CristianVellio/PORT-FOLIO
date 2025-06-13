@@ -23,6 +23,7 @@ function Projects() {
     link,
     icon,
     type,
+    status,
     description,
     collaborative,
     repo,
@@ -68,6 +69,15 @@ function Projects() {
                 Collaborative Project
               </span>
             )}
+            {status && (
+              <span className="font-tilt flex items-center gap-2 text-lime-400 text-sm mt-6 mb-2">
+                Currently working on this Project
+                <span className="relative flex h-3 w-3">
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-lime-500 shadow-[0_0_6px_2px_rgba(163,230,53,0.4)]"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-500 opacity-75"></span>
+                </span>
+              </span>
+            )}
             <div className="mt-4 space-y-1">
               {link && (
                 <a
@@ -101,6 +111,7 @@ function Projects() {
     title: PropTypes.string.isRequired,
     icon: PropTypes.node.isRequired,
     type: PropTypes.string.isRequired,
+    status: PropTypes.bool,
     description: PropTypes.node.isRequired,
     collaborative: PropTypes.bool,
     link: PropTypes.string,
@@ -113,6 +124,7 @@ function Projects() {
       title: "Bienestar Plus",
       icon: <SiAngular />,
       type: "Fullstack",
+      status: true,
       description: (
         <>
           {" "}
