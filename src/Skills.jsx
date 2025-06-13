@@ -111,10 +111,10 @@ function Skills() {
     },
   ];
 
-  const cylinderWidth = isMobile ? 800 : 1500;
+  const cylinderWidth = isMobile ? 1000 : 1500;
   const faceCount = skills.length;
   const faceWidth = (cylinderWidth / faceCount) * 0.5;
-  const radius = (cylinderWidth / (2 * Math.PI)) * (isMobile ? 2.1 : 1.7);
+  const radius = (cylinderWidth / (2 * Math.PI)) * (isMobile ? 1.9 : 1.7);
 
   const dragFactor = 0.03;
   const rotation = useMotionValue(0);
@@ -191,7 +191,7 @@ function Skills() {
       <h2 className="text-[52px] font-orbitron text-center font-semibold mb-20 leading-normal uppercase text-secondary">
         Favorite Stacks
       </h2>
-      <div className="relative h-[250px] w-full overflow-hidden">
+      <div className="relative h-[300px] sm:h-[250px] w-full overflow-hidden">
         <div className="flex h-full items-center justify-center [perspective:1000px] [transform-style:preserve-3d]">
           <motion.div
             ref={carouselRef}
@@ -227,7 +227,7 @@ function Skills() {
               >
                 <Icon
                   icon={skill.icon}
-                  className="skill-icon text-[30px] md:text-[35px] lg:text-[40px] text-tertiary hover:text-secondary"
+                  className="skill-icon text-[35px] md:text-[35px] lg:text-[40px] text-tertiary hover:text-secondary"
                 />
                 <p
                   translate="no"
