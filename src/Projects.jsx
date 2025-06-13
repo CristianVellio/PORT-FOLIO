@@ -71,10 +71,10 @@ function Projects() {
             )}
             {status && (
               <span className="font-tilt flex items-center gap-2 text-lime-400 text-sm mt-6 mb-2">
-                Currently working on this Project
+                Active Development
                 <span className="relative flex h-3 w-3">
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-lime-500 shadow-[0_0_6px_2px_rgba(163,230,53,0.4)]"></span>
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-500 opacity-75"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400/60 opacity-60"></span>
                 </span>
               </span>
             )}
