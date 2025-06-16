@@ -37,14 +37,20 @@ function App() {
       <div className="relative z-10">
         <Nav />
         <Banner />
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense
+          fallback={
+            <div className="w-full py-20 text-center text-sm text-secondary animate-pulse">
+              Loading section...
+            </div>
+          }
+        >
           <About />
+          <Skills />
+          <Projects />
+          <Certifications />
+          <Contact />
+          <Footer ref={footerRef} />
         </Suspense>
-        <Skills />
-        <Projects />
-        <Certifications />
-        <Contact />
-        <Footer ref={footerRef} />
 
         {showButton && (
           <button
