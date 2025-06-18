@@ -36,6 +36,7 @@ function Banner() {
           className="text-[52px] text-center w-full font-tilt font-semibold mb-8 leading-normal uppercase"
           style={{ maxWidth: "100%" }}
         >
+          <span className="sr-only">Cristian Vellio -</span>
           {text}
           <span className="text-tertiary">
             <Cursor cursorStyle="|" />
