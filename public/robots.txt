@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cristian-vellio-cv.vercel.app/sitemap.xml
