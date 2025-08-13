@@ -22,13 +22,13 @@ function Certifications() {
       img: cert1,
       title: "Diplomatura en Fullstack Web Development",
       issuer: "Universidad Tecnológica Nacional (UTN)",
-      year: "2024",
+      year: "2025",
     },
     {
       img: cert4,
-      title: "Oracle One Back-End Java Spring",
+      title: "Oracle One Backend: Java Spring Boot",
       issuer: "Oracle",
-      year: "2024",
+      year: "2025",
     },
     {
       img: cert2,
