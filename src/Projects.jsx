@@ -1,16 +1,11 @@
-import img1 from "./assets/img/projects_covers/OENCRYPTADOR_ORACLE.webp";
 import img2 from "./assets/img/projects_covers/OWEATHER_IOT.webp";
 import img3 from "./assets/img/projects_covers/OBOOKSTORE_FS.webp";
-import img4 from "./assets/img/projects_covers/CONVERSOR.webp";
-import img5 from "./assets/img/projects_covers/OTRANSPORTES_X.webp";
 import img6 from "./assets/img/projects_covers/OTOONME.webp";
 import img7 from "./assets/img/projects_covers/clinic_api.webp";
-import img8 from "./assets/img/projects_covers/screenmatch.webp";
 import img9 from "./assets/img/projects_covers/Oforohub.webp";
-import img10 from "./assets/img/projects_covers/Oliteralura.webp";
 import img11 from "./assets/img/projects_covers/OBienestar_Plus_Banner.webp";
 import img12 from "./assets/img/projects_covers/Otoolkit_project.webp";
-import { FaReact, FaJava, FaPython, FaHtml5, FaCss3 } from "react-icons/fa";
+import { FaReact, FaPython } from "react-icons/fa";
 import PropTypes from "prop-types";
 import { SiAngular, SiGnubash, SiSpring } from "react-icons/si";
 import { Icon } from "@iconify/react";
@@ -21,6 +16,7 @@ function Projects() {
     img,
     title,
     link,
+    wiki,
     icon,
     type,
     status,
@@ -89,6 +85,16 @@ function Projects() {
                   Visit Deployed Demo →
                 </a>
               )}
+              {wiki && (
+                <a
+                  href={wiki}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-serrat block text-sm text-blue-400 hover:text-blue-300 transition duration-200"
+                >
+                  Read Wiki →
+                </a>
+              )}
               {repo && (
                 <a
                   href={repo}
@@ -115,6 +121,7 @@ function Projects() {
     description: PropTypes.node.isRequired,
     collaborative: PropTypes.bool,
     link: PropTypes.string,
+    wiki: PropTypes.string,
     repo: PropTypes.string,
   };
 
@@ -144,33 +151,9 @@ function Projects() {
         </>
       ),
       collaborative: true,
+      link: "https://bienestar-plus.vercel.app/home",
+      wiki: "https://github.com/ISPC-Soluciones/Bienestar-Plus/wiki",
       repo: "https://github.com/ISPC-Soluciones/Bienestar-Plus",
-    },
-    {
-      img: img12,
-      title: "Administration Toolkit Jr.",
-      icon: <SiGnubash />,
-      type: "Scripting",
-      description: (
-        <>
-          {" "}
-          <Icon
-            icon="devicon:linux"
-            className="inline-block mr-2"
-            width="24"
-            height="24"
-          />
-          <br /> The Administration Toolkit Jr. is a command-line utility
-          developed in Bash scripting for Linux-based systems (Ubuntu/Debian).
-          <br /> It provides a user-friendly text-based menu interface that
-          allows junior system administrators to perform essential system
-          monitoring and management tasks without requiring advanced Linux
-          knowledge. <br /> Developed by students of the Software Development
-          program at the Higher Polytechnic Institute of Cordoba (ISPC).
-        </>
-      ),
-      collaborative: true,
-      repo: "https://github.com/CristianVellio/toolkit-linux",
     },
     {
       img: img3,
@@ -228,30 +211,6 @@ function Projects() {
       repo: "https://github.com/CristianVellio/proyecto_Clima",
     },
     {
-      img: img7,
-      title: "Voll Clinic",
-      icon: <SiSpring />,
-      type: "API REST",
-      description: (
-        <>
-          {" "}
-          <Icon
-            icon="material-symbols:medical-information-outline"
-            className="text-red-600 inline-block mr-2"
-            width="24"
-            height="24"
-          />
-          <br /> Voll Med Clinic API is a RESTful service built with Spring Boot
-          for managing clinic operations, including authentication, user
-          management, and medical data handling. <br /> It uses JWT
-          authentication for security and integrates with MySQL for persistent
-          data storage.
-        </>
-      ),
-      collaborative: false,
-      repo: "https://github.com/CristianVellio/api",
-    },
-    {
       img: img9,
       title: "ForoHub",
       icon: <SiSpring />,
@@ -276,77 +235,61 @@ function Projects() {
       repo: "https://github.com/CristianVellio/FOROHUB",
     },
     {
-      img: img8,
-      title: "Screenmatch",
+      img: img7,
+      title: "Voll Clinic",
       icon: <SiSpring />,
-      type: "Backend",
+      type: "API REST",
       description: (
         <>
           {" "}
           <Icon
-            icon="material-symbols:video-camera-back"
-            className="text-yellow-200 inline-block mr-2"
+            icon="material-symbols:medical-information-outline"
+            className="text-red-600 inline-block mr-2"
             width="24"
             height="24"
           />
-          <br /> Screenmatch is a Spring Boot-based Java application designed as
-          an introductory project for working with the framework. It leverages
-          several key technologies.
+          <br /> Voll Med Clinic API is a RESTful service built with Spring Boot
+          for managing clinic operations, including authentication, user
+          management, and medical data handling. <br /> It uses JWT
+          authentication for security and integrates with MySQL for persistent
+          data storage.
         </>
       ),
       collaborative: false,
-      repo: "https://github.com/CristianVellio/screenmatch",
+      repo: "https://github.com/CristianVellio/api",
     },
     {
-      img: img10,
-      title: "LiterAlura",
-      icon: <SiSpring />,
-      type: "Backend",
+      img: img12,
+      title: "Administration Toolkit Jr.",
+      icon: <SiGnubash />,
+      type: "Scripting",
       description: (
         <>
           {" "}
           <Icon
-            icon="material-symbols:book-3"
-            className="text-blue-700 inline-block mr-2"
+            icon="devicon:linux"
+            className="inline-block mr-2"
             width="24"
             height="24"
           />
-          <br /> LiterAlura is a book management application developed in Java
-          with Spring Boot. It allows you to manage a digital library with
-          information about books, authors, and languages.
+          <br /> The Administration Toolkit Jr. is a command-line utility
+          developed in Bash scripting for Linux-based systems (Ubuntu/Debian).
+          <br /> It provides a user-friendly text-based menu interface that
+          allows junior system administrators to perform essential system
+          monitoring and management tasks without requiring advanced Linux
+          knowledge. <br /> Developed by students of the Software Development
+          program at the Higher Polytechnic Institute of Cordoba (ISPC).
         </>
       ),
-      collaborative: false,
-      repo: "https://github.com/CristianVellio/LiterAlura",
-    },
-    {
-      img: img4,
-      title: "Currency Converter",
-      icon: <FaJava />,
-      type: "Backend",
-      description: (
-        <>
-          {" "}
-          <Icon
-            icon="material-symbols:money-bag"
-            className="text-amber-500 inline-block mr-2"
-            width="24"
-            height="24"
-          />
-          <br /> The Currency Converter is an application designed to perform
-          currency conversions in a simple and efficient way. The project allows
-          conversion between different currencies using up-to-date data provided
-          by a third-party API.
-        </>
-      ),
-      collaborative: false,
-      repo: "https://github.com/CristianVellio/conversor-de-moneda",
+      collaborative: true,
+      repo: "https://github.com/CristianVellio/toolkit-linux",
     },
     {
       img: img6,
       title: "Portfolio",
       icon: <FaReact />,
       type: "Frontend",
+      status: true,
       description: (
         <>
           {" "}
@@ -367,52 +310,6 @@ function Projects() {
       collaborative: false,
       link: "https://cristianvellio.vercel.app/",
       repo: "https://github.com/CristianVellio/PORT-FOLIO",
-    },
-    {
-      img: img1,
-      title: "Text Encryptor",
-      icon: <FaHtml5 />,
-      type: "Frontend",
-      description: (
-        <>
-          {" "}
-          <Icon
-            icon="material-symbols:encrypted"
-            className="text-white inline-block mr-2"
-            width="24"
-            height="24"
-          />
-          <br /> Solo challenge creating an application that encrypts texts, so
-          you can exchange secret messages with other people who know the
-          encryption key used.
-        </>
-      ),
-      collaborative: false,
-      link: "https://encrypter-oracle-one.vercel.app/",
-      repo: "https://github.com/CristianVellio/Oracle-ONE/tree/main/Challenge%201",
-    },
-    {
-      img: img5,
-      title: "Transportes X",
-      icon: <FaCss3 />,
-      type: "Frontend",
-      description: (
-        <>
-          {" "}
-          <Icon
-            icon="material-symbols:travel-rounded"
-            className="text-blue-500 inline-block mr-2"
-            width="24"
-            height="24"
-          />
-          <br /> First solo project creating a static, MPA of three sections,
-          responsive Website using HTML; CSS correct use of Flexbox or CSS Grid;
-          Bootstrap as an alternative to our layout.
-        </>
-      ),
-      collaborative: false,
-      link: "https://transportex-x-utn-frba.netlify.app/",
-      repo: "https://github.com/CristianVellio/Proyecto-Integrador-UTN-FRBA-Inicial",
     },
   ];
 
