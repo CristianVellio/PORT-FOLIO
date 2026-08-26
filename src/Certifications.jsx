@@ -14,6 +14,8 @@ import cert4 from "./assets/img/certificates/Oracle_java_Spring_backend.webp";
 import cert5 from "./assets/img/certificates/fullstack_python_cac.webp";
 import cert6 from "./assets/img/certificates/OCambridge_FCE.webp";
 import cert7 from "./assets/img/certificates/OEF_SET_Certificate.webp";
+import cert8 from "./assets/img/certificates/ISPC_FS.jpg";
+import cert9 from "./assets/img/certificates/PROG_ISPC.jpg";
 
 function Certifications() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -25,10 +27,22 @@ function Certifications() {
       year: "2025",
     },
     {
+      img: cert8,
+      title: "Fullstack Developer Jr",
+      issuer: "Instituto Superior Politecnico de Cordoba (ISPC)",
+      year: "2025",
+    },
+    {
       img: cert4,
       title: "Oracle One Backend: Java Spring Boot",
       issuer: "Oracle",
       year: "2025",
+    },
+    {
+      img: cert9,
+      title: "Developer",
+      issuer: "Instituto Superior Politecnico de Cordoba (ISPC)",
+      year: "2024",
     },
     {
       img: cert2,
