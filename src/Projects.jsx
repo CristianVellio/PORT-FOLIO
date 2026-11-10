@@ -3,7 +3,7 @@ import img3 from "./assets/img/projects_covers/OBOOKSTORE_FS.webp";
 import img6 from "./assets/img/projects_covers/OTOONME.webp";
 import img7 from "./assets/img/projects_covers/clinic_api.webp";
 import img9 from "./assets/img/projects_covers/Oforohub.webp";
-import img11 from "./assets/img/projects_covers/OBienestar_Plus_Banner.webp";
+import img11 from "./assets/img/projects_covers/Bienestar_Plus_Cover.webp";
 import img12 from "./assets/img/projects_covers/Otoolkit_project.webp";
 import { FaReact, FaPython } from "react-icons/fa";
 import PropTypes from "prop-types";

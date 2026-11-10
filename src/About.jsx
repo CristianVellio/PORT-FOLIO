@@ -1,6 +1,6 @@
 import img from "./assets/img/about/Ome.webp";
-import CRISTIAN_VELLIO_RESUME from "./assets/pdf/CRISTIAN_VELLIO_RESUME.pdf";
-import CRISTIAN_VELLIO_CURRICULUM from "./assets/pdf/CRISTIAN_VELLIO_CURRICULUM.pdf";
+import Cristian_Vellio_Developer from "./assets/pdf/Cristian_Vellio_Developer.pdf";
+import Cristian_Vellio_Desarrollador from "./assets/pdf/Cristian_Vellio_Desarrollador.pdf";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 function About() {
@@ -26,28 +26,30 @@ function About() {
           About Me
         </h2>
         <p className="font-serrat text-justify text-lg leading-8">
-          I’m a Software Developer with a love for turning ideas into
-          experiences through technology. With a strong base in full-stack
-          development and a background in both technical and creative fields, I
-          aim to build applications that are not only functional but thoughtful.{" "}
-          <br />
-          My academic path includes a Full-Stack Web Developer diploma from
-          UTN-BA, a Python-based Associate’s degree, and ongoing studies in
-          Software Development at ISPC. But just as important are the years I
-          spent exploring Arts and Literature; they shape how I think, solve
-          problems, and communicate. <br /> I believe in clean code, lifelong
-          learning, and collaboration over competition. Every challenge is a
-          chance to grow, and I’m always excited to contribute, learn, and
-          create. <br /> Thanks for stopping by. I look forward to working
-          together.
+          I’m a Software Developer with a passion for turning complex ideas into
+          intuitive, high-impact digital experiences. With a solid foundation in
+          full-stack engineering (Java / Spring Boot, Python / Django REST,
+          TypeScript, Angular, React), I design and build applications that are
+          as structurally sound as they are thoughtful. <br />
+          My technical background includes a Full-Stack Web Development diploma
+          from UTN-BA and advanced studies in Software Development at ISPC
+          (graduating December 2026). Equally important are my foundational
+          studies in Arts and Literature; they deeply influence my creative
+          problem-solving, attention to user experience, and technical
+          communication. <br /> I strongly advocate for clean architecture,
+          automated testing, continuous learning, and clear collaboration. Every
+          challenge is an opportunity to craft better software and grow
+          alongside great teams. <br /> Thanks for stopping by; feel free to
+          explore my work or reach out to discuss how we can build something
+          great together.
         </p>
         <div className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
             <div className="flex space-x-2"></div>
             <button className="neno-button shadow-xl hover:shadow-secondary/50  text-white border-2 hover:bg-secondary border-tertiary rounded-lg py-4 px-8 uppercase font-tilt relative overflow-hidden ">
               <a
-                href={CRISTIAN_VELLIO_RESUME}
-                download="CRISTIAN_VELLIO_RESUME"
+                href={Cristian_Vellio_Developer}
+                download="Cristian_Vellio_Developer"
               >
                 Download Resume (EN)
               </a>
@@ -59,8 +61,8 @@ function About() {
             <div className="flex space-x-2"></div>
             <button className="neno-button shadow-xl font-tilt hover:shadow-secondary/50  text-white border-2 hover:bg-secondary border-tertiary rounded-lg py-4 px-8 uppercase relative overflow-hidden ">
               <a
-                href={CRISTIAN_VELLIO_CURRICULUM}
-                download="CRISTIAN_VELLIO_CURRICULUM"
+                href={Cristian_Vellio_Desarrollador}
+                download="Cristian_Vellio_Desarrollador"
               >
                 Descargar CV (ES)
               </a>
