@@ -1,6 +1,6 @@
 import img2 from "./assets/img/projects_covers/OWEATHER_IOT.webp";
 import img3 from "./assets/img/projects_covers/OBOOKSTORE_FS.webp";
-import img6 from "./assets/img/projects_covers/OTOONME.webp";
+import img6 from "./assets/img/projects_covers/mimiatura_portafolio.webp";
 import img7 from "./assets/img/projects_covers/clinic_api.webp";
 import img9 from "./assets/img/projects_covers/Oforohub.webp";
 import img11 from "./assets/img/projects_covers/Bienestar_Plus_Cover.webp";
@@ -79,13 +79,19 @@ function Projects() {
                 {status === "paused" && (
                   <>
                     <span className="text-gray-400">Paused</span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-gray-500"></span>
+                    <Icon
+                      icon="material-symbols:pause-rounded"
+                      className="text-gray-400 text-lg"
+                    />
                   </>
                 )}
                 {status === "deprecated" && (
                   <>
                     <span className="text-red-400">Deprecated</span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                    <Icon
+                      icon="material-symbols:close-rounded"
+                      className="text-red-400 text-lg"
+                    />
                   </>
                 )}
               </div>
