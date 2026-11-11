@@ -66,13 +66,29 @@ function Projects() {
               </span>
             )}
             {status && (
-              <span className="font-tilt flex items-center gap-2 text-lime-400 text-sm mt-6 mb-2">
-                Active Development
-                <span className="relative flex h-3 w-3">
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-lime-500 shadow-[0_0_6px_2px_rgba(163,230,53,0.4)]"></span>
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400/60 opacity-60"></span>
-                </span>
-              </span>
+              <div className="font-tilt flex items-center gap-2 text-sm mt-6 mb-2">
+                {status === "active" && (
+                  <>
+                    <span className="text-lime-400">Active Development</span>
+                    <span className="relative flex h-3 w-3">
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-lime-500 shadow-[0_0_6px_2px_rgba(163,230,53,0.4)]"></span>
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400/60 opacity-60"></span>
+                    </span>
+                  </>
+                )}
+                {status === "paused" && (
+                  <>
+                    <span className="text-gray-400">Paused</span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-gray-500"></span>
+                  </>
+                )}
+                {status === "deprecated" && (
+                  <>
+                    <span className="text-red-400">Deprecated</span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                  </>
+                )}
+              </div>
             )}
             <div className="mt-4 space-y-1">
               {link && (
@@ -131,7 +147,7 @@ function Projects() {
       title: "Bienestar Plus",
       icon: <SiAngular />,
       type: "Fullstack",
-      status: true,
+      status: "active",
       description: (
         <>
           {" "}
@@ -160,6 +176,7 @@ function Projects() {
       title: "Bookstore App",
       icon: <FaReact />,
       type: "Fullstack",
+      status: "paused",
       description: (
         <>
           {" "}
@@ -187,6 +204,7 @@ function Projects() {
       title: "Meteorological Station",
       icon: <FaPython />,
       type: "Fullstack IoT",
+      status: "paused",
       description: (
         <>
           {" "}
@@ -215,6 +233,7 @@ function Projects() {
       title: "ForoHub",
       icon: <SiSpring />,
       type: "Backend",
+      status: "deprecated",
       description: (
         <>
           {" "}
@@ -239,6 +258,7 @@ function Projects() {
       title: "Voll Clinic",
       icon: <SiSpring />,
       type: "API REST",
+      status: "deprecated",
       description: (
         <>
           {" "}
@@ -263,6 +283,7 @@ function Projects() {
       title: "Administration Toolkit Jr.",
       icon: <SiGnubash />,
       type: "Scripting",
+      status: "deprecated",
       description: (
         <>
           {" "}
@@ -289,7 +310,7 @@ function Projects() {
       title: "Portfolio",
       icon: <FaReact />,
       type: "Frontend",
-      status: true,
+      status: "active",
       description: (
         <>
           {" "}
